@@ -1,0 +1,1326 @@
+{
+  "run_tag": "20261018_133430",
+  "timestamp": "2026-10-18T13:34:37.176183",
+  "objetivo": "Rastreamento Topologico do Hospital Regional de Ceilandia (HRC) - Etapa E4",
+  "hrc_uc_primaria": {
+    "topologia_cadeia": {
+      "COD_ID": "01d6dfec8e270bbd5215e231ff676130bba898de060bbe65fd14fbd985db29d8",
+      "RAMAL": "N/A (Conexao Direta MT)",
+      "PAC": "STN_TN08_9026_CEI003",
+      "PN_CON": "9026_CEI003",
+      "UNI_TR_MT": "N/A (Subestacao Propria / Barramento MT)",
+      "CTMT": "TN08",
+      "UNI_TR_AT": "T-1_STN",
+      "SUB": "STN",
+      "DIAGRAMA_CADEIA": "UC [01d6dfec8e270bbd5215e231ff676130bba898de060bbe65fd14fbd985db29d8] -> RAMAL [N/A (Conexao Direta MT)] -> PAC [STN_TN08_9026_CEI003] -> UNI_TR_MT [N/A (Subestacao Propria / Barramento MT)] -> CTMT [TN08] -> SUB [STN]"
+    },
+    "dados_cadastrais_completos": {
+      "PN_CON": "9026_CEI003",
+      "DIST": "5160",
+      "PAC": "STN_TN08_9026_CEI003",
+      "CTMT": "TN08",
+      "UNI_TR_AT": "T-1_STN",
+      "SUB": "STN",
+      "CONJ": "16022",
+      "MUN": "5300108",
+      "CEG_GD": " ",
+      "BRR": "CEILANDIA",
+      "CEP": "72215-178",
+      "CLAS_SUB": "CO9",
+      "CNAE": "8610-1/01",
+      "TIP_CC": "MTTipo3",
+      "FAS_CON": "ABCN",
+      "GRU_TEN": "MT",
+      "TEN_FORN": "49",
+      "GRU_TAR": "A4",
+      "SIT_ATIV": "AT",
+      "DAT_CON": "19/01/2006",
+      "CAR_INST": "51987.66666666",
+      "DEM_CONT": "110.22222222",
+      "LIV": "0",
+      "ARE_LOC": "UB",
+      "TIP_SIST": "RD_INTERLIG",
+      "DEM_01": "132.0",
+      "DEM_02": "119.0",
+      "DEM_03": "119.0",
+      "DEM_04": "0.0",
+      "DEM_05": "0.0",
+      "DEM_06": "0.0",
+      "DEM_07": "0.0",
+      "DEM_08": "0.0",
+      "DEM_09": "0.0",
+      "DEM_10": "0.0",
+      "DEM_11": "0.0",
+      "DEM_12": "0.0",
+      "ENE_01": "56594.516082",
+      "ENE_02": "54912.222314",
+      "ENE_03": "59627.971163",
+      "ENE_04": "0.0",
+      "ENE_05": "0.0",
+      "ENE_06": "0.0",
+      "ENE_07": "0.0",
+      "ENE_08": "0.0",
+      "ENE_09": "0.0",
+      "ENE_10": "0.0",
+      "ENE_11": "0.0",
+      "ENE_12": "0.0",
+      "DIC_01": "0.0",
+      "DIC_02": "0.0",
+      "DIC_03": "0.0",
+      "DIC_04": "0.0",
+      "DIC_05": "0.0",
+      "DIC_06": "0.0",
+      "DIC_07": "0.0",
+      "DIC_08": "0.0",
+      "DIC_09": "0.0",
+      "DIC_10": "0.0",
+      "DIC_11": "0.0",
+      "DIC_12": "0.0",
+      "FIC_01": "0.0",
+      "FIC_02": "0.0",
+      "FIC_03": "0.0",
+      "FIC_04": "0.0",
+      "FIC_05": "0.0",
+      "FIC_06": "0.0",
+      "FIC_07": "0.0",
+      "FIC_08": "0.0",
+      "FIC_09": "0.0",
+      "FIC_10": "0.0",
+      "FIC_11": "0.0",
+      "FIC_12": "0.0",
+      "SEMRED": "0",
+      "DESCR": "793979",
+      "COD_ID": "01d6dfec8e270bbd5215e231ff676130bba898de060bbe65fd14fbd985db29d8"
+    },
+    "metadados_rastreamento": {
+      "score_aderencia": 180,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "CEP exato do HRC: 72215-178",
+        "CNAE Hospitalar: 8610-1/01",
+        "Potencia Instalada de Grande Porte: 51987.7 kW"
+      ]
+    }
+  },
+  "candidatas_adicionais_mt": [
+    {
+      "COD_ID": "fb21e7e290f11aaf916258999cb8f52790673886d696248c513d3aacf656d9bd",
+      "CNAE": "8640-2/05",
+      "CEP": "72215-178",
+      "CAR_INST": "29775.41666666",
+      "CTMT": "TN08",
+      "SUB": "STN",
+      "PAC": "STN_TN08_9027_CEI003",
+      "PN_CON": "9027_CEI003",
+      "score": 145,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "CEP exato do HRC: 72215-178",
+        "CNAE de Saude: 8640-2/05",
+        "Potencia Instalada de Grande Porte: 29775.4 kW"
+      ]
+    },
+    {
+      "COD_ID": "60261e9e623cdd12979cb608fe1115dedf6421f3be7334073805492f0ef3b9c5",
+      "CNAE": "8610-1/01",
+      "CEP": "72220-280",
+      "CAR_INST": "166105.33333333",
+      "CTMT": "CN09",
+      "SUB": "SCN",
+      "PAC": "SCN_CN09_9210_CEI080",
+      "PN_CON": "9210_CEI080",
+      "score": 130,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "CNAE Hospitalar: 8610-1/01",
+        "Potencia Instalada de Grande Porte: 166105.3 kW"
+      ]
+    },
+    {
+      "COD_ID": "041a3fe42664e6aad286bd7c4b00975dd8acd544a56568be59fd2c4e46629eaf",
+      "CNAE": "8630-5/03",
+      "CEP": "72215-178",
+      "CAR_INST": "4912.6",
+      "CTMT": "CN07",
+      "SUB": "SCN",
+      "PAC": "SCN_CN07_9027_CEI32A",
+      "PN_CON": "9027_CEI32A",
+      "score": 120,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "CEP exato do HRC: 72215-178",
+        "CNAE de Saude: 8630-5/03",
+        "Potencia Instalada Media: 4912.6 kW"
+      ]
+    },
+    {
+      "COD_ID": "a368a7ce7365d338926596f5585c9cc4e9ba91136f9dae2ae217cb2ad494a8e1",
+      "CNAE": "8640-2/05",
+      "CEP": "72215-178",
+      "CAR_INST": "3.0",
+      "CTMT": "CS05",
+      "SUB": "SCS",
+      "PAC": "SCS_CS05_9035_CEI003",
+      "PN_CON": "9035_CEI003",
+      "score": 105,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "CEP exato do HRC: 72215-178",
+        "CNAE de Saude: 8640-2/05"
+      ]
+    },
+    {
+      "COD_ID": "70514686dfc80ebd1dcae0624c8655bfadf6fd2e989c3c98e2047c9de0313919",
+      "CNAE": "8610-1/01",
+      "CEP": "71955-000",
+      "CAR_INST": "109602.08333333",
+      "CTMT": "AC09",
+      "SUB": "SAC",
+      "PAC": "SAC_AC09_9109_TAG041",
+      "PN_CON": "9109_TAG041",
+      "score": 100,
+      "evidencias": [
+        "CNAE Hospitalar: 8610-1/01",
+        "Potencia Instalada de Grande Porte: 109602.1 kW"
+      ]
+    },
+    {
+      "COD_ID": "1c840e204054324889f9509759389d70f5b82eeea9345058c572a489b2f57628",
+      "CNAE": "8610-1/01",
+      "CEP": "72025-000",
+      "CAR_INST": "375393.58333333",
+      "CTMT": "AC07",
+      "SUB": "SAC",
+      "PAC": "SAC_AC07_9206_TAG033",
+      "PN_CON": "9206_TAG033",
+      "score": 100,
+      "evidencias": [
+        "CNAE Hospitalar: 8610-1/01",
+        "Potencia Instalada de Grande Porte: 375393.6 kW"
+      ]
+    },
+    {
+      "COD_ID": "0f806d4442d09a6e0d09b96ebecb2e49a7be6b08c0a38b7b075d8fe19370d73c",
+      "CNAE": "8610-1/01",
+      "CEP": "71635-000",
+      "CAR_INST": "383419.66666666",
+      "CTMT": "EN13",
+      "SUB": "SEN",
+      "PAC": "SEN_EN13_9048_BSB128",
+      "PN_CON": "9048_BSB128",
+      "score": 100,
+      "evidencias": [
+        "CNAE Hospitalar: 8610-1/01",
+        "Potencia Instalada de Grande Porte: 383419.7 kW"
+      ]
+    },
+    {
+      "COD_ID": "fa2cfa14e1a7657f9162bec3208e954d0c9d33b8461378c76558fdd2bbb996cc",
+      "CNAE": "8610-1/01",
+      "CEP": "71535-005",
+      "CAR_INST": "173980.16666666",
+      "CTMT": "BC23",
+      "SUB": "SBC",
+      "PAC": "SBC_BC23_9057_BSBRJ012_ATV",
+      "PN_CON": "9057_BSBRJ012_ATV",
+      "score": 100,
+      "evidencias": [
+        "CNAE Hospitalar: 8610-1/01",
+        "Potencia Instalada de Grande Porte: 173980.2 kW"
+      ]
+    },
+    {
+      "COD_ID": "ec9ffd3d13cbec9adc1787eb62cdfed67e990d23d969f107da52cce0b6bad92e",
+      "CNAE": "8610-1/02",
+      "CEP": "72400-000",
+      "CAR_INST": "283686.75",
+      "CTMT": "GM06",
+      "SUB": "SGM",
+      "PAC": "SGM_GM06_9102_GAM021",
+      "PN_CON": "9102_GAM021",
+      "score": 100,
+      "evidencias": [
+        "CNAE Hospitalar: 8610-1/02",
+        "Potencia Instalada de Grande Porte: 283686.8 kW"
+      ]
+    },
+    {
+      "COD_ID": "a4577e81b66930473b528d9bee6a85cd443c4422af23339d3beee34b683f7bd0",
+      "CNAE": "8610-1/01",
+      "CEP": "70840-050",
+      "CAR_INST": "483777.16666666",
+      "CTMT": "RF10",
+      "SUB": "SRF",
+      "PAC": "SRF_RF10_9059_RCF032",
+      "PN_CON": "9059_RCF032",
+      "score": 100,
+      "evidencias": [
+        "CNAE Hospitalar: 8610-1/01",
+        "Potencia Instalada de Grande Porte: 483777.2 kW"
+      ]
+    },
+    {
+      "COD_ID": "bf4afe8682c5a2f8a735b7a27fb8b68345b354d398cdb20ce1115e87c5b40949",
+      "CNAE": "8610-1/01",
+      "CEP": "70390-140",
+      "CAR_INST": "662001.5",
+      "CTMT": "HP03",
+      "SUB": "SHP",
+      "PAC": "SHP_HP03_9195_BSB040",
+      "PN_CON": "9195_BSB040",
+      "score": 100,
+      "evidencias": [
+        "CNAE Hospitalar: 8610-1/01",
+        "Potencia Instalada de Grande Porte: 662001.5 kW"
+      ]
+    },
+    {
+      "COD_ID": "7f3742dd8129c83fdb5c98a3245ec11c5302ac055dd35a778a7ba169ff480df2",
+      "CNAE": "8610-1/01",
+      "CEP": "70200-730",
+      "CAR_INST": "521558.5",
+      "CTMT": "ES12",
+      "SUB": "SES",
+      "PAC": "SES_ES12_9089_BSB099",
+      "PN_CON": "9089_BSB099",
+      "score": 100,
+      "evidencias": [
+        "CNAE Hospitalar: 8610-1/01",
+        "Potencia Instalada de Grande Porte: 521558.5 kW"
+      ]
+    },
+    {
+      "COD_ID": "9dad6adc02c84299425d8e9da504de58e722322b183933e29fde52f520f7a945",
+      "CNAE": "8610-1/01",
+      "CEP": "70200-670",
+      "CAR_INST": "83390.08333333",
+      "CTMT": "BG_01C3",
+      "SUB": "SBG",
+      "PAC": "S05_0506_9036_BSB059",
+      "PN_CON": "9036_BSB059",
+      "score": 100,
+      "evidencias": [
+        "CNAE Hospitalar: 8610-1/01",
+        "Potencia Instalada de Grande Porte: 83390.1 kW"
+      ]
+    },
+    {
+      "COD_ID": "7fe9812ef4bbabf625d98e4cdc9b442e827ff4ab4f929b378df276376dcd7dae",
+      "CNAE": "8610-1/01",
+      "CEP": "71615-270",
+      "CAR_INST": "317652.75",
+      "CTMT": "BG_01C3",
+      "SUB": "SBG",
+      "PAC": "S05_0510_9096_LGS021",
+      "PN_CON": "9096_LGS021",
+      "score": 100,
+      "evidencias": [
+        "CNAE Hospitalar: 8610-1/01",
+        "Potencia Instalada de Grande Porte: 317652.8 kW"
+      ]
+    },
+    {
+      "COD_ID": "ac13c0ee2e71c34ccba143072a2c584a15f98d30ae7bae7070b90428fe776cee",
+      "CNAE": "4691-5/00",
+      "CEP": "72215-110",
+      "CAR_INST": "157236.75",
+      "CTMT": "CS07",
+      "SUB": "SCS",
+      "PAC": "SCS_CS07_9318_CEI006",
+      "PN_CON": "9318_CEI006",
+      "score": 90,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Setor do HRC (CEP 72215-110)",
+        "Potencia Instalada de Grande Porte: 157236.8 kW"
+      ]
+    },
+    {
+      "COD_ID": "cea0a32bc608cc365b8eae38585051f68037aaf63c825d91daee75d20ccb9b63",
+      "CNAE": "8610-1/01",
+      "CEP": "72220-280",
+      "CAR_INST": "53.75",
+      "CTMT": "CN07",
+      "SUB": "SCN",
+      "PAC": "SCN_CN07_9562_CEI027",
+      "PN_CON": "9562_CEI027",
+      "score": 90,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "CNAE Hospitalar: 8610-1/01"
+      ]
+    },
+    {
+      "COD_ID": "b6ebd33356b07674e62e0761897ace6f1e0f42763f246e0c090ead9b38df458b",
+      "CNAE": "8610-1/02",
+      "CEP": "72262-100",
+      "CAR_INST": "100.0",
+      "CTMT": "CN11",
+      "SUB": "SCN",
+      "PAC": "SCN_CN11_9255_CEI051",
+      "PN_CON": "9255_CEI051",
+      "score": 90,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "CNAE Hospitalar: 8610-1/02"
+      ]
+    },
+    {
+      "COD_ID": "d7ecd800ce82290a08780df467c98dc3cc1e65e024f513571979d39b33267800",
+      "CNAE": "8610-1/02",
+      "CEP": "72225-270",
+      "CAR_INST": "13.2",
+      "CTMT": "CS01",
+      "SUB": "SCS",
+      "PAC": "SCS_CS01_9116_CEI078",
+      "PN_CON": "9116_CEI078",
+      "score": 90,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "CNAE Hospitalar: 8610-1/02"
+      ]
+    },
+    {
+      "COD_ID": "45ea30779afa487c71382e7ee38563f6c8d05a5578b946fd4bb1a7e968e8cfd4",
+      "CNAE": "4711-3/02",
+      "CEP": "72215-556",
+      "CAR_INST": "32965.5",
+      "CTMT": "CS07",
+      "SUB": "SCS",
+      "PAC": "SCS_CS07_9017_CEIRJ002_ATV",
+      "PN_CON": "9017_CEIRJ002_ATV",
+      "score": 90,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Setor do HRC (CEP 72215-556)",
+        "Potencia Instalada de Grande Porte: 32965.5 kW"
+      ]
+    },
+    {
+      "COD_ID": "246673cf47cc41cf47e8fd78c52e54ea09eaa14234c9bbce51e10a1cc8846310",
+      "CNAE": "4711-3/01",
+      "CEP": "72215-110",
+      "CAR_INST": "28759.58333333",
+      "CTMT": "CS07",
+      "SUB": "SCS",
+      "PAC": "SCS_CS07_9526_CEI280_ATV",
+      "PN_CON": "9526_CEI280_ATV",
+      "score": 90,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Setor do HRC (CEP 72215-110)",
+        "Potencia Instalada de Grande Porte: 28759.6 kW"
+      ]
+    },
+    {
+      "COD_ID": "a6d20ac77dff6a6024d67a2846cc23504e79be7d2c980b719fc68ef6c8ea18bd",
+      "CNAE": "6120-5/02",
+      "CEP": "72215-071",
+      "CAR_INST": "38869.9090909",
+      "CTMT": "CN07",
+      "SUB": "SCN",
+      "PAC": "SCN_CN07_9027_CEI32A",
+      "PN_CON": "9027_CEI32A",
+      "score": 90,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Setor do HRC (CEP 72215-071)",
+        "Potencia Instalada de Grande Porte: 38869.9 kW"
+      ]
+    },
+    {
+      "COD_ID": "3cec652fad5c4e267847c2bf398ac0a330d407d8351803ad77395c1272c86b3c",
+      "CNAE": "4711-3/02",
+      "CEP": "72215-541",
+      "CAR_INST": "49213.0",
+      "CTMT": "CS03",
+      "SUB": "SCS",
+      "PAC": "SCS_CS03_9110_CEI005",
+      "PN_CON": "9110_CEI005",
+      "score": 90,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Setor do HRC (CEP 72215-541)",
+        "Potencia Instalada de Grande Porte: 49213.0 kW"
+      ]
+    },
+    {
+      "COD_ID": "bd251366dcfbb7e97e34d5d99cdb7837a125179346b695b5a6d3b3d742fed836",
+      "CNAE": "4711-3/01",
+      "CEP": "72215-110",
+      "CAR_INST": "250481.5",
+      "CTMT": "CS07",
+      "SUB": "SCS",
+      "PAC": "SCS_CS07_9526_CEI280_ATV",
+      "PN_CON": "9526_CEI280_ATV",
+      "score": 90,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Setor do HRC (CEP 72215-110)",
+        "Potencia Instalada de Grande Porte: 250481.5 kW"
+      ]
+    },
+    {
+      "COD_ID": "20d9248e9f6d6d8b3bc6e5527848eb152061d6a6fc3d85364d340e2d13b3333c",
+      "CNAE": "4711-3/02",
+      "CEP": "72200-000",
+      "CAR_INST": "140837.66666666",
+      "CTMT": "CN07",
+      "SUB": "SCN",
+      "PAC": "SCN_CN07_9562_CEI027",
+      "PN_CON": "9562_CEI027",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 140837.7 kW"
+      ]
+    },
+    {
+      "COD_ID": "3bcc2a3d1cec511b2ce7bf9896ceb3daaae4ddd780ff9130730cd3cb082bc685",
+      "CNAE": "6463-8/00",
+      "CEP": "72225-252",
+      "CAR_INST": "69914.08333333",
+      "CTMT": "CN07",
+      "SUB": "SCN",
+      "PAC": "SCN_CN07_9562_CEI027",
+      "PN_CON": "9562_CEI027",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 69914.1 kW"
+      ]
+    },
+    {
+      "COD_ID": "7268ca17a917b40669c5f4e5138756498371b8f5ea2206e9a0eb0ef308a23d50",
+      "CNAE": "4711-3/02",
+      "CEP": "72220-311",
+      "CAR_INST": "107821.41666666",
+      "CTMT": "CS01",
+      "SUB": "SCS",
+      "PAC": "SCS_CS01_9020_CEI016",
+      "PN_CON": "9020_CEI016",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 107821.4 kW"
+      ]
+    },
+    {
+      "COD_ID": "7ea0c33004263baefd93ab2ed17b70d2fcbc240af51e9f8f62772a03b323c3da",
+      "CNAE": "4639-7/01",
+      "CEP": "72220-282",
+      "CAR_INST": "139938.33333333",
+      "CTMT": "CS01",
+      "SUB": "SCS",
+      "PAC": "SCS_CS01_9123_CEI012",
+      "PN_CON": "9123_CEI012",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 139938.3 kW"
+      ]
+    },
+    {
+      "COD_ID": "fe7526acaf45ff82a9aee6b073621d1516592850d4047b7d1ee52d1c7c02ac1c",
+      "CNAE": "4711-3/02",
+      "CEP": "72250-501",
+      "CAR_INST": "19609.5",
+      "CTMT": "CN03",
+      "SUB": "SCN",
+      "PAC": "SCN_CN03_9240_CEI036",
+      "PN_CON": "9240_CEI036",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 19609.5 kW"
+      ]
+    },
+    {
+      "COD_ID": "69860c4e76ac763cd3627d9fb08208700163759512699687f7ef41ea5878e50c",
+      "CNAE": "4691-5/00",
+      "CEP": "72701-997",
+      "CAR_INST": "166193.83333333",
+      "CTMT": "CN16",
+      "SUB": "SCN",
+      "PAC": "SCN_CN16_9108_CEI250_ATV",
+      "PN_CON": "9108_CEI250_ATV",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 166193.8 kW"
+      ]
+    },
+    {
+      "COD_ID": "ce6706b84f03e84dab47d8ab53090a71622065f3a6b4e27b8731b530e2314130",
+      "CNAE": "6110-8/01",
+      "CEP": "72210-020",
+      "CAR_INST": "53818.91666666",
+      "CTMT": "TN08",
+      "SUB": "STN",
+      "PAC": "STN_TN08_9123_CEIRJ002_ATV",
+      "PN_CON": "9123_CEIRJ002_ATV",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 53818.9 kW"
+      ]
+    },
+    {
+      "COD_ID": "ee2c57a1bfbeed28a53b94be2a3d22c5a8190d833e72a620b04fffac647d32d5",
+      "CNAE": "6110-8/01",
+      "CEP": "72225-330",
+      "CAR_INST": "18429.58333333",
+      "CTMT": "CN07",
+      "SUB": "SCN",
+      "PAC": "SCN_CN07_9592_CEI027",
+      "PN_CON": "9592_CEI027",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 18429.6 kW"
+      ]
+    },
+    {
+      "COD_ID": "89c77ba0649398da653a24e38de9afca9d739f42d0b26462f8c1dcc1e3798a5e",
+      "CNAE": "6462-0/00",
+      "CEP": "72265-040",
+      "CAR_INST": "23797.91666666",
+      "CTMT": "NB08",
+      "SUB": "SNB",
+      "PAC": "SNB_NB08_9189_GRA056",
+      "PN_CON": "9189_GRA056",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 23797.9 kW"
+      ]
+    },
+    {
+      "COD_ID": "ea40f985409df5800d0978c024b50f4ef33aef50353ff4545c20ddb62a719c1b",
+      "CNAE": "6463-8/00",
+      "CEP": "72236-800",
+      "CAR_INST": "80169.0",
+      "CTMT": "NW19",
+      "SUB": "SNW",
+      "PAC": "SNW_NW19_9041_BSBRJ003_ATV",
+      "PN_CON": "9041_BSBRJ003_ATV",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 80169.0 kW"
+      ]
+    },
+    {
+      "COD_ID": "dc594cbe6f43f4e99d5a0a993c4e7c47d40e1c3dc68a5520358f636e05473b57",
+      "CNAE": "4711-3/02",
+      "CEP": "72260-708",
+      "CAR_INST": "41351.75",
+      "CTMT": "CN11",
+      "SUB": "SCN",
+      "PAC": "SCN_CN11_9686_CEI053",
+      "PN_CON": "9686_CEI053",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 41351.8 kW"
+      ]
+    },
+    {
+      "COD_ID": "8a812aaf24de4e3595505836d31c1f60561665a85534fea1fcca9c742efe5408",
+      "CNAE": "4711-3/02",
+      "CEP": "72225-500",
+      "CAR_INST": "136391.5",
+      "CTMT": "CN05",
+      "SUB": "SCN",
+      "PAC": "SCN_CN05_9532_CEI026",
+      "PN_CON": "9532_CEI026",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 136391.5 kW"
+      ]
+    },
+    {
+      "COD_ID": "c1289a8af62c75b333e0f195a667904f24218cec24c1983743eb02706cbf8ab8",
+      "CNAE": "8531-7/00",
+      "CEP": "72225-310",
+      "CAR_INST": "46626.41666666",
+      "CTMT": "CN07",
+      "SUB": "SCN",
+      "PAC": "SCN_CN07_9561_CEI027",
+      "PN_CON": "9561_CEI027",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 46626.4 kW"
+      ]
+    },
+    {
+      "COD_ID": "7c767e5add624823274d239aaa6c0c8565a5f9bd6bff835bdbb40d9bf974ed73",
+      "CNAE": "2222-6/00",
+      "CEP": "72265-060",
+      "CAR_INST": "38672.54545454",
+      "CTMT": "CN07",
+      "SUB": "SCN",
+      "PAC": "SCN_CN07_9027_CEI32A",
+      "PN_CON": "9027_CEI32A",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 38672.5 kW"
+      ]
+    },
+    {
+      "COD_ID": "36eb4eba6b45810d8956f71b21ced5aac863ceccabf6da91d1415db3ca32d588",
+      "CNAE": "9499-5/00",
+      "CEP": "72240-563",
+      "CAR_INST": "37052.63636363",
+      "CTMT": "CN08",
+      "SUB": "SCN",
+      "PAC": "SCN_CN08_9294_CEI031",
+      "PN_CON": "9294_CEI031",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 37052.6 kW"
+      ]
+    },
+    {
+      "COD_ID": "3ab337655a1995a00dceaefa401932fa806aee307c4adeff46ec7b21d31fb983",
+      "CNAE": "6422-1/00",
+      "CEP": "72225-010",
+      "CAR_INST": "13009.0",
+      "CTMT": "CN03",
+      "SUB": "SCN",
+      "PAC": "SCN_CN03_9001_CEI025",
+      "PN_CON": "9001_CEI025",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 13009.0 kW"
+      ]
+    },
+    {
+      "COD_ID": "2e7efd3b4033a41524e3fe9d85ea2b3dd5d4ea098607bb76d7e67a94d8e61fa4",
+      "CNAE": "3101-2/00",
+      "CEP": "72265-220",
+      "CAR_INST": "22225.16666666",
+      "CTMT": "CN10",
+      "SUB": "SCN",
+      "PAC": "SCN_CN10_9169_CEI061",
+      "PN_CON": "9169_CEI061",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 22225.2 kW"
+      ]
+    },
+    {
+      "COD_ID": "d1e0022f28e03501afa7870fd20c4e38e72f0d30f4f9c7d5cb8efb80ba3ef5d1",
+      "CNAE": "4617-6/00",
+      "CEP": "72231-500",
+      "CAR_INST": "40414.125",
+      "CTMT": "CS02",
+      "SUB": "SCS",
+      "PAC": "SCS_CS02_9003_CEI017",
+      "PN_CON": "9003_CEI017",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 40414.1 kW"
+      ]
+    },
+    {
+      "COD_ID": "abd5700c8db4b46b905b039197a42434e9018763f9f7e361f30acba1c6c72e92",
+      "CNAE": "7723-3/00",
+      "CEP": "72265-060",
+      "CAR_INST": "77084.25",
+      "CTMT": "CN13",
+      "SUB": "SCN",
+      "PAC": "SCN_CN13_9275_CEI056",
+      "PN_CON": "9275_CEI056",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 77084.2 kW"
+      ]
+    },
+    {
+      "COD_ID": "2b1f6488d75277a8013332fedcaa50727125bc55c3203980d8150f2fe6da806f",
+      "CNAE": "2311-7/00",
+      "CEP": "72265-150",
+      "CAR_INST": "55764.41666666",
+      "CTMT": "CN13",
+      "SUB": "SCN",
+      "PAC": "SCN_CN13_9551_CEI56A",
+      "PN_CON": "9551_CEI56A",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 55764.4 kW"
+      ]
+    },
+    {
+      "COD_ID": "96d8050ed89b7b29a37a00a0420090b37d325797dff1d5d58201757a954cadf8",
+      "CNAE": "3839-4/99",
+      "CEP": "72265-190",
+      "CAR_INST": "17223.58333333",
+      "CTMT": "CN07",
+      "SUB": "SCN",
+      "PAC": "SCN_CN07_9027_CEI32A",
+      "PN_CON": "9027_CEI32A",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 17223.6 kW"
+      ]
+    },
+    {
+      "COD_ID": "fe0e98debad559fc65e0db1016c3905114863838c4d759de503f1d47e3b62499",
+      "CNAE": "4686-9/02",
+      "CEP": "72265-110",
+      "CAR_INST": "60705.81818181",
+      "CTMT": "CN13",
+      "SUB": "SCN",
+      "PAC": "SCN_CN13_9454_CEI056",
+      "PN_CON": "9454_CEI056",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 60705.8 kW"
+      ]
+    },
+    {
+      "COD_ID": "71ae23628672de4b7fca4327828e7762397a8440f1382a08d30037e290fa8ead",
+      "CNAE": "4639-7/01",
+      "CEP": "72261-061",
+      "CAR_INST": "37795.66666666",
+      "CTMT": "CN11",
+      "SUB": "SCN",
+      "PAC": "SCN_CN11_9433_CEI051",
+      "PN_CON": "9433_CEI051",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 37795.7 kW"
+      ]
+    },
+    {
+      "COD_ID": "0bc503d676d9d075a6ddb78d9c78ae77a0b8948e9c77022387dc6af40d75ec8b",
+      "CNAE": "1094-5/00",
+      "CEP": "72265-200",
+      "CAR_INST": "43197.25",
+      "CTMT": "CN13",
+      "SUB": "SCN",
+      "PAC": "SCN_CN13_9530_CEI56A",
+      "PN_CON": "9530_CEI56A",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 43197.2 kW"
+      ]
+    },
+    {
+      "COD_ID": "60dce3b4db577044de238b2b06f823f7b0437810f4bd86baf6ca2e264047061c",
+      "CNAE": "1012-1/03",
+      "CEP": "72227-992",
+      "CAR_INST": "95751.3",
+      "CTMT": "CN15",
+      "SUB": "SCN",
+      "PAC": "SCN_CN15_9004_CEI201_ATV",
+      "PN_CON": "9004_CEI201_ATV",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 95751.3 kW"
+      ]
+    },
+    {
+      "COD_ID": "725d2092809b762ffedde4bcf80a012b9307f5d8a6da66e283c07bf3d4cd0e54",
+      "CNAE": "6810-2/02",
+      "CEP": "72265-160",
+      "CAR_INST": "31706.09090909",
+      "CTMT": "CN13",
+      "SUB": "SCN",
+      "PAC": "SCN_CN13_9565_CEI56A",
+      "PN_CON": "9565_CEI56A",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 31706.1 kW"
+      ]
+    },
+    {
+      "COD_ID": "f0e9be30c19dfddd87e1f7737655b4f8ae7a1427cf1eb1327229f343d8185d5a",
+      "CNAE": "6810-2/02",
+      "CEP": "72265-160",
+      "CAR_INST": "50169.4",
+      "CTMT": "CN13",
+      "SUB": "SCN",
+      "PAC": "SCN_CN13_9565_CEI56A",
+      "PN_CON": "9565_CEI56A",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 50169.4 kW"
+      ]
+    },
+    {
+      "COD_ID": "4d8ba31518fc33959cd09ebbaa9be3d7183c553867e9e54a1d8c69cd16428172",
+      "CNAE": "1094-5/00",
+      "CEP": "72265-720",
+      "CAR_INST": "27250.11111111",
+      "CTMT": "CN15",
+      "SUB": "SCN",
+      "PAC": "SCN_CN15_9232_CEI109",
+      "PN_CON": "9232_CEI109",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 27250.1 kW"
+      ]
+    },
+    {
+      "COD_ID": "7e70510a53a74ff7a65d69aaf5b19fac02ac328cd7584d534d01d102e53c3dc4",
+      "CNAE": "8520-1/00",
+      "CEP": "72220-280",
+      "CAR_INST": "32162.66666666",
+      "CTMT": "CS01",
+      "SUB": "SCS",
+      "PAC": "SCS_CS01_9240_CEI026",
+      "PN_CON": "9240_CEI026",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 32162.7 kW"
+      ]
+    },
+    {
+      "COD_ID": "5c60a327f4d3d2c04c2effe34e8e7e9efb1ea3d012bc57432347d71be72230ea",
+      "CNAE": "2222-6/00",
+      "CEP": "72265-210",
+      "CAR_INST": "95617.16666666",
+      "CTMT": "CN13",
+      "SUB": "SCN",
+      "PAC": "SCN_CN13_9112_CEI055",
+      "PN_CON": "9112_CEI055",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 95617.2 kW"
+      ]
+    },
+    {
+      "COD_ID": "39ad3804dc3d95e2a86487bc8abb4d0966bb0a7f20cff057df5536513ed43828",
+      "CNAE": "4691-5/00",
+      "CEP": "72220-300",
+      "CAR_INST": "144746.91666666",
+      "CTMT": "CS01",
+      "SUB": "SCS",
+      "PAC": "SCS_CS01_9006_CEI016",
+      "PN_CON": "9006_CEI016",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 144746.9 kW"
+      ]
+    },
+    {
+      "COD_ID": "3255eca8a18d5a2c4887431de65c5160b5cdf5be3c9b735904c8ccddf2d16858",
+      "CNAE": "9491-0/00",
+      "CEP": "72210-280",
+      "CAR_INST": "11563.5",
+      "CTMT": "CN07",
+      "SUB": "SCN",
+      "PAC": "SCN_CN07_9027_CEI32A",
+      "PN_CON": "9027_CEI32A",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 11563.5 kW"
+      ]
+    },
+    {
+      "COD_ID": "3ce9186c54a676d49b9feddfbe1da88378b0415831230da8bc84ace00ac23653",
+      "CNAE": "4299-5/99",
+      "CEP": "72200-000",
+      "CAR_INST": "18079.81818181",
+      "CTMT": "CN13",
+      "SUB": "SCN",
+      "PAC": "SCN_CN13_9021_CEI055",
+      "PN_CON": "9021_CEI055",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 18079.8 kW"
+      ]
+    },
+    {
+      "COD_ID": "943287ceb2be892a2e16803e9215e80a457ee882a39b5e5ac237149175a2a3af",
+      "CNAE": "4691-5/00",
+      "CEP": "72701-997",
+      "CAR_INST": "145168.41666666",
+      "CTMT": "CN15",
+      "SUB": "SCN",
+      "PAC": "SCN_CN15_9030_CEI109",
+      "PN_CON": "9030_CEI109",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 145168.4 kW"
+      ]
+    },
+    {
+      "COD_ID": "cb227994c86d745894f8353353f21c3dcd760da85fd2580617ee419987af59b2",
+      "CNAE": "4711-3/02",
+      "CEP": "72200-000",
+      "CAR_INST": "53563.36363636",
+      "CTMT": "CN08",
+      "SUB": "SCN",
+      "PAC": "SCN_CN08_9032_CEI032",
+      "PN_CON": "9032_CEI032",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 53563.4 kW"
+      ]
+    },
+    {
+      "COD_ID": "b4a9593b6b8283b640f672748f917f6c99dd6ceb571e9941d8d4d4ac656e8573",
+      "CNAE": "9499-5/00",
+      "CEP": "72701-997",
+      "CAR_INST": "13857.75",
+      "CTMT": "CN15",
+      "SUB": "SCN",
+      "PAC": "SCN_CN15_9197_CEI230_ATV",
+      "PN_CON": "9019_CEI230B_ATV",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 13857.8 kW"
+      ]
+    },
+    {
+      "COD_ID": "acd23a24874e63540f000304fdf0f744922bea5acfb0224e8bfe7faba440fb3f",
+      "CNAE": "2222-6/00",
+      "CEP": "72701-997",
+      "CAR_INST": "35693.08333333",
+      "CTMT": "CN07",
+      "SUB": "SCN",
+      "PAC": "SCN_CN07_9562_CEI027",
+      "PN_CON": "9562_CEI027",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 35693.1 kW"
+      ]
+    },
+    {
+      "COD_ID": "acc930a00130d94a0312f93373bd8d6e5f2eb1249b27fd7397256df15680058a",
+      "CNAE": "5611-2/01",
+      "CEP": "72220-023",
+      "CAR_INST": "17396.66666666",
+      "CTMT": "CN01",
+      "SUB": "SCN",
+      "PAC": "SCN_CN01_9058_CEIRJ002_ATV",
+      "PN_CON": "9058_CEIRJ002_ATV",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 17396.7 kW"
+      ]
+    },
+    {
+      "COD_ID": "69fcb9a5bff462a374a75be7524f83250e777628eae88a8cd5e237b99dfba176",
+      "CNAE": "1094-5/00",
+      "CEP": "72265-720",
+      "CAR_INST": "210802.55555555",
+      "CTMT": "CN13",
+      "SUB": "SCN",
+      "PAC": "SCN_CN13_9437_CEI055",
+      "PN_CON": "9437_CEI055",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 210802.6 kW"
+      ]
+    },
+    {
+      "COD_ID": "379a3b6c62c2698e7d9bb0d53b42ba991a4c33e3fcb6e5920a4a5c32bf544a63",
+      "CNAE": "4781-4/00",
+      "CEP": "72210-120",
+      "CAR_INST": "21220.16666666",
+      "CTMT": "TN08",
+      "SUB": "STN",
+      "PAC": "STN_TN08_9634_CEI024",
+      "PN_CON": "9634_CEI024",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 21220.2 kW"
+      ]
+    },
+    {
+      "COD_ID": "ab4fa096001f5651128afa16a5b6dcb0361ad746bb8c9ec5ecc7e11ce51a641f",
+      "CNAE": "4711-3/02",
+      "CEP": "72251-501",
+      "CAR_INST": "31712.36363636",
+      "CTMT": "CN03",
+      "SUB": "SCN",
+      "PAC": "SCN_CN03_9018_CEI042",
+      "PN_CON": "9018_CEI042",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 31712.4 kW"
+      ]
+    },
+    {
+      "COD_ID": "4fbb7073b0b1f42f45b38c1abf00d7ce7c4ac97b03967d29b939e9ea272b2a12",
+      "CNAE": "1091-1/01",
+      "CEP": "72265-010",
+      "CAR_INST": "126056.91666666",
+      "CTMT": "CN13",
+      "SUB": "SCN",
+      "PAC": "SCN_CN13_9427_CEI056",
+      "PN_CON": "9427_CEI056",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 126056.9 kW"
+      ]
+    },
+    {
+      "COD_ID": "d950a9ed5bcef3f4c9e3b76add9e3fb15446f9566a939fda4095e9f6612d8354",
+      "CNAE": "4711-3/02",
+      "CEP": "72225-030",
+      "CAR_INST": "43342.91666666",
+      "CTMT": "CN01",
+      "SUB": "SCN",
+      "PAC": "SCN_CN01_9284_CEI025",
+      "PN_CON": "9284_CEI025",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 43342.9 kW"
+      ]
+    },
+    {
+      "COD_ID": "f557bfe3acca17f62779ef73b17bfa5e7fe1fd94c385f42fa9aafc089356ab40",
+      "CNAE": "4711-3/02",
+      "CEP": "72235-543",
+      "CAR_INST": "38902.25",
+      "CTMT": "CS04",
+      "SUB": "SCS",
+      "PAC": "SCS_CS04_9230_CEI021",
+      "PN_CON": "9230_CEI021",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 38902.2 kW"
+      ]
+    },
+    {
+      "COD_ID": "f44e4f98ca13870807612c2d60a2f8c56ffc6f48310e10a6619b25770d711bcb",
+      "CNAE": "4711-3/02",
+      "CEP": "72236-507",
+      "CAR_INST": "30921.0",
+      "CTMT": "CS04",
+      "SUB": "SCS",
+      "PAC": "SCS_CS04_9302_CEI019",
+      "PN_CON": "9302_CEI019",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 30921.0 kW"
+      ]
+    },
+    {
+      "COD_ID": "7bd409bbb6402cbc36d7cbce51938eab16b2b5d8472928f926b3cafe9edee256",
+      "CNAE": "4711-3/02",
+      "CEP": "72225-551",
+      "CAR_INST": "34389.125",
+      "CTMT": "CN01",
+      "SUB": "SCN",
+      "PAC": "SCN_CN01_9458_CEI028",
+      "PN_CON": "9458_CEI028",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 34389.1 kW"
+      ]
+    },
+    {
+      "COD_ID": "7e25a4046ea4d9886a5bfb932ba594e34a71e796017924a9cb936afc359dc7fc",
+      "CNAE": "9430-8/00",
+      "CEP": "72210-300",
+      "CAR_INST": "28903.3",
+      "CTMT": "TN10",
+      "SUB": "STN",
+      "PAC": "STN_TN10_9186_CEI030",
+      "PN_CON": "9186_CEI030",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 28903.3 kW"
+      ]
+    },
+    {
+      "COD_ID": "bf60cfd660101f36454de8b42daa85587ca0dca46ed77467986adcf0f69d8e37",
+      "CNAE": "1069-4/00",
+      "CEP": "72265-040",
+      "CAR_INST": "90564.16666666",
+      "CTMT": "CN13",
+      "SUB": "SCN",
+      "PAC": "SCN_CN13_9294_CEI055",
+      "PN_CON": "9294_CEI055",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 90564.2 kW"
+      ]
+    },
+    {
+      "COD_ID": "dd96292982dcc5e3720ddf026c31915864f803ca22ad7855c2f277a06e823951",
+      "CNAE": "4711-3/02",
+      "CEP": "72231-522",
+      "CAR_INST": "50666.8",
+      "CTMT": "CS02",
+      "SUB": "SCS",
+      "PAC": "SCS_CS02_9106_CEI017",
+      "PN_CON": "9106_CEI017",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 50666.8 kW"
+      ]
+    },
+    {
+      "COD_ID": "03b36786368fd99b0079c955673b03b7ade4ebbe35526e8315370406561b327a",
+      "CNAE": "2222-6/00",
+      "CEP": "72265-010",
+      "CAR_INST": "32007.5",
+      "CTMT": "AC11",
+      "SUB": "SAC",
+      "PAC": "SAC_AC11_9144_NBA018",
+      "PN_CON": "9144_NBA018",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 32007.5 kW"
+      ]
+    },
+    {
+      "COD_ID": "2c534e51da9e6ca72c5653354cd98459f0879994e88ca914b00de2d22e6087ba",
+      "CNAE": "4634-6/01",
+      "CEP": "72701-997",
+      "CAR_INST": "44921.33333333",
+      "CTMT": "TG_BZC1",
+      "SUB": "STG",
+      "PAC": "SBZ_BZ01_9122_BZD001",
+      "PN_CON": "9122_BZD001",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 44921.3 kW"
+      ]
+    },
+    {
+      "COD_ID": "e0324ee1f5f292dea20117301704b59004c02e7db9f375ece8131c2346ae2b6c",
+      "CNAE": "4632-0/02",
+      "CEP": "72265-720",
+      "CAR_INST": "15718.0",
+      "CTMT": "EN08",
+      "SUB": "SEN",
+      "PAC": "SEN_EN08_9039_BSB172",
+      "PN_CON": "9039_BSB172",
+      "score": 70,
+      "evidencias": [
+        "Bairro: CEILANDIA",
+        "Potencia Instalada de Grande Porte: 15718.0 kW"
+      ]
+    }
+  ],
+  "candidatas_baixa_tensao_bt_entorno": [
+    {
+      "COD_ID": "f62dcf34a67b95ab0ba00cef804b34419d7abf01d86fbb25554032980a07281d",
+      "CNAE": "9511-8/00",
+      "CEP": "72215-178",
+      "CTMT": "TN08",
+      "SUB": "STN",
+      "score": 60
+    },
+    {
+      "COD_ID": "7b6ee408781f4dc5a5269bd259c7087f29580a6e4851c6bca523a8b287a3caa3",
+      "CNAE": "9511-8/00",
+      "CEP": "72215-178",
+      "CTMT": "TN08",
+      "SUB": "STN",
+      "score": 60
+    },
+    {
+      "COD_ID": "bd6c05885906b1ee6ef387c328c61c6ff836450c19cd965572df6ae647eefd2e",
+      "CNAE": "9511-8/00",
+      "CEP": "72215-178",
+      "CTMT": "TN08",
+      "SUB": "STN",
+      "score": 60
+    },
+    {
+      "COD_ID": "24346fc62ca2cae3bd6a1f84e334409035cfdb21ad1d7f764767ab539e81c9bb",
+      "CNAE": "9511-8/00",
+      "CEP": "72215-178",
+      "CTMT": "TN08",
+      "SUB": "STN",
+      "score": 60
+    },
+    {
+      "COD_ID": "f6ca4904a063a62a23032704a53eaebe234aadd850e7b18cd66e3ead4439c1ec",
+      "CNAE": " ",
+      "CEP": "72215-178",
+      "CTMT": "TN08",
+      "SUB": "STN",
+      "score": 60
+    },
+    {
+      "COD_ID": "291b94c8ee7a937083add3e4ae2b7d63cf14ef4f7e74a5a3101d64a8eb84653e",
+      "CNAE": "9511-8/00",
+      "CEP": "72215-178",
+      "CTMT": "TN08",
+      "SUB": "STN",
+      "score": 60
+    },
+    {
+      "COD_ID": "77645f61f3b8f69348fb03fdb93e78624f47671a77377bd26248b9bc40f3021b",
+      "CNAE": "9511-8/00",
+      "CEP": "72215-178",
+      "CTMT": "TN08",
+      "SUB": "STN",
+      "score": 60
+    },
+    {
+      "COD_ID": "fd869290a4f4d4b194ed077dcaafb29fd8524d29051223bbbe738483e7dfb94d",
+      "CNAE": "8640-2/07",
+      "CEP": "72215-178",
+      "CTMT": "TN08",
+      "SUB": "STN",
+      "score": 60
+    },
+    {
+      "COD_ID": "ad26727e28c5b4af3209fa87adde9a9e114a2d6d70bcfb760008ae54b31ca2b2",
+      "CNAE": " ",
+      "CEP": "72215-178",
+      "CTMT": "TN08",
+      "SUB": "STN",
+      "score": 60
+    },
+    {
+      "COD_ID": "02dae19da881ba3e416cba724c469323d6b690f2dde27a30def7e35395218409",
+      "CNAE": "9511-8/00",
+      "CEP": "72215-178",
+      "CTMT": "TN08",
+      "SUB": "STN",
+      "score": 60
+    }
+  ]
+}

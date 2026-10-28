@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "circuito": "TN08",
+    "subestacao": "STN",
+    "pac_alvo": "STN_TN08_9026_CEI003",
+    "entidade": "Hospital Regional de Ceilândia (HRC)",
+    "fonte_ground_truth": "Fatura Oficial de Energia Elétrica (LAI / Neoenergia Brasília)",
+    "mes_referencia": "08/2026",
+    "data_execucao": "2026-10-28T10:43:47.783719",
+    "run_tag": "20261028_104347"
+  },
+  "ground_truth_parametros": {
+    "demanda_maxima_medida_kw": 460.8,
+    "fator_de_carga": 0.56,
+    "fator_de_potencia": 0.92,
+    "consumo_mensal_estimado_kwh": 188375.04000000004,
+    "demanda_anterior_bdgd_kw": 110.22
+  },
+  "baseline_pre_calibracao": {
+    "master_file": "Master_TN08_20261019_104122.dss",
+    "convergiu": true,
+    "iteracoes": 4,
+    "v_sub_pu": {
+      "A": 1.033451393656297,
+      "B": 1.043351143448979,
+      "C": 1.0439619416122334
+    },
+    "v_hrc_pu": {
+      "A": 1.0052605733845608,
+      "B": 1.0331000017735394,
+      "C": 1.0249301764279557
+    },
+    "v_hrc_ln_kv": {
+      "A": 8.009346984560255,
+      "B": 8.231155784907832,
+      "C": 8.166063243005263
+    },
+    "v_hrc_ll_kv": {
+      "A": 13.87259591270694,
+      "B": 14.256780024474844,
+      "C": 14.14403643470579
+    },
+    "desbalanco_pct": 2.726423703779781,
+    "classificacoes_hrc": {
+      "A": "[ADEQUADA]",
+      "B": "[ADEQUADA]",
+      "C": "[ADEQUADA]"
+    },
+    "status_geral_conforme": true,
+    "p_perdas_kw": 306.4343209984714,
+    "q_perdas_kvar": 321.1160007285949,
+    "percentual_perdas": 6.538222492458927,
+    "p_inj_mw": 4.6868139062552165,
+    "q_inj_mvar": 1.9689079358263344,
+    "s_inj_mva": 5.083583681973495,
+    "fp_se": 0.9219507732064619,
+    "p_hrc_kw": 110.21999251490999,
+    "q_hrc_kvar": 46.95350872795208
+  },
+  "baseline_calibrado_ground_truth": {
+    "master_file": "Master_TN08_Calibrado.dss",
+    "convergiu": true,
+    "iteracoes": 4,
+    "v_sub_pu": {
+      "A": 1.0327682644923553,
+      "B": 1.042682992478243,
+      "C": 1.0432507259702737
+    },
+    "v_hrc_pu": {
+      "A": 1.0021838037294073,
+      "B": 1.0302030358160956,
+      "C": 1.0218811429483827
+    },
+    "v_hrc_ln_kv": {
+      "A": 7.984833026277059,
+      "B": 8.208074400667817,
+      "C": 8.141770270862509
+    },
+    "v_hrc_ll_kv": {
+      "A": 13.830136491465822,
+      "B": 14.21680189426212,
+      "C": 14.101959772687682
+    },
+    "desbalanco_pct": 2.752138867376981,
+    "classificacoes_hrc": {
+      "A": "[ADEQUADA]",
+      "B": "[ADEQUADA]",
+      "C": "[ADEQUADA]"
+    },
+    "status_geral_conforme": true,
+    "p_perdas_kw": 316.92124967099954,
+    "q_perdas_kvar": 346.65520625448016,
+    "percentual_perdas": 6.286389664760987,
+    "p_inj_mw": 5.041387291779488,
+    "q_inj_mvar": 2.1416593334645113,
+    "s_inj_mva": 5.4774346665507,
+    "fp_se": 0.9203920445762608,
+    "p_hrc_kw": 460.7999727563622,
+    "q_hrc_kvar": 196.2999261875836
+  }
+}

@@ -1,0 +1,143 @@
+# DOSSIÊ DE CONTEXTO E ESTADO DO PROJETO: INICIAÇÃO CIENTÍFICA (UnDF)
+**Pesquisador:** Caike
+**Projeto:** Aplicação de Modelos Preditivos de Inteligência Artificial na Rede Elétrica do Distrito Federal para a Garantia da Resiliência em Infraestruturas Críticas.
+**Data de Atualização:** 16 de Outubro de 2026
+**Status do Projeto:** Etapa 03e concluída com sucesso. Sistema aguardando os próximos comandos de modelagem / simulação.
+
+---
+
+## 1. Escopo, Objetivos e Fundamentos
+
+A pesquisa integra **Sistemas Elétricos de Potência**, **Ciência de Dados** e **Cibersegurança**, com foco na resiliência ciberfísica de infraestruturas críticas (hospitais e segurança pública) do Distrito Federal, tomando o **Hospital Regional de Ceilândia (HRC)** como estudo de caso prioritário.
+
+- **Premissa de Defesa Cibernética:** Modelos de Machine Learning (Random Forest, Graph Neural Networks - GNN, Beta-VAE, Isolation Forest) não atuam como barreiras de TI (firewalls), mas como **sistemas de alarme inteligente (IDS ciberfísicos)**, detectando injeções de falsos dados (FDI - False Data Injection), adulteração furtiva de setpoints e anomalias topológicas que ultrapassam as defesas convencionais.
+- **Ambiente de Simulação Alvo:** Integração entre a Base de Dados Geográfica da Distribuidora (BDGD - ANEEL), Python e o motor físico **OpenDSS** para modelagem de fluxo de potência, contingências e ataques coordenados TI/TO.
+
+---
+
+## 2. Regras Rígidas e Diretrizes Técnicas Estabelecidas
+
+1. **Regra de Ouro da BDGD / ANEEL:**
+   - **NUNCA identificar a UC do HRC como fato consumado.** A identificação formal e inequívoca da UC depende de fatura física de energia, código de conta contrato ou cadastro interno da distribuidora (Neoenergia Brasília).
+   - **NUNCA construir grafo de conectividade elétrica definitiva ou concluir atendimento elétrico sem validação de campo/medição.**
+   - **Sempre segregar:**
+     - *Confirmado pelo arquivo:* dados e atributos expressamente presentes nas tabelas.
+     - *Medido:* distâncias euclidianas, contagens, cálculos de percentual.
+     - *Inferido por norma ou nome:* hipóteses de relacionamento, proximidade espacial e correlações cadastrais.
+2. **Normas e Peculiaridades da Base:**
+   - A BDGD é regulada pelo **PRODIST Módulo 10** (não Módulo 8).
+   - Não existe camada `CHAVE` na BDGD (o seccionamento/chaves está contido em `UNSEMT`, `UNSEBT` e `UNSEAT`).
+   - A camada `SEGCON` não possui geometria no padrão moderno V11 (a topologia física reside em `SSDMT`, `SSDAT` e `SSDBT`).
+   - Valores nulos **jamais** devem ser preenchidos arbitrariamente com valores típicos.
+   - Níveis de curto-circuito não estão presentes na BDGD e dependem de fontes externas.
+3. **Ambiente de Execução e Preservação:**
+   - Sistema Operacional: Windows.
+   - Interpretador: `.\venv\Scripts\python.exe` (Python 3.13.3; GeoPandas 1.2.0, Pyogrio 0.13.0, Pandas 3.0.6, Shapely 2.2, Pyproj).
+   - **Nunca instalar ou reinstalar pacotes** sem ordem explícita.
+   - **Regra de Preservação Absoluta:** Scripts anteriores (`01`, `02`, `03`, `03b`, `03c`, `03d`, `03e`) e artefatos em `data/raw/`, `data/processed/` e `logs/` são estritamente **somente leitura**. Novos desenvolvimentos geram novos scripts sequenciais e novos artefatos sem sobrescrita (`mode='x'`).
+   - Entradas CSV devem sempre ser lidas com `dtype=str` e mapeamento de colunas insensível a maiúsculas/minúsculas. Validação de SHA-256 antes e depois da execução é mandatória.
+
+---
+
+## 3. Linha do Tempo e Histórico de Etapas Concluídas
+
+### Etapa 01: Mineração e Topologia Bruta (`src/01_mineracao_topologia.py`)
+- Extração direta da BDGD (`data/raw/`) via Pyogrio em EPSG:4674.
+- Leitura das camadas `SSDMT`, `SSDAT`, `UNTRMT`, `UNTRAT`.
+- Geração do primeiro mapa elétrico do DF: `data/processed/mapa_topologia.png`.
+
+### Etapa 02: Filtro Espacial no Entorno do HRC (`src/02_filtro_espacial.py`)
+- Cruzamento com `data/raw/hospitais_df.csv` (Coordenadas HRC: -15.81506, -48.09605).
+- Recorte espacial com buffer de 3.000 metros projetado em coordenadas métricas **EPSG:31983 (SIRGAS 2000 / UTM zone 23S)**.
+- Geração do GeoPackage vetorial: `data/processed/subrede_hospitais.gpkg` (camadas: `SSDMT`, `SSDAT`, `SSDBT`, `UNTRMT`, `UNTRAT`, `buffer_3000m`, `hospitais`).
+
+### Etapa 03: Validação Geoespacial e Visualização (`src/03_validacao_visualizacao.py`)
+- Verificação métrica e topológica da sub-rede do HRC. **Status: Validação Aprovada.**
+- Geração de `data/processed/validacao_visual_subrede_hrc.png` e `data/processed/relatorio_validacao_subrede_hrc.txt`.
+
+### Etapa 03b: Inventário de Esquema da BDGD (`src/03b_inventario_schema_bdgd.py`)
+- Mapeamento das 43 camadas da BDGD. Identificação dos campos de vínculo (`PN_CON`, `UNI_TR_MT`, `CTMT`, `SUB`).
+- Extração das UCs contidas no buffer de 3 km: `data/processed/perfil_ucs_entorno_hrc.csv` (236 linhas UCMT e 97.817 linhas UCBT).
+- Geração de `inventario_tabelas_bdgd.csv`, `inventario_campos_bdgd.csv` e `candidatos_chave_ligacao.csv`.
+
+### Etapa 03c: Triagem de UCs Candidatas do HRC (`src/03c_triagem_ucs_hrc.py`)
+- Filtro F1: UCs MT de Poder Público ou Serviço Público (`CLAS_SUB` iniciada em PP ou SP): 27 registros.
+- Filtro F2: UCs MT com CNAE de Saúde (86) ou Administração Pública (84): 27 registros.
+- Filtro F3 (Interseção F1 e F2): 19 registros (todas com CNAE 84; nenhuma MT com CNAE 86 no entorno é PP/SP).
+- Geração de `triagem_ucs_mt_publicas_hrc.csv`, `triagem_ucs_mt_cnae_saude_seguranca_hrc.csv`, `triagem_candidatas_hrc_interseccao.csv` e `triagem_agregada_ctmt_sub_hrc.csv`.
+
+### Etapa 03d: Hipóteses de Alimentadores do HRC (`src/03d_hipoteses_alimentador_hrc.py`)
+- Identificação dos alimentadores fisicamente mais próximos do HRC (num raio de 500 m):
+  - **CS05** (Subestação SCS - Subestação Ceilândia Sul): 14 segmentos, dist. mínima 101,2 m.
+  - **TN08** (Subestação STN - Subestação Ceilândia Norte): 1 segmento, dist. mínima 144,6 m.
+  - **TN10** (Subestação STN): 5 segmentos, dist. mínima 98,8 m.
+- Categorização de cruzamento para hipóteses H1 a H4 (`coincide_ctmt_e_sub`, `coincide_apenas_sub`, `sem_coincidencia`):
+  - H1 (Interseção 03c a <= 500 m): 8 linhas (5 coincidem CTMT e SUB).
+  - H2 (Todas candidatas MT da interseção 03c): 19 linhas.
+  - H3 (Candidatas MT com CNAE 86 a <= 500 m): 0 linhas (não há UCMT com CNAE 86 que seja simultaneamente PP/SP).
+  - H4 (Universo amplo de UCs MT e BT com CNAE 86 ou PP/SP a <= 1.000 m): 592 linhas.
+  - H5: Análise espacial das subestações poligonais (`SUB`). Nenhuma engloba o ponto do HRC; STN está a 1,8 km e SCS a 2,6 km.
+- Geração de `hipoteses_h1_h4_ucs_candidatas_hrc.csv`, `hipoteses_h5_subestacao_e_circuitos_hrc.csv` e `distribuicao_clas_sub_entorno_hrc.csv`.
+
+### Etapa 03e: Auditoria de Duplicidades e Recontagem Rigorosa (`src/03e_auditoria_duplicidade_ucs_hrc.py`)
+- **Achado Crucial de Auditoria:** `COD_ID` **não é chave primária unívoca** nas tabelas da BDGD do DF.
+  - No perfil 03b, a UCMT possui 236 linhas mas apenas **199 COD_ID distintos** (35 linhas idênticas redundantes).
+  - A UCBT possui 97.817 linhas para **88.327 COD_ID distintos** (9.386 IDs com divergência cadastral de `CLAS_SUB`, `CNAE`, etc.).
+  - Os scripts 03b/03c/03d utilizavam `.isin()` e não realizavam `merge` nem `sjoin`, confirmando que a multiplicidade é nativa do cadastro da distribuidora.
+- **Recontagem Oficial com IDs Únicos:**
+  - Universo MT (03b/03c): de 236 para **199 UCs distintas** (-15,68%).
+  - F1 (PP/SP): 27 linhas = **27 UCs distintas** (100% íntegro).
+  - F2 (CNAE 84/86): de 27 para **25 UCs distintas** (-7,41%).
+  - Interseção F1 e F2: 19 linhas = **19 UCs distintas** (100% íntegro).
+  - H1: de 8 linhas para **6 UCs distintas** (3 em `coincide_ctmt_e_sub`, 1 em `coincide_apenas_sub`, 2 em `sem_coincidencia`).
+  - H4: de 592 linhas para **581 UCs distintas** (148 em `coincide_ctmt_e_sub`, 258 em `coincide_apenas_sub`, 175 em `sem_coincidencia`).
+- **Análise Discriminante:**
+  - `coincide_apenas_sub` foi formalmente classificada como **NÃO DISCRIMINANTE** porque a mesma subestação engloba mais de 30% da amostra (SCS em H1/H2 e STN/SCS em H4).
+- **Mapeamento de UCs com CNAE 86 (Saúde) a <= 500 m do HRC:**
+  - Identificados **22 COD_ID distintos** (todos classificados como CO1 ou CO9 no cadastro, nenhuma PP/SP).
+  - Distâncias de 144,6 m a 480,6 m nos circuitos TN08, CS05, CS07, TN05, TN10.
+  - Fatos registrados estritamente como verificáveis, sem qualquer presunção de serem a UC do HRC.
+- Geração dos artefatos: `auditoria_contagem_ucs_hrc.csv`, `auditoria_duplicidade_colunas_hrc.csv`, `recontagem_ucs_hrc_distintas.csv`, `ucs_cnae_saude_500m_hrc.csv` e `relatorio_auditoria_duplicidade_hrc.txt`.
+
+---
+
+## 4. Estado Atual e Estrutura de Diretórios
+
+O projeto encontra-se com o pipeline de dados preliminares, filtragem espacial, triagem de hipóteses e auditoria de integridade cadastral **100% concluído, auditado e reproduzível**.
+
+```text
+├── data/
+│   ├── raw/
+│   │   ├── [BDGD_DF].gdb/          # Base Geográfica da Distribuidora (Módulo 10 PRODIST)
+│   │   └── hospitais_df.csv        # Coordenadas georreferenciadas dos hospitais
+│   └── processed/
+│       ├── subrede_hospitais.gpkg  # GeoPackage do buffer de 3km no HRC (EPSG:31983)
+│       ├── perfil_ucs_entorno_hrc.csv
+│       ├── triagem_ucs_mt_*.csv / triagem_candidatas_hrc_interseccao.csv
+│       ├── hipoteses_h1_h4_*.csv / hipoteses_h5_*.csv
+│       ├── auditoria_contagem_ucs_hrc.csv
+│       ├── auditoria_duplicidade_colunas_hrc.csv
+│       ├── recontagem_ucs_hrc_distintas.csv
+│       ├── ucs_cnae_saude_500m_hrc.csv
+│       └── relatórios (.txt) e validações (.png)
+├── logs/                           # Logs detalhados com timestamp e hashes SHA-256
+├── src/
+│   ├── 01_mineracao_topologia.py
+│   ├── 02_filtro_espacial.py
+│   ├── 03_validacao_visualizacao.py
+│   ├── 03b_inventario_schema_bdgd.py
+│   ├── 03c_triagem_ucs_hrc.py
+│   ├── 03d_hipoteses_alimentador_hrc.py
+│   └── 03e_auditoria_duplicidade_ucs_hrc.py
+└── venv/                           # Ambiente virtual isolado Python 3.13
+```
+
+---
+
+## 5. Prontidão para as Próximas Fases
+
+O sistema está pronto aguardando a definição do próximo objetivo pelo pesquisador. Os passos naturais imediatos disponíveis para continuidade são:
+
+1. **Auditoria de Causa Raiz D1 no `.gdb`:** Leitura direta de `PONNOT` no geodatabase bruto para confirmar se a multiplicidade de vínculos nasce da relação entre pontos notáveis e ramais de ligação.
+2. **Modelagem Topológica e Elétrica no OpenDSS:** Construção do modelo de rede em OpenDSS para os circuitos candidatos prioritários que cercam o HRC (**CS05**, **TN08** e **TN10**).
+3. **Simulação de Fluxo de Carga e Injeção de Anomalias / Ataques (FDI):** Implementação dos cenários ciberfísicos de contingência e treinamento dos modelos preditivos de inteligência artificial.

@@ -1,0 +1,37 @@
+! ==============================================================================
+! OpenDSS Master File - Subestação SHP (Circuitos HP03 e HP04)
+! Zona 2: Asa Sul / Plano Piloto | Foco: Hospital de Base (HBDF) e Complexo Policial
+! Gerado de forma automatizada pelo script src/14_extracao_e_baseline_asa_sul.py
+! RUN_TAG: 20261028_101044
+! ==============================================================================
+
+Clear
+
+! 1. FONTE EQUIVALENTE DE ALTA TENSÃO (138 kV) — SUBESTAÇÃO SHP (REGULADA A 1.04 pu)
+New Circuit.Subestacao_SHP BasekV=138.0 pu=1.0400 phases=3 Bus1=SHP_138kV Angle=0 MVAsc3=3500 MVAsc1=2800
+
+! 2. TRANSFORMADOR DA SUBESTAÇÃO SHP (138 / 13.8 kV, 40 MVA)
+New Transformer.T1_SHP Phases=3 Windings=2 XHL=10.0 %loadloss=0.45 %noloadloss=0.08
+~ Wdg=1 Bus=SHP_138kV kV=138.0 kVA=40000 Conn=Delta %r=0.20
+~ Wdg=2 Bus=BAR_SHP_649.1.2.3 kV=13.8 kVA=40000 Conn=Wye %r=0.20 tap=1.000
+
+! 3. DEFINIÇÃO DAS BASES DE TENSÃO
+Set VoltageBases = [138.0, 13.8, 0.38, 0.22]
+CalcVoltageBases
+
+! 4. REDIRECIONAMENTO DOS SUBSISTEMAS FÍSICOS
+Redirect "Lines_SHP_20261028_101044.dss"
+Redirect "Transformers_SHP_20261028_101044.dss"
+Redirect "Switches_SHP_20261028_101044.dss"
+Redirect "Loads_SHP_20261028_101044.dss"
+
+! 5. COORDENADAS GEOGRÁFICAS
+Buscoords "Buscoords_SHP_20261028_101044.dss"
+
+! 6. PARÂMETROS DE CONTROLE E SOLUÇÃO
+Set Maxiterations=150
+Set Tolerance=0.0001
+Set Mode=Snapshot
+Set ControlMode=Static
+
+! Fim do Master

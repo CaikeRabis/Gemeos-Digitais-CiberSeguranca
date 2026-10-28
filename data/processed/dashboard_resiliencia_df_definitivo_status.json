@@ -1,0 +1,208 @@
+{
+  "run_tag": "20261028_122757",
+  "timestamp": "2026-10-28T12:28:00.513230",
+  "status": {
+    "zona1": {
+      "topologia": "Segregada (STN ≠ SCN)",
+      "conformidade": "Precária",
+      "p_inj_mw": 16.60491636459393,
+      "perdas_kw": 1288.7675736647116,
+      "perdas_pct": 7.761361426744097
+    },
+    "zona2": {
+      "topologia": "Segregada (SBG ≠ SHP)",
+      "conformidade": "Adequada",
+      "p_inj_mw": 33.325483375901534,
+      "perdas_kw": 1624.7893010469033,
+      "perdas_pct": 4.875516080951516
+    }
+  },
+  "circuitos": {
+    "TN08": {
+      "circuito": "TN08",
+      "zona": 1,
+      "zona_nome": "Zona 1 — Ceilândia",
+      "subestacao": "STN",
+      "subestacao_nome": "SE Taguatinga Norte",
+      "master": "Master_TN08_Calibrado.dss",
+      "iteracoes": 4,
+      "p_inj_kw": 5041.387291779544,
+      "p_perdas_kw": 316.92124967099954,
+      "q_perdas_kvar": 346.65520625448016,
+      "perdas_pct": 6.286389664760916,
+      "cargas": [
+        {
+          "id": "HRC",
+          "nome": "Hospital Regional de Ceilândia",
+          "tipo": "saude",
+          "load": "HRC_PRIORITARIO",
+          "pac": "STN_TN08_9026_CEI003",
+          "detalhe": "Ground Truth Calibrado (Fatura Oficial 08/2026: 460.80 kW)",
+          "tensoes_pu": {
+            "A": 1.0021838037294073,
+            "B": 1.0302030358160956,
+            "C": 1.0218811429483827
+          },
+          "tensoes_kv": {
+            "A": 13.830136491465822,
+            "B": 14.216801894262122,
+            "C": 14.101959772687682
+          },
+          "kw_modelado": 460.8,
+          "status": "ADEQUADA"
+        }
+      ]
+    },
+    "CN07": {
+      "circuito": "CN07",
+      "zona": 1,
+      "zona_nome": "Zona 1 — Ceilândia",
+      "subestacao": "SCN",
+      "subestacao_nome": "SE Ceilândia Norte",
+      "master": "Master_CN07_20261019_124919.dss",
+      "iteracoes": 5,
+      "p_inj_kw": 11563.529072814386,
+      "p_perdas_kw": 971.846323993712,
+      "q_perdas_kvar": 1613.9528678440236,
+      "perdas_pct": 8.404409396768866,
+      "cargas": [
+        {
+          "id": "15ª DP",
+          "nome": "15ª Delegacia de Polícia Civil (Ceilândia Centro)",
+          "tipo": "seguranca",
+          "load": "DP15_PRIORITARIO",
+          "pac": "SCN_CN07_9032_CEIRJ002",
+          "detalhe": "Demanda Contratada: 75.00 kW | Ponto Extremo do Alimentador",
+          "tensoes_pu": {
+            "A": 0.9247752733886853,
+            "B": 0.9593978856361625,
+            "C": 0.9456749976669075
+          },
+          "tensoes_kv": {
+            "A": 12.761898772763859,
+            "B": 13.239690821779044,
+            "C": 13.050314967803326
+          },
+          "kw_modelado": 75.0,
+          "status": "PRECÁRIA"
+        }
+      ]
+    },
+    "SBG": {
+      "circuito": "SBG",
+      "zona": 2,
+      "zona_nome": "Zona 2 — Asa Sul / Plano Piloto",
+      "subestacao": "SBG",
+      "subestacao_nome": "SE Brasília Geral (Furnas / Neoenergia)",
+      "master": "Master_SBG.dss",
+      "iteracoes": 4,
+      "p_inj_kw": 19969.394434831538,
+      "p_perdas_kw": 1119.129014254694,
+      "q_perdas_kvar": 2247.668158434868,
+      "perdas_pct": 5.604221088961304,
+      "cargas": [
+        {
+          "id": "HBDF",
+          "nome": "Hospital de Base do Distrito Federal (SMHS)",
+          "tipo": "saude",
+          "load": "HBDF_VERDADEIRO",
+          "pac": "S02_0201_PT_TF_913",
+          "detalhe": "PAC Oficial no SMHS (Demanda Agregada: 1.700,68 kW em 13,8 kV)",
+          "tensoes_pu": {
+            "A": 0.9513712022273149,
+            "B": 0.9921783001369309,
+            "C": 0.9856900402779057
+          },
+          "tensoes_kv": {
+            "A": 13.128922590736945,
+            "B": 13.69206054188965,
+            "C": 13.602522555835101
+          },
+          "kw_modelado": 1700.68,
+          "status": "ADEQUADA"
+        }
+      ]
+    },
+    "SHP": {
+      "circuito": "SHP",
+      "zona": 2,
+      "zona_nome": "Zona 2 — Asa Sul / Plano Piloto",
+      "subestacao": "SHP",
+      "subestacao_nome": "SE Subterrânea Hípica (SPS / ParkShopping)",
+      "master": "Master_SHP_Calibrado.dss",
+      "iteracoes": 4,
+      "p_inj_kw": 13356.088941069995,
+      "p_perdas_kw": 505.6602867922094,
+      "q_perdas_kvar": 993.6204055276664,
+      "perdas_pct": 3.785990711976342,
+      "cargas": [
+        {
+          "id": "1ª DP",
+          "nome": "1ª Delegacia de Polícia / Complexo PCDF (SPS)",
+          "tipo": "seguranca",
+          "load": "DP_SPS_PRIORITARIO",
+          "pac": "SHP_HP04_9025_BSB27A",
+          "detalhe": "Setor Policial Sul (Demanda Contratada: 97.50 kW em 13,8 kV)",
+          "tensoes_pu": {
+            "A": 1.0138098716202422,
+            "B": 1.0157712379143289,
+            "C": 1.0157143767772783
+          },
+          "tensoes_kv": {
+            "A": 13.990576228359343,
+            "B": 14.017643083217742,
+            "C": 14.016858399526443
+          },
+          "kw_modelado": 97.5,
+          "status": "ADEQUADA"
+        }
+      ]
+    }
+  },
+  "estatisticas_mapa": {
+    "TN08": {
+      "segmentos_mt": 328
+    },
+    "CN07": {
+      "segmentos_mt": 431
+    },
+    "SBG": {
+      "segmentos_mt": 2040
+    },
+    "SHP": {
+      "segmentos_mt": 160
+    },
+    "bounds": {
+      "z1": [
+        [
+          -15.828792590105877,
+          -48.1349762900237
+        ],
+        [
+          -15.783263210029077,
+          -48.08369499992426
+        ]
+      ],
+      "z2": [
+        [
+          -15.841316780045304,
+          -47.95085758031303
+        ],
+        [
+          -15.787326740036974,
+          -47.884033870266876
+        ]
+      ],
+      "all": [
+        [
+          -15.841316780045304,
+          -48.1349762900237
+        ],
+        [
+          -15.783263210029077,
+          -47.884033870266876
+        ]
+      ]
+    }
+  }
+}

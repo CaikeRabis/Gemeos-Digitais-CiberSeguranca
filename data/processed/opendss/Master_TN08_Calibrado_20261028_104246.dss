@@ -1,0 +1,90 @@
+! ==============================================================================
+! OPENDSS MASTER FILE: CIRCUITO TN08 - CALIBRADO COM GROUND TRUTH (LAI/NEOENERGIA)
+! HRC: Demanda Real Medida = 460.80 kW | FP = 0.92 | FC = 0.56
+! Calibrado em: 2026-10-28 10:42:47 | RUN_TAG: 20261028_104246
+! ==============================================================================
+! ==============================================================================
+! OPENDSS MASTER FILE: CIRCUITO ALIMENTADOR TN08 - SUBESTACAO STN
+! Neoenergia Distribuicao Brasilia / BDGD ANEEL 2025/2026
+! Gerado por: src/06_extracao_circuito_opendss.py | RUN_TAG: 20261018_134703
+! Data/Hora: 2026-10-18 13:47:23
+! ==============================================================================
+
+Clear
+Set DefaultBaseFrequency=60
+
+! --- 1. FONTE EQUIVALENTE DA SUBESTACAO STN (138 kV) ---
+New Circuit.TN08 BasekV=138.0 pu=1.04 Angle=0.0 Frequency=60 Phases=3 Bus1=STN_138kV
+
+! --- 2. TRANSFORMADOR DE SUBESTACAO T-1_STN (138 kV / 13.8 kV - 32 MVA) ---
+New Transformer.T1_STN Phases=3 Windings=2 XHL=10.0 %loadloss=0.5 %noloadloss=0.1
+~ Wdg=1 Bus=STN_138kV kV=138.0 kVA=32000 Conn=Delta %r=0.25
+~ Wdg=2 Bus=STN_TN08_SUB kV=13.8 kVA=32000 Conn=Wye %r=0.25 Tap=1.008
+
+! --- 3. CONEXAO DO BARRAMENTO DA SE AO INICIO DO ALIMENTADOR (PAC_INI: TN_ALTN08) ---
+New Line.L_ALIMENTADOR_INICIAL Phases=3 Bus1=STN_TN08_SUB.1.2.3 Bus2=TN_ALTN08.1.2.3 Length=0.001 Units=km r1=0.001 x1=0.001 r0=0.002 x0=0.002
+
+! --- 4. CATALOGO DE LINECODES (CONDUTORES SEGCON) ---
+New LineCode.259_BT_1_1 nphases=3 r1=0.61300 x1=0.42880 r0=1.71640 x0=1.20064 units=km normamps=235.0 emergamps=235.0 ! 1xA1/0 POPPY//0//0//1xA1/0 POPPY
+New LineCode.260_BT_1_1 nphases=3 r1=0.61300 x1=0.42880 r0=1.71640 x0=1.20064 units=km normamps=235.0 emergamps=235.0 ! 1xA1/0 POPPY//0//0//1xA2 IRIS
+New LineCode.261_BT_1_1 nphases=3 r1=0.61300 x1=0.42880 r0=1.71640 x0=1.20064 units=km normamps=235.0 emergamps=235.0 ! 1xA1/0 POPPY//0//0//1xA4 ROSE
+New LineCode.266_BT_3_1 nphases=3 r1=0.61300 x1=0.42880 r0=1.71640 x0=1.20064 units=km normamps=235.0 emergamps=235.0 ! 1xA1/0 POPPY//1xA1/0 POPPY//1xA1/0 POPPY//1xA1/0 POPPY
+New LineCode.267_BT_3_1 nphases=3 r1=0.61300 x1=0.42880 r0=1.71640 x0=1.20064 units=km normamps=235.0 emergamps=235.0 ! 1xA1/0 POPPY//1xA1/0 POPPY//1xA1/0 POPPY//1xA2 IRIS
+New LineCode.268_BT_3_1 nphases=3 r1=0.61300 x1=0.42880 r0=1.71640 x0=1.20064 units=km normamps=235.0 emergamps=235.0 ! 1xA1/0 POPPY//1xA1/0 POPPY//1xA1/0 POPPY//1xA4 ROSE
+New LineCode.273_A4_3_1 nphases=3 r1=0.61300 x1=0.42880 r0=1.71640 x0=1.20064 units=km normamps=235.0 emergamps=235.0 ! 1xA1/0 POPPY-M//1xA1/0 POPPY-M//1xA1/0 POPPY-M//0
+New LineCode.284_BT_1_1 nphases=3 r1=0.97500 x1=0.36700 r0=2.73000 x0=1.02760 units=km normamps=175.0 emergamps=175.0 ! 1xA2 IRIS//0//0//1xA1/0 POPPY
+New LineCode.285_BT_1_1 nphases=3 r1=0.97500 x1=0.36700 r0=2.73000 x0=1.02760 units=km normamps=175.0 emergamps=175.0 ! 1xA2 IRIS//0//0//1xA2 IRIS
+New LineCode.286_BT_1_1 nphases=3 r1=0.97500 x1=0.36700 r0=2.73000 x0=1.02760 units=km normamps=152.0 emergamps=152.0 ! 1xA2 IRIS//0//0//1xA4 ROSE
+New LineCode.296_BT_3_1 nphases=3 r1=0.97500 x1=0.36700 r0=2.73000 x0=1.02760 units=km normamps=175.0 emergamps=175.0 ! 1xA2 IRIS//1xA2 IRIS//1xA2 IRIS//1xA1/0 POPPY
+New LineCode.297_BT_3_1 nphases=3 r1=0.97500 x1=0.36700 r0=2.73000 x0=1.02760 units=km normamps=175.0 emergamps=175.0 ! 1xA2 IRIS//1xA2 IRIS//1xA2 IRIS//1xA2 IRIS
+New LineCode.299_BT_3_1 nphases=3 r1=0.97500 x1=0.36700 r0=2.73000 x0=1.02760 units=km normamps=152.0 emergamps=152.0 ! 1xA2 IRIS//1xA2 IRIS//1xA2 IRIS//1xA4 ROSE
+New LineCode.322_BT_1_1 nphases=3 r1=1.55100 x1=0.46380 r0=4.34280 x0=1.29864 units=km normamps=130.0 emergamps=130.0 ! 1xA4 ROSE//0//0//1xA2 IRIS
+New LineCode.323_BT_1_1 nphases=3 r1=1.55100 x1=0.46380 r0=4.34280 x0=1.29864 units=km normamps=58.0 emergamps=58.0 ! 1xA4 ROSE//0//0//1xA4 ROSE
+New LineCode.333_BT_3_1 nphases=3 r1=1.55100 x1=0.46380 r0=4.34280 x0=1.29864 units=km normamps=130.0 emergamps=130.0 ! 1xA4 ROSE//1xA4 ROSE//1xA4 ROSE//1xA2 IRIS
+New LineCode.334_BT_3_1 nphases=3 r1=1.55100 x1=0.46380 r0=4.34280 x0=1.29864 units=km normamps=58.0 emergamps=58.0 ! 1xA4 ROSE//1xA4 ROSE//1xA4 ROSE//1xA4 ROSE
+New LineCode.349_A4_3_1 nphases=3 r1=1.55100 x1=0.46380 r0=4.34280 x0=1.29864 units=km normamps=130.0 emergamps=130.0 ! 1xA4 ROSE-M//1xA4 ROSE-M//1xA4 ROSE-M//0
+New LineCode.367_A4_3_1 nphases=3 r1=0.30600 x1=0.40250 r0=0.85680 x0=1.12700 units=km normamps=365.0 emergamps=365.0 ! 1xA4/0 OXLIP-M//1xA4/0 OXLIP-M//1xA4/0 OXLIP-M//0
+New LineCode.376_A4_3_1 nphases=3 r1=0.73200 x1=0.31540 r0=2.04960 x0=0.88312 units=km normamps=240.0 emergamps=240.0 ! 1xA50P//1xA50P//1xA50P//0
+New LineCode.462_A4_3_2 nphases=3 r1=0.08700 x1=0.37730 r0=0.24360 x0=1.05644 units=km normamps=281.8 emergamps=281.8 ! 1xC240-15KV//1xC240-15KV//1xC240-15KV//0
+New LineCode.642_BT_3_1 nphases=3 r1=2.17900 x1=0.01330 r0=6.10120 x0=0.03724 units=km normamps=76.0 emergamps=76.0 ! A16Q//A16Q//A16Q//A16Q
+New LineCode.660_A4_3_1 nphases=3 r1=0.18800 x1=0.26350 r0=0.52640 x0=0.73780 units=km normamps=581.0 emergamps=581.0 ! A185P-15KV//A185P-15KV//A185P-15KV//0
+New LineCode.744_A4_3_1 nphases=3 r1=0.50600 x1=0.29530 r0=1.41680 x0=0.82684 units=km normamps=312.0 emergamps=312.0 ! Tab II - 70 mm²
+New LineCode.767_BT_1_1 nphases=3 r1=2.08200 x1=0.01880 r0=5.82960 x0=0.05264 units=km normamps=74.0 emergamps=74.0 ! C10Q//0//0//C10Q
+New LineCode.770_BT_3_1 nphases=3 r1=2.08200 x1=0.01880 r0=5.82960 x0=0.05264 units=km normamps=74.0 emergamps=74.0 ! C10Q//C10Q//C10Q//C10Q
+New LineCode.775_BT_1_1 nphases=3 r1=1.30800 x1=0.48060 r0=3.66240 x0=1.34568 units=km normamps=101.0 emergamps=101.0 ! C16Q//0//0//C16Q
+New LineCode.786_BT_3_1 nphases=3 r1=0.82700 x1=0.38110 r0=2.31560 x0=1.06708 units=km normamps=135.0 emergamps=135.0 ! C25Q//C25Q//C25Q//C25Q
+New LineCode.791_BT_1_1 nphases=3 r1=5.24400 x1=0.38580 r0=14.68320 x0=1.08024 units=km normamps=50.0 emergamps=50.0 ! C4D//0//0//C4D
+New LineCode.794_BT_3_1 nphases=3 r1=5.24400 x1=0.38580 r0=14.68320 x0=1.08024 units=km normamps=50.0 emergamps=50.0 ! C4D//C4D//C4D//C4D
+New LineCode.795_BT_1_1 nphases=3 r1=5.24400 x1=0.38580 r0=14.68320 x0=1.08024 units=km normamps=40.0 emergamps=40.0 ! C4Q//0//0//C4Q
+New LineCode.798_BT_3_1 nphases=3 r1=5.24400 x1=0.38580 r0=14.68320 x0=1.08024 units=km normamps=40.0 emergamps=40.0 ! C4Q//C4Q//C4Q//C4Q
+New LineCode.803_BT_1_1 nphases=3 r1=3.50400 x1=0.40330 r0=9.81120 x0=1.12924 units=km normamps=65.0 emergamps=65.0 ! C6D//0//0//C6D
+New LineCode.814_BT_3_1 nphases=3 r1=0.28900 x1=0.32930 r0=0.80920 x0=0.92204 units=km normamps=296.0 emergamps=296.0 ! PB120N120-1KV-3//PB120N120-1KV-3//PB120N120-1KV-3//PB120N120-1KV-3
+New LineCode.839_BT_1_1 nphases=3 r1=0.73200 x1=0.64300 r0=2.04960 x0=1.80040 units=km normamps=159.0 emergamps=159.0 ! PB50-1KV-3//0//0//PB50-1KV-3
+New LineCode.842_BT_3_1 nphases=3 r1=0.73200 x1=0.64300 r0=2.04960 x0=1.80040 units=km normamps=159.0 emergamps=159.0 ! PB50-1KV-3//PB50-1KV-3//PB50-1KV-3//PB50-1KV-3
+New LineCode.855_BT_1_1 nphases=3 r1=0.50600 x1=0.44500 r0=1.41680 x0=1.24600 units=km normamps=206.0 emergamps=206.0 ! PB70N70-1KV-3//0//0//PB70N70-1KV-3
+New LineCode.860_BT_3_1 nphases=3 r1=0.50600 x1=0.44500 r0=1.41680 x0=1.24600 units=km normamps=206.0 emergamps=206.0 ! PB70N70-1KV-3//PB70N70-1KV-3//PB70N70-1KV-3//PB70N70-1KV-3
+
+! --- 5. REDIRECIONAMENTO DE COMPONENTES MODULARES ---
+Redirect Lines_TN08_20261018_134703.dss
+Redirect Transformers_TN08_20261018_134703.dss
+Redirect Loads_TN08_Calibrado.dss
+Buscoords Buscoords_TN08_20261018_134703.dss
+
+! --- 6. DEFINICAO DE TENSOES BASE E REGIME DE OPERACAO ---
+Set VoltageBases = [138.0, 13.8, 0.38, 0.22]
+CalcVoltageBases
+
+! Modo de solucao estatico para fluxo de potencia
+Set Mode=Snapshot
+Set Maxiterations=100
+Set Tolerance=0.0001
+
+! Comando de solucao (descomentar para resolver imediatamente)
+! Solve
+! Show Voltages LN Nodes
+! Show Powers kVA Elements
+
+! --- MODULO DE CHAVES UNSEMT (20261019_093214) ---
+Redirect Switches_TN08_20261019_093214.dss
+Buscoords Buscoords_TN08_20261019_093214.dss
+CalcVoltageBases

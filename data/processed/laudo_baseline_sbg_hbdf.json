@@ -1,0 +1,36 @@
+{
+    "run_tag": "20261028_120647",
+    "timestamp": "2026-10-28T12:07:10.820020",
+    "subestacao": "SBG",
+    "subestacao_nome": "SE BRASILIA GERAL (FURNAS / NEOENERGIA)",
+    "circuitos": [
+        "02_BGC1",
+        "BG_01C2"
+    ],
+    "pac_hbdf_verdadeiro": "S02_0201_PT_TF_913",
+    "demanda_hbdf_kw": 1700.68,
+    "status_convergencia": true,
+    "iteracoes": 4,
+    "tensoes_hbdf_pu": {
+        "A": 0.9513712022273149,
+        "B": 0.9921783001369309,
+        "C": 0.9856900402779057
+    },
+    "tensoes_hbdf_kv": {
+        "A": 13.128922590736945,
+        "B": 13.69206054188965,
+        "C": 13.602522555835101
+    },
+    "classificacoes_hbdf": {
+        "A": "ADEQUADA",
+        "B": "ADEQUADA",
+        "C": "ADEQUADA"
+    },
+    "desbalanco_hbdf_percentual": 4.080709790961601,
+    "potencia_ativa_injetada_mw": 19.969394434831482,
+    "potencia_reativa_injetada_mvar": 8.887873373423245,
+    "potencia_aparente_injetada_mva": 21.857973538182456,
+    "perdas_ativas_kw": 1119.129014254694,
+    "perdas_reativas_kvar": 2247.668158434868,
+    "percentual_perdas": 5.60422108896132
+}

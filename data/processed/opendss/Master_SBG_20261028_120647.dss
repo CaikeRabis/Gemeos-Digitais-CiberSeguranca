@@ -1,0 +1,37 @@
+! ==============================================================================
+! OpenDSS Master File - Subestação SBG (Brasília Geral / 02_BGC1 e BG_01C2)
+! Zona 2: Asa Sul / SMHS | PAC Oficial do Hospital de Base do Distrito Federal (HBDF)
+! Gerado de forma automatizada pelo script src/20_extracao_e_baseline_sbg_hbdf.py
+! RUN_TAG: 20261028_120647
+! ==============================================================================
+
+Clear
+
+! 1. FONTE EQUIVALENTE DE ALTA TENSÃO (138 kV) — SUBESTAÇÃO SBG (REGULADA A 1.0400 pu)
+New Circuit.Subestacao_SBG BasekV=138.0 pu=1.0400 phases=3 Bus1=SBG_138kV Angle=0 MVAsc3=3500 MVAsc1=2800
+
+! 2. TRANSFORMADOR DE FORÇA DA SUBESTAÇÃO SBG (138 / 34.5 kV, 60 MVA)
+New Transformer.T_SBG Phases=3 Windings=2 XHL=8.0 %loadloss=0.45 %noloadloss=0.08
+~ Wdg=1 Bus=SBG_138kV kV=138.0 kVA=60000 Conn=Delta %r=0.20
+~ Wdg=2 Bus=SBG34S1.1.2.3 kV=34.5 kVA=60000 Conn=Wye %r=0.20 tap=1.000
+
+! 3. DEFINIÇÃO DAS BASES DE TENSÃO
+Set VoltageBases = [138.0, 34.5, 13.8, 0.40, 0.38, 0.22]
+CalcVoltageBases
+
+! 4. REDIRECIONAMENTO DOS SUBSISTEMAS FÍSICOS
+Redirect "Lines_SBG_20261028_120647.dss"
+Redirect "Transformers_SBG_20261028_120647.dss"
+Redirect "Switches_SBG_20261028_120647.dss"
+Redirect "Loads_SBG_20261028_120647.dss"
+
+! 5. COORDENADAS GEOGRÁFICAS
+Buscoords "Buscoords_SBG_20261028_120647.dss"
+
+! 6. PARÂMETROS DE CONTROLE E SOLUÇÃO
+Set Maxiterations=150
+Set Tolerance=0.0001
+Set Mode=Snapshot
+Set ControlMode=Static
+
+! Fim do Master

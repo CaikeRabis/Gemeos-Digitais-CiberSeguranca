@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "script": "src/17_correcao_geografica_asa_sul.py",
+    "run_tag": "20261028_110652",
+    "data_execucao": "2026-10-28T11:06:58.371238"
+  },
+  "metricas_deslocamento": {
+    "hbdf": {
+      "antiga_lat": -15.821826,
+      "antiga_lon": -47.925235,
+      "nova_lat": -15.7983,
+      "nova_lon": -47.8921,
+      "distancia_km": 4.405771939302321,
+      "distancia_m": 4405.771939302321,
+      "local_real": "Setor Médico Hospitalar Sul (SMHS) — Asa Sul / Plano Piloto",
+      "local_antigo_erroneo": "Proximidades da Subestação SHP / EPGU / ParkShopping"
+    },
+    "dp_sps": {
+      "antiga_lat": -15.834658,
+      "antiga_lon": -47.93972,
+      "nova_lat": -15.8343,
+      "nova_lon": -47.9395,
+      "distancia_km": 0.0462443902953337,
+      "distancia_m": 46.2443902953337,
+      "local_real": "Setor Policial Sul (SPS) — Complexo PCDF / 1ª DP",
+      "local_antigo_erroneo": "Alinhamento preliminar de poste na BDGD"
+    }
+  },
+  "metricas_eletricas": {
+    "convergiu": true,
+    "iteracoes": 4,
+    "v_sub_pu": [
+      1.0200353881739355,
+      1.021874765500047,
+      1.0218626430474458
+    ],
+    "tensoes_hbdf": {
+      "A": 0.9566079328619906,
+      "B": 0.9655761639046624,
+      "C": 0.9618902812792752
+    },
+    "classificacoes_hbdf": {
+      "A": "[ADEQUADA]",
+      "B": "[ADEQUADA]",
+      "C": "[ADEQUADA]"
+    },
+    "tensoes_dp": {
+      "A": 1.0138098716202422,
+      "B": 1.0157712379143289,
+      "C": 1.0157143767772783
+    },
+    "classificacoes_dp": {
+      "A": "[ADEQUADA]",
+      "B": "[ADEQUADA]",
+      "C": "[ADEQUADA]"
+    },
+    "p_inj_mw": 13.356088941069789,
+    "q_inj_mvar": 6.36760303150003,
+    "s_inj_mva": 14.796333335273815,
+    "p_perdas_kw": 505.6602867922094,
+    "q_perdas_kvar": 993.6204055276664,
+    "percentual_perdas": 3.7859907119764005
+  },
+  "arquivos": {
+    "buscoords_calibrado": "C:\\Users\\adm\\Documents\\Modelos Preditivos na Rede Elétrica do DF\\data\\processed\\opendss\\Buscoords_SHP_Calibrado.dss",
+    "master_calibrado": "C:\\Users\\adm\\Documents\\Modelos Preditivos na Rede Elétrica do DF\\data\\processed\\opendss\\Master_SHP_Calibrado.dss",
+    "mapa_interativo_corrigido": "C:\\Users\\adm\\Documents\\Modelos Preditivos na Rede Elétrica do DF\\data\\processed\\Mapa_Interativo_SHP_Corrigido.html"
+  }
+}

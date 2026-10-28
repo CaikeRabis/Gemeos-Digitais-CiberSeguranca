@@ -1,0 +1,150 @@
+{
+  "run_tag": "20261028_112126",
+  "status": {
+    "zona1": {
+      "topologia": "Segregada",
+      "tensao": "Precária"
+    },
+    "zona2": {
+      "topologia": "SPOF Crítico",
+      "tensao": "Adequada"
+    }
+  },
+  "circuitos": {
+    "TN08": {
+      "circuito": "TN08",
+      "zona": 1,
+      "subestacao": "STN",
+      "master": "Master_TN08_Calibrado.dss",
+      "iteracoes": 4,
+      "p_inj_kw": 5041.387291779544,
+      "p_perdas_kw": 316.92124967099954,
+      "perdas_pct": 6.286389664760916,
+      "cargas": [
+        {
+          "id": "HRC",
+          "nome": "Hospital Regional de Ceilândia",
+          "tipo": "saude",
+          "load": "HRC_PRIORITARIO",
+          "pac": "STN_TN08_9026_CEI003",
+          "tensoes_pu": {
+            "A": 1.0021838037294073,
+            "B": 1.0302030358160956,
+            "C": 1.0218811429483827
+          },
+          "kw_modelado": 460.8,
+          "status": "ADEQUADA"
+        }
+      ]
+    },
+    "CN07": {
+      "circuito": "CN07",
+      "zona": 1,
+      "subestacao": "SCN",
+      "master": "Master_CN07_20261019_124919.dss",
+      "iteracoes": 5,
+      "p_inj_kw": 11563.529072814386,
+      "p_perdas_kw": 971.846323993712,
+      "perdas_pct": 8.404409396768866,
+      "cargas": [
+        {
+          "id": "DP15",
+          "nome": "15ª Delegacia de Polícia",
+          "tipo": "seguranca",
+          "load": "DP15_PRIORITARIO",
+          "pac": "SCN_CN07_9032_CEIRJ002",
+          "tensoes_pu": {
+            "A": 0.9247752733886853,
+            "B": 0.9593978856361625,
+            "C": 0.9456749976669075
+          },
+          "kw_modelado": 75.0,
+          "status": "PRECÁRIA"
+        }
+      ]
+    },
+    "SHP": {
+      "circuito": "SHP",
+      "zona": 2,
+      "subestacao": "SHP",
+      "master": "Master_SHP_Calibrado.dss",
+      "iteracoes": 4,
+      "p_inj_kw": 13356.088941069995,
+      "p_perdas_kw": 505.6602867922094,
+      "perdas_pct": 3.785990711976342,
+      "cargas": [
+        {
+          "id": "HBDF",
+          "nome": "Hospital de Base do DF",
+          "tipo": "saude",
+          "load": "HBDF_PRIORITARIO",
+          "pac": "SHP_HP03_9195_BSB040",
+          "tensoes_pu": {
+            "A": 0.9566079328619906,
+            "B": 0.9655761639046624,
+            "C": 0.9618902812792752
+          },
+          "kw_modelado": 90.0,
+          "status": "ADEQUADA"
+        },
+        {
+          "id": "DP1",
+          "nome": "1ª DP / Complexo PCDF (SPS)",
+          "tipo": "seguranca",
+          "load": "DP_SPS_PRIORITARIO",
+          "pac": "SHP_HP04_9025_BSB27A",
+          "tensoes_pu": {
+            "A": 1.0138098716202422,
+            "B": 1.0157712379143289,
+            "C": 1.0157143767772783
+          },
+          "kw_modelado": 97.5,
+          "status": "ADEQUADA"
+        }
+      ]
+    }
+  },
+  "estatisticas_mapa": {
+    "TN08": {
+      "segmentos_mt": 328
+    },
+    "CN07": {
+      "segmentos_mt": 431
+    },
+    "SHP": {
+      "segmentos_mt": 463
+    },
+    "bounds": {
+      "z1": [
+        [
+          -15.828792590105877,
+          -48.1349762900237
+        ],
+        [
+          -15.783263210029077,
+          -48.08369499992426
+        ]
+      ],
+      "z2": [
+        [
+          -15.841316780045304,
+          -47.94465913980741
+        ],
+        [
+          -15.7983,
+          -47.8921
+        ]
+      ],
+      "all": [
+        [
+          -15.841316780045304,
+          -48.1349762900237
+        ],
+        [
+          -15.783263210029077,
+          -47.8921
+        ]
+      ]
+    }
+  }
+}
