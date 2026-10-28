@@ -1,0 +1,45 @@
+2026-10-19 09:32:14 | INFO | ================================================================================
+2026-10-19 09:32:14 | INFO | INICIANDO ETAPA E5: ACOPLAMENTO DE CHAVES UNSEMT DO TN08 (RUN_TAG=20261019_093214)
+2026-10-19 09:32:14 | INFO | ================================================================================
+2026-10-19 09:32:14 | INFO | Base BDGD de origem: Neoenergia_Brasilia_5160_2025-12-31_V11_20260821-0031.gdb
+2026-10-19 09:32:14 | INFO | Master OpenDSS base: Master_TN08_20261018_134703.dss
+2026-10-19 09:32:14 | INFO | Buscoords base: Buscoords_TN08_20261018_134703.dss
+2026-10-19 09:32:14 | INFO | Lendo camada UNSEMT no GDB para CTMT == 'TN08'...
+2026-10-19 09:32:15 | INFO | Total de chaves UNSEMT extraidas para o circuito TN08: 99
+2026-10-19 09:32:15 | INFO | Classificacao operacional das chaves:
+2026-10-19 09:32:15 | INFO |   * Normalmente Fechadas (P_N_OPE == 'F'): 92 chaves
+2026-10-19 09:32:15 | INFO |   * Normalmente Abertas   (P_N_OPE == 'A'): 7 chaves
+2026-10-19 09:32:15 | INFO | Gerando comandos nativos OpenDSS para as chaves de manobra...
+2026-10-19 09:32:15 | INFO | Arquivo de chaves gravado com sucesso: Switches_TN08_20261019_093214.dss
+2026-10-19 09:32:15 | INFO | Chave seccionadora FW9093 do ramal do HRC identificada e modelada como FECHADA.
+2026-10-19 09:32:15 | INFO | Atualizando coordenadas geograficas para incluir as barras das chaves...
+2026-10-19 09:32:15 | INFO | Total de barras mapeadas no novo Buscoords: 1355 (82 novas barras adicionadas)
+2026-10-19 09:32:15 | INFO | Novo Buscoords gravado com sucesso: Buscoords_TN08_20261019_093214.dss
+2026-10-19 09:32:15 | INFO | Regerando arquivo Master_TN08 para referenciar o modulo de chaves e coordenadas...
+2026-10-19 09:32:15 | INFO | Novo Master gravado com sucesso: Master_TN08_20261019_093214.dss
+2026-10-19 09:32:15 | INFO | Append realizado com sucesso no Master anterior: Master_TN08_20261018_134703.dss
+2026-10-19 09:32:15 | INFO | ================================================================================
+2026-10-19 09:32:15 | INFO | TESTANDO SIMULACAO DO NOVO MASTER COM CHAVES ACOPLADAS...
+2026-10-19 09:32:15 | INFO | ================================================================================
+2026-10-19 09:32:16 | INFO | Status de Convergencia: CONVERGIDO (5 iteracoes)
+2026-10-19 09:32:16 | INFO | Perdas Ativas Totais: 3204.09 kW
+2026-10-19 09:32:16 | INFO | ================================================================================
+2026-10-19 09:32:16 | INFO | DIAGNOSTICO DE ENERGIZACAO DO HOSPITAL REGIONAL DE CEILANDIA (HRC):
+2026-10-19 09:32:16 | INFO | ================================================================================
+2026-10-19 09:32:16 | INFO |   * Barramento PAC do HRC: STN_TN08_9026_CEI003
+2026-10-19 09:32:16 | INFO |   * Base de Tensao (kVBase): 13.80 kV (Linha-Linha) | 7.97 kV (Fase-Neutro)
+2026-10-19 09:32:16 | INFO |   * Tensoes Nominais de Fase (Volts): [6928.9, 7914.9, 7482.7] V
+2026-10-19 09:32:16 | INFO |   * Tensoes em pu: [0.8696, 0.9934, 0.9392] pu
+2026-10-19 09:32:16 | INFO | [SUCESSO ABSOLUTO] O barramento primario do HRC esta energizado e operacional!
+2026-10-19 09:32:16 | INFO | ================================================================================
+2026-10-19 09:32:16 | INFO | RESUMO DA VOLUMETRIA DE CHAVES ACOPLADAS (UNSEMT):
+2026-10-19 09:32:16 | INFO | ================================================================================
+2026-10-19 09:32:16 | INFO |   * Total de Chaves UNSEMT Modeladas: 99
+2026-10-19 09:32:16 | INFO |   * Chaves Normalmente Fechadas ('F'): 92 (Conduzindo no estado estacionario)
+2026-10-19 09:32:16 | INFO |   * Chaves Normalmente Abertas   ('A'): 7 (Desconectadas via 'Open Line... term=1')
+2026-10-19 09:32:16 | INFO |   * Chave Primaria do HRC (FW9093): FECHADA (Alimenta o PAC STN_TN08_9026_CEI003)
+2026-10-19 09:32:16 | INFO |   * Arquivo DSS de Chaves Gerado: Switches_TN08_20261019_093214.dss
+2026-10-19 09:32:16 | INFO |   * Arquivo Master Atualizado: Master_TN08_20261019_093214.dss
+2026-10-19 09:32:16 | INFO |   * Arquivo Buscoords Atualizado: Buscoords_TN08_20261019_093214.dss
+2026-10-19 09:32:16 | INFO | ================================================================================
+2026-10-19 09:32:16 | INFO | Etapa E5 (Acoplamento de Chaves UNSEMT) concluida com exito.

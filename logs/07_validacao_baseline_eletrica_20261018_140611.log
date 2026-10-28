@@ -1,0 +1,66 @@
+2026-10-18 14:06:11 | INFO | ================================================================================
+2026-10-18 14:06:11 | INFO | INICIANDO ETAPA E5: SUITE DE SMOKE TESTS E VALIDACAO DE BASELINE ELETRICA (RUN_TAG=20261018_140611)
+2026-10-18 14:06:11 | INFO | ================================================================================
+2026-10-18 14:06:11 | INFO | Motor OpenDSS Carregado: DSS C-API Library version 0.14.5 revision 87d85c2622c8281b92255335bc7c09b11191b21d based on OpenDSS SVN 3723 [FPC 3.2.2] (64-bit build) MVMULT INCREMENTAL_Y CONTEXT_API PM 20240329033747; License Status: Open 
+DSS-Python version: 0.15.7
+2026-10-18 14:06:11 | INFO | Arquivo Master para compilacao: Master_TN08_20261018_134703.dss
+2026-10-18 14:06:11 | INFO | Circuito compilado com sucesso: TN08
+2026-10-18 14:06:11 | INFO | Total de Barras: 1273 | Total de Elementos de Circuito: 6344
+2026-10-18 14:06:11 | INFO | --------------------------------------------------------------------------------
+2026-10-18 14:06:11 | INFO | TESTE 1: RESOLUCAO E CONVERGENCIA DO FLUXO DE POTENCIA (SNAPSHOT)
+2026-10-18 14:06:11 | INFO | --------------------------------------------------------------------------------
+2026-10-18 14:06:11 | INFO | [TESTE 1 APROVADO] Fluxo de potencia convergiu com sucesso em 4 iteracoes.
+2026-10-18 14:06:11 | INFO | --------------------------------------------------------------------------------
+2026-10-18 14:06:11 | INFO | TESTE 2: AUDITORIA DO PERFIL DE TENSAO (NORMATIVA ANEEL PRODIST: 0.93 <= V <= 1.05 pu)
+2026-10-18 14:06:11 | INFO | --------------------------------------------------------------------------------
+2026-10-18 14:06:11 | INFO | Total de nos de fase analisados: 2035
+2026-10-18 14:06:11 | INFO | Tensao Minima Absoluta: 0.0567 pu
+2026-10-18 14:06:11 | INFO | Tensao Maxima Absoluta: 1.1698 pu
+2026-10-18 14:06:11 | INFO | Nos com Subtensao (V < 0.93 pu): 608 (29.88%)
+2026-10-18 14:06:11 | INFO | Nos com Sobretensao (V > 1.05 pu): 323 (15.87%)
+2026-10-18 14:06:11 | INFO | Tensao nas Fases do PAC do HRC (STN_TN08_9026_CEI003): [0.0, 0.0, 0.0] pu
+2026-10-18 14:06:11 | WARNING | PAC do HRC opera fora da faixa ideal ANEEL (0.93 - 1.05 pu) no baseline nominal.
+2026-10-18 14:06:11 | INFO | [TESTE 2 CONCLUIDO] Perfil de tensao quantificado conforme diretrizes ANEEL.
+2026-10-18 14:06:11 | INFO | --------------------------------------------------------------------------------
+2026-10-18 14:06:11 | INFO | TESTE 3: AUDITORIA DE CARREGAMENTO E SOBRECARGA (> 100% DA CAPACIDADE)
+2026-10-18 14:06:11 | INFO | --------------------------------------------------------------------------------
+2026-10-18 14:06:11 | INFO | Total de Linhas Auditadas: 1214
+2026-10-18 14:06:11 | INFO | Linhas Sobrecarregadas (> 100%): 141 (11.61%)
+2026-10-18 14:06:11 | INFO | Total de Transformadores Auditados: 61
+2026-10-18 14:06:11 | INFO | Transformadores Sobrecarregados (> 100%): 20 (32.79%)
+2026-10-18 14:06:11 | INFO | Top 5 Linhas Mais Carregadas:
+2026-10-18 14:06:11 | INFO |   * Line.bt_257284: 1777.16% (I_max=1315.1 A | I_nom=74.0 A)
+2026-10-18 14:06:11 | INFO |   * Line.bt_241513: 1148.36% (I_max=1745.5 A | I_nom=152.0 A)
+2026-10-18 14:06:11 | INFO |   * Line.bt_257286: 746.47% (I_max=552.4 A | I_nom=74.0 A)
+2026-10-18 14:06:11 | INFO |   * Line.bt_337434: 730.73% (I_max=292.3 A | I_nom=40.0 A)
+2026-10-18 14:06:11 | INFO |   * Line.bt_49984: 649.21% (I_max=1337.4 A | I_nom=206.0 A)
+2026-10-18 14:06:11 | INFO | Top 5 Transformadores Mais Carregados:
+2026-10-18 14:06:11 | INFO |   * Trafo.fz5095: 516.32% (S=580.9 kVA | Nominal=112.5 kVA)
+2026-10-18 14:06:11 | INFO |   * Trafo.ft3862: 473.24% (S=71.0 kVA | Nominal=15.0 kVA)
+2026-10-18 14:06:11 | INFO |   * Trafo.fz0820: 423.31% (S=317.5 kVA | Nominal=75.0 kVA)
+2026-10-18 14:06:11 | INFO |   * Trafo.ft6396: 403.42% (S=453.8 kVA | Nominal=112.5 kVA)
+2026-10-18 14:06:11 | INFO |   * Trafo.fz4052: 370.62% (S=416.9 kVA | Nominal=112.5 kVA)
+2026-10-18 14:06:11 | INFO | [TESTE 3 CONCLUIDO] Carregamento termico dos ativos mapeado.
+2026-10-18 14:06:11 | INFO | --------------------------------------------------------------------------------
+2026-10-18 14:06:11 | INFO | TESTE 4: BALANCO DE POTENCIA E EFICIENCIA DA REDE
+2026-10-18 14:06:11 | INFO | --------------------------------------------------------------------------------
+2026-10-18 14:06:11 | INFO | Potencia Ativa Injetada na SE STN: 7422.20 kW (7.42 MW)
+2026-10-18 14:06:11 | INFO | Potencia Reativa Injetada na SE STN: 3949.46 kVAr (3.95 MVAr)
+2026-10-18 14:06:11 | INFO | Potencia Liquida Consumida pelas Cargas: 5492.49 kW (5.49 MW)
+2026-10-18 14:06:11 | INFO | Perdas Tecnicas Ativas: 1929.71 kW (1.93 MW)
+2026-10-18 14:06:11 | INFO | Perdas Tecnicas Reativas: 2001.60 kVAr (2.00 MVAr)
+2026-10-18 14:06:11 | INFO | Percentual de Perdas Tecnicas: 26.00%
+2026-10-18 14:06:11 | INFO | [TESTE 4 APROVADO] Balanco de potencia consistente e fisicamente realizavel.
+2026-10-18 14:06:11 | INFO | ================================================================================
+2026-10-18 14:06:11 | INFO | RELATORIO SINTETICO DE SAUDE DA REDE (BASELINE TN08 - OPENDSS):
+2026-10-18 14:06:11 | INFO | ================================================================================
+2026-10-18 14:06:11 | INFO |   * Status de Convergencia: APROVADO (4 iteracoes)
+2026-10-18 14:06:11 | INFO |   * Faixa de Tensao Global: [0.0567 pu, 1.1698 pu]
+2026-10-18 14:06:11 | INFO |   * Violacoes de Tensao ANEEL: 608 subtensao | 323 sobretensao
+2026-10-18 14:06:11 | INFO |   * Ativos em Sobrecarga (>100%): 141 linhas (11.6%) | 20 trafos (32.8%)
+2026-10-18 14:06:11 | INFO |   * Injecao na Subestacao STN: 7422.20 kW (7.42 MW)
+2026-10-18 14:06:11 | INFO |   * Eficiencia e Perdas: 26.00% de perdas tecnicas (1929.71 kW)
+2026-10-18 14:06:11 | INFO |   * Tensao no PAC do HRC: [0.0, 0.0, 0.0] pu
+2026-10-18 14:06:11 | INFO | ================================================================================
+2026-10-18 14:06:11 | INFO | Artefato de log gravado em: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\logs\07_validacao_baseline_eletrica_20261018_140611.log
+2026-10-18 14:06:11 | INFO | Etapa E5 (Validacao Baseline Eletrica) concluida com exito.

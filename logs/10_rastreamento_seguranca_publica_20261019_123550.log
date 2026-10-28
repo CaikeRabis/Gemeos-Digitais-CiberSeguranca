@@ -1,0 +1,19 @@
+2026-10-19 12:35:50,753 [INFO] ================================================================================
+2026-10-19 12:35:50,753 [INFO] INICIANDO ETAPA: RASTREAMENTO TOPOLÓGICO DE INFRAESTRUTURAS DE SEGURANÇA PÚBLICA
+2026-10-19 12:35:50,753 [INFO] RUN_TAG: 20261019_123550
+2026-10-19 12:35:50,753 [INFO] ================================================================================
+2026-10-19 12:35:50,755 [INFO] Base UCMT selecionada: UCMT_consolidada_20261018_131447.csv
+2026-10-19 12:35:50,755 [INFO] Base UCBT selecionada: UCBT_consolidada_20261018_131447.csv
+2026-10-19 12:35:50,755 [INFO] Lendo base UCMT consolidada: UCMT_consolidada_20261018_131447.csv
+2026-10-19 12:35:50,859 [INFO] Total de registros UCMT carregados: 5609
+2026-10-19 12:35:50,901 [INFO] Unidades de Segurança Pública localizadas em Ceilândia (MT): 2
+2026-10-19 12:35:50,903 [INFO] Unidades de Segurança Pública sob a Subestação STN (MT): 2
+2026-10-19 12:35:50,909 [INFO] Iniciando varredura em chunks da base UCBT: UCBT_consolidada_20261018_131447.csv (ChunkSize: 100,000)
+2026-10-19 12:35:58,214 [INFO] Varredura UCBT concluída: 1,183,916 linhas analisadas (137,036 em Ceilândia).
+2026-10-19 12:35:58,214 [INFO] Unidades de Segurança Pública localizadas em Ceilândia (BT): 0
+2026-10-19 12:35:58,222 [ERROR] Erro durante o rastreamento de segurança pública: name 'registros_bt' is not defined
+Traceback (most recent call last):
+  File "C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\src\10_rastreamento_seguranca_publica.py", line 373, in main
+    registros_bt=registros_bt
+                 ^^^^^^^^^^^^
+NameError: name 'registros_bt' is not defined. Did you mean: 'registros_cei_bt'?

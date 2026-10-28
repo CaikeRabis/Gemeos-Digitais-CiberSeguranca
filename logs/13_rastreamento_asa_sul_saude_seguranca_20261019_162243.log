@@ -1,0 +1,20 @@
+2026-10-19 16:22:43,970 [INFO] ================================================================================
+2026-10-19 16:22:43,970 [INFO] INICIANDO EXPLORAÇÃO TOPOLÓGICA DA ZONA 2 (ASA SUL / PLANO PILOTO)
+2026-10-19 16:22:43,970 [INFO] RUN_TAG: 20261019_162243
+2026-10-19 16:22:43,971 [INFO] ================================================================================
+2026-10-19 16:22:43,977 [INFO] Base UCMT selecionada: UCMT_consolidada_20261018_131447.csv
+2026-10-19 16:22:43,977 [INFO] Base UCBT selecionada: UCBT_consolidada_20261018_131447.csv
+2026-10-19 16:22:43,977 [INFO] Carregando base UCMT consolidada: UCMT_consolidada_20261018_131447.csv
+2026-10-19 16:22:44,150 [INFO] Total de UCs de Média Tensão carregadas: 5,609
+2026-10-19 16:22:44,190 [INFO] UCs em MT no escopo regional da Asa Sul / Plano Piloto: 2,137
+2026-10-19 16:22:44,211 [INFO] Hospitais / Complexos de Saúde MT mapeados na Asa Sul: 19
+2026-10-19 16:22:44,211 [INFO] Unidades de Segurança Pública MT mapeadas na Asa Sul: 14
+2026-10-19 16:22:44,215 [INFO] Iniciando varredura em chunks da base UCBT: UCBT_consolidada_20261018_131447.csv (Chunk: 150,000)
+2026-10-19 16:22:52,024 [INFO] Varredura UCBT finalizada (1,183,916 registros lidos).
+2026-10-19 16:22:52,024 [INFO] Saúde BT capturada: 70 | Segurança BT capturada: 537
+2026-10-19 16:22:52,035 [INFO] Dashboard terminal e Parecer de Resiliencia emitidos com sucesso.
+2026-10-19 16:22:52,074 [INFO] Arquivo JSON de topologia exportado: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\topologia_asa_sul_20261019_162243.json (513,322 bytes)
+2026-10-19 16:22:52,074 [INFO] ================================================================================
+2026-10-19 16:22:52,074 [INFO] EXPLORAÇÃO DA ZONA 2 (ASA SUL) CONCLUÍDA COM SUCESSO!
+2026-10-19 16:22:52,074 [INFO] Artefato JSON disponível em: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\topologia_asa_sul_20261019_162243.json
+2026-10-19 16:22:52,074 [INFO] ================================================================================

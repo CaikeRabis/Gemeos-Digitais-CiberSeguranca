@@ -1,0 +1,16 @@
+2026-10-17 18:02:49 | INFO | Iniciando analise de ambiguos da cascata R3 (RUN_TAG=20261017_180249)
+2026-10-17 18:02:49 | INFO | Arquivo de entrada: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\amostra_grupos_duplicados_20261017_172116.csv
+2026-10-17 18:02:50 | INFO | Linhas totais no CSV de amostra: 21528
+2026-10-17 18:02:50 | INFO | Linhas filtradas para UCBT_tab: 20217
+2026-10-17 18:02:51 | INFO | Total de COD_ID distintos em UCBT_tab: 10000
+2026-10-17 18:02:52 | INFO | Passo 1 - Validacao da Cascata: resolvidos=9898, ambiguos=102, perdidos=0
+2026-10-17 18:02:52 | INFO | Validacao confirmada com sucesso: 9.898 resolvidos, 102 ambiguos, 0 perdidos.
+2026-10-17 18:02:52 | INFO | Passo 2 - Grupos com SIT_ATIV e DAT_CON iguais entre remanescentes: 102 de 102 (100.00%)
+2026-10-17 18:02:52 | INFO | Passo 3 - Comparacao de Referencia:
+2026-10-17 18:02:52 | INFO |   - Grupos com ENE_01 igual entre todas as remanescentes: 37 de 102
+2026-10-17 18:02:52 | INFO |   - Grupos com DEM_01 igual entre todas as remanescentes: 102 de 102
+2026-10-17 18:02:52 | INFO | Total de colunas divergentes identificadas: 53
+2026-10-17 18:02:52 | INFO | Total de linhas remanescentes exportadas: 205
+2026-10-17 18:02:52 | INFO | CSV de linhas gravado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\ambiguos_cascata_linhas_20261017_180249.csv
+2026-10-17 18:02:52 | INFO | CSV de colunas gravado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\ambiguos_cascata_colunas_20261017_180249.csv
+2026-10-17 18:02:52 | INFO | Processamento concluido com sucesso.

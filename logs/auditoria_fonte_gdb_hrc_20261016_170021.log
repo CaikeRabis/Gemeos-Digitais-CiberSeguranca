@@ -1,0 +1,37 @@
+2026-10-16 17:00:21 | INFO | Início da auditoria da fonte no geodatabase: Neoenergia_Brasilia_5160_2025-12-31_V11_20260821-0031.gdb
+2026-10-16 17:00:50 | INFO | Hashes de entrada calculados; arquivos internos da GDB: 209
+2026-10-16 17:00:50 | ERROR | Falha ao auditar UCMT_tab
+Traceback (most recent call last):
+  File "C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\src\03f_auditoria_fonte_duplicidade_gdb.py", line 333, in main
+    audit, _frame = audit_uc_source(inputs.gdb, actual)
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\src\03f_auditoria_fonte_duplicidade_gdb.py", line 150, in audit_uc_source
+    _meta, table = pyogrio.read_arrow(gdb, layer=layer, read_geometry=False,
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                      skip_features=offset, max_features=BATCH_SIZE)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\venv\Lib\site-packages\pyogrio\raw.py", line 266, in read_arrow
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: pyarrow required to read using 'read_arrow'. You can use 'open_arrow' to read data with an alternative Arrow implementation
+2026-10-16 17:00:51 | ERROR | Falha ao auditar UCBT_tab
+Traceback (most recent call last):
+  File "C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\src\03f_auditoria_fonte_duplicidade_gdb.py", line 333, in main
+    audit, _frame = audit_uc_source(inputs.gdb, actual)
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\src\03f_auditoria_fonte_duplicidade_gdb.py", line 150, in audit_uc_source
+    _meta, table = pyogrio.read_arrow(gdb, layer=layer, read_geometry=False,
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                      skip_features=offset, max_features=BATCH_SIZE)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\venv\Lib\site-packages\pyogrio\raw.py", line 266, in read_arrow
+    raise RuntimeError(
+    ...<2 lines>...
+    )
+RuntimeError: pyarrow required to read using 'read_arrow'. You can use 'open_arrow' to read data with an alternative Arrow implementation
+2026-10-16 17:01:04 | ERROR | Auditoria interrompida: Integridade das entradas falhou: houve alteração detectada
+Traceback (most recent call last):
+  File "C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\src\03f_auditoria_fonte_duplicidade_gdb.py", line 354, in main
+    raise RuntimeError("Integridade das entradas falhou: houve alteração detectada")
+RuntimeError: Integridade das entradas falhou: houve alteração detectada

@@ -1,0 +1,50 @@
+2026-10-28 12:06:47,699 [INFO] Iniciando pipeline de extração, modelagem OpenDSS e baseline do verdadeiro HBDF...
+2026-10-28 12:06:47,699 [INFO] ================================================================================
+2026-10-28 12:06:47,699 [INFO] INICIANDO EXTRAÇÃO E CONVERSÃO OPENDSS — SUBESTAÇÃO SBG (02_BGC1 / BG_01C2)
+2026-10-28 12:06:47,704 [INFO] Foco Primário: Hospital de Base do Distrito Federal (SMHS)
+2026-10-28 12:06:47,704 [INFO] RUN_TAG: 20261028_120647
+2026-10-28 12:06:47,704 [INFO] ================================================================================
+2026-10-28 12:06:47,706 [INFO] BDGD Bruta:           Neoenergia_Brasilia_5160_2025-12-31_V11_20260821-0031.gdb
+2026-10-28 12:06:47,706 [INFO] UCMT Consolidada:     UCMT_consolidada_20261018_131447.csv
+2026-10-28 12:06:47,706 [INFO] UCBT Consolidada:     UCBT_consolidada_20261018_131447.csv
+2026-10-28 12:06:47,707 [INFO] Extraindo trechos de Média Tensão (SSDMT) para 02_BGC1 e BG_01C2...
+2026-10-28 12:06:49,835 [INFO] SSDMT carregado: 2067 segmentos primários.
+2026-10-28 12:06:49,835 [INFO] Extraindo trechos de Baixa Tensão (SSDBT) para 02_BGC1 e BG_01C2...
+2026-10-28 12:06:54,462 [INFO] SSDBT carregado: 7840 segmentos secundários.
+2026-10-28 12:06:54,462 [INFO] Extraindo transformadores MT/BT e SE (UNTRMT)...
+2026-10-28 12:06:54,824 [INFO] UNTRMT carregado: 181 transformadores cadastrados.
+2026-10-28 12:06:54,824 [INFO] Extraindo chaves seccionadoras (UNSEMT)...
+2026-10-28 12:06:55,395 [INFO] UNSEMT carregado: 316 chaves de manobra.
+2026-10-28 12:06:55,395 [INFO] Carregando catálogo de condutores (SEGCON)...
+2026-10-28 12:06:55,511 [INFO] Carregando parâmetros técnicos de transformadores (EQTRMT)...
+2026-10-28 12:06:57,276 [INFO] Carregando UCs de Média Tensão (UCMT)...
+2026-10-28 12:06:57,340 [INFO] UCMT conectadas a 02_BGC1/BG_01C2: 415 UCs.
+2026-10-28 12:06:57,340 [INFO] Carregando UCs de Baixa Tensão (UCBT) com Fator de Coincidência...
+2026-10-28 12:07:06,108 [INFO] UCBT conectadas a 02_BGC1/BG_01C2: 15095 UCs.
+2026-10-28 12:07:07,443 [INFO] Lines gravado: Lines_SBG_20261028_120647.dss (9909 segmentos)
+2026-10-28 12:07:07,463 [INFO] Switches gravado: Switches_SBG_20261028_120647.dss (315 fechadas, 1 abertas)
+2026-10-28 12:07:07,484 [INFO] Transformers gravado: Transformers_SBG_20261028_120647.dss (5 trafos SE 34.5/13.8kV, 176 trafos MT/BT)
+2026-10-28 12:07:07,518 [INFO] UCMT modeladas: 1 HBDF Agregado (1700.68 kW) + 403 UCs MT
+2026-10-28 12:07:07,610 [INFO] Demanda Total Recalculada em BT para SBG (02_BGC1/BG_01C2): 16595.81 kW (16.596 MW)
+2026-10-28 12:07:08,389 [INFO] Loads gravado: Loads_SBG_20261028_120647.dss (415 UCMT, 15095 UCBT)
+2026-10-28 12:07:08,421 [INFO] Buscoords gravado: Buscoords_SBG_20261028_120647.dss (10489 barras)
+2026-10-28 12:07:08,426 [INFO] Master gravado com sucesso: Master_SBG_20261028_120647.dss
+2026-10-28 12:07:08,458 [INFO] Master canônico atualizado: Master_SBG.dss
+2026-10-28 12:07:08,458 [INFO] Exportando camadas espaciais para geo_sbg_20261028_120647.gpkg...
+2026-10-28 12:07:09,026 [INFO] Created 2,067 records
+2026-10-28 12:07:09,314 [INFO] Created 7,840 records
+2026-10-28 12:07:09,439 [INFO] Created 181 records
+2026-10-28 12:07:09,550 [INFO] Created 1 records
+2026-10-28 12:07:09,617 [INFO] GeoPackage canônico gravado: geo_sbg.gpkg
+2026-10-28 12:07:09,993 [INFO] ================================================================================
+2026-10-28 12:07:09,994 [INFO] EXECUTANDO FLUXO DE POTÊNCIA E AUDITORIA PRODIST — SUBESTAÇÃO SBG / HBDF
+2026-10-28 12:07:09,994 [INFO] ================================================================================
+2026-10-28 12:07:09,994 [INFO] Compilando circuito: Master_SBG_20261028_120647.dss
+2026-10-28 12:07:10,799 [INFO] Fluxo de Potência convergiu com sucesso em 4 iterações (Snapshot Newton-Raphson)!
+2026-10-28 12:07:10,819 [INFO] Dashboard PRODIST do verdadeiro HBDF impresso no terminal com sucesso.
+2026-10-28 12:07:10,823 [INFO] Laudo JSON exportado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\laudo_baseline_sbg_hbdf.json
+2026-10-28 12:07:10,823 [INFO] ================================================================================
+2026-10-28 12:07:10,823 [INFO] MODELAGEM E AUDITORIA DO VERDADEIRO HBDF (SUBESTAÇÃO SBG) CONCLUÍDAS COM SUCESSO!
+2026-10-28 12:07:10,823 [INFO] Master OpenDSS: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\opendss\Master_SBG_20261028_120647.dss
+2026-10-28 12:07:10,823 [INFO] GeoPackage:     C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\opendss\geo_sbg_20261028_120647.gpkg
+2026-10-28 12:07:10,823 [INFO] ================================================================================

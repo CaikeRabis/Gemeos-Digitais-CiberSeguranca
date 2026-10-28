@@ -1,0 +1,18 @@
+2026-10-15 17:29:10 | INFO | Início do teste de hipóteses (somente leitura).
+2026-10-15 17:29:13 | INFO | Camada SUB -> SUB
+2026-10-15 17:29:13 | INFO | Camada SSDMT -> SSDMT
+2026-10-15 17:29:13 | INFO | Camada SSDBT -> SSDBT
+2026-10-15 17:29:13 | INFO | Camada UNTRMT -> UNTRMT
+2026-10-15 17:29:13 | INFO | Camada UCMT -> UCMT_tab
+2026-10-15 17:29:13 | INFO | Camada UCBT -> UCBT_tab
+2026-10-15 17:29:13 | INFO | Camada PONNOT -> PONNOT
+2026-10-15 17:29:13 | INFO | Camada CTMT -> CTMT
+2026-10-15 17:29:13 | INFO | Camada UCAT -> UCAT_tab
+2026-10-15 17:29:13 | ERROR | Erro inesperado no teste de hipóteses.
+Traceback (most recent call last):
+  File "C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\src\03d_hipoteses_alimentador_hrc.py", line 537, in main
+    ponto, buffer, nome = obter_hrc()
+                          ~~~~~~~~~^^
+  File "C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\src\03d_hipoteses_alimentador_hrc.py", line 195, in obter_hrc
+    l_hosp = next(n for n in nomes if n.lower().startswith("hospital"))
+StopIteration

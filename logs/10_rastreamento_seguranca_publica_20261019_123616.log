@@ -1,0 +1,21 @@
+2026-10-19 12:36:16,027 [INFO] ================================================================================
+2026-10-19 12:36:16,027 [INFO] INICIANDO ETAPA: RASTREAMENTO TOPOLÓGICO DE INFRAESTRUTURAS DE SEGURANÇA PÚBLICA
+2026-10-19 12:36:16,027 [INFO] RUN_TAG: 20261019_123616
+2026-10-19 12:36:16,027 [INFO] ================================================================================
+2026-10-19 12:36:16,029 [INFO] Base UCMT selecionada: UCMT_consolidada_20261018_131447.csv
+2026-10-19 12:36:16,029 [INFO] Base UCBT selecionada: UCBT_consolidada_20261018_131447.csv
+2026-10-19 12:36:16,030 [INFO] Lendo base UCMT consolidada: UCMT_consolidada_20261018_131447.csv
+2026-10-19 12:36:16,098 [INFO] Total de registros UCMT carregados: 5609
+2026-10-19 12:36:16,117 [INFO] Unidades de Segurança Pública localizadas em Ceilândia (MT): 2
+2026-10-19 12:36:16,119 [INFO] Unidades de Segurança Pública sob a Subestação STN (MT): 2
+2026-10-19 12:36:16,124 [INFO] Iniciando varredura em chunks da base UCBT: UCBT_consolidada_20261018_131447.csv (ChunkSize: 100,000)
+2026-10-19 12:36:22,979 [INFO] Varredura UCBT concluída: 1,183,916 linhas analisadas (137,036 em Ceilândia).
+2026-10-19 12:36:22,979 [INFO] Unidades de Segurança Pública localizadas em Ceilândia (BT): 0
+2026-10-19 12:36:22,987 [INFO] ================================================================================
+2026-10-19 12:36:22,987 [INFO] VALIDAÇÃO CRUZADA TOPOLÓGICA: SEGURANÇA PÚBLICA vs. HOSPITAL REGIONAL (HRC)
+2026-10-19 12:36:22,987 [INFO] ================================================================================
+2026-10-19 12:36:22,992 [INFO] Relatório de validação cruzada exibido no terminal com sucesso.
+2026-10-19 12:36:22,994 [INFO] ================================================================================
+2026-10-19 12:36:22,995 [INFO] Arquivo JSON exportado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\seguranca_ceilandia_topologia_20261019_123616.json
+2026-10-19 12:36:22,996 [INFO] Tamanho do arquivo: 3130 bytes
+2026-10-19 12:36:22,996 [INFO] ================================================================================

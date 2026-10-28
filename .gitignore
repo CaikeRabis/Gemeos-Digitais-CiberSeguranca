@@ -1,0 +1,33 @@
+# Virtual Environment
+venv/
+.venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+# Raw & Heavy Geodata / Databases (> 100MB GitHub limit)
+data/raw/
+*.csv
+*.gpkg
+*.gdb
+*.zip
+*.tar.gz
+*.7z
+*.bak
+
+# Processed heavy data
+data/processed/*.csv
+data/processed/*.gpkg
+data/processed/*.txt
+
+# Temporary & Vercel
+scratch/
+.vercel/
+
+# IDE / Environment
+.idea/
+.vscode/
+.env

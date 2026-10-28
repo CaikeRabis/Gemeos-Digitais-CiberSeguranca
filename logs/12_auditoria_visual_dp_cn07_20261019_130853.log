@@ -1,0 +1,29 @@
+2026-10-19 13:08:53,920 [INFO] ================================================================================
+2026-10-19 13:08:53,920 [INFO] INICIANDO AUDITORIA VISUAL E ELÉTRICA — 15ª DELEGACIA DE POLÍCIA (CN07)
+2026-10-19 13:08:53,920 [INFO] RUN_TAG: 20261019_130853
+2026-10-19 13:08:53,920 [INFO] ================================================================================
+2026-10-19 13:08:53,922 [INFO] Master DSS selecionado:     Master_CN07_20261019_124919.dss
+2026-10-19 13:08:53,922 [INFO] GeoPackage selecionado:     geo_cn07_20261019_124919.gpkg
+2026-10-19 13:08:53,922 [INFO] Buscoords selecionado:      Buscoords_CN07_20261019_124919.dss
+2026-10-19 13:08:53,923 [INFO] ================================================================================
+2026-10-19 13:08:53,923 [INFO] PARTE 1: AUDITORIA ELÉTRICA NO OPENDSS E LIMITES PRODIST (15ª DP)
+2026-10-19 13:08:53,923 [INFO] ================================================================================
+2026-10-19 13:08:53,923 [INFO] Carregando Master DSS: Master_CN07_20261019_124919.dss
+2026-10-19 13:08:54,127 [INFO] Dashboard PRODIST do CN07 impresso no terminal com sucesso.
+2026-10-19 13:08:54,127 [INFO] Carregando camada de Média Tensão (SSDMT) do GeoPackage...
+2026-10-19 13:08:54,180 [INFO] Camada MT carregada: 'linhas_mt_ssdmt' (431 trechos).
+2026-10-19 13:08:54,182 [INFO] Coordenada geográfica da 15ª DP: Longitude=-48.124233, Latitude=-15.817193
+2026-10-19 13:08:54,182 [INFO] ================================================================================
+2026-10-19 13:08:54,182 [INFO] PARTE 2.1: GERANDO MAPA ESTÁTICO DE ALTA RESOLUÇÃO (MATPLOTLIB)
+2026-10-19 13:08:54,182 [INFO] ================================================================================
+2026-10-19 13:08:55,318 [INFO] Arquivo PNG gerado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Auditoria_15DP_CN07.png
+2026-10-19 13:08:55,318 [INFO] ================================================================================
+2026-10-19 13:08:55,318 [INFO] PARTE 2.2: GERANDO MAPA INTERATIVO GEORREFERENCIADO (FOLIUM / ESRI SATELLITE)
+2026-10-19 13:08:55,318 [INFO] ================================================================================
+2026-10-19 13:08:55,702 [INFO] Arquivo HTML gerado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Interativo_15DP_CN07.html
+2026-10-19 13:08:55,702 [INFO] ================================================================================
+2026-10-19 13:08:55,702 [INFO] CONFIRMAÇÃO FORMAL DE GERAÇÃO DOS ARQUIVOS FÍSICOS:
+2026-10-19 13:08:55,703 [INFO]   [1] PNG:  C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Auditoria_15DP_CN07.png (Existe: True | Tamanho: 572369 bytes)
+2026-10-19 13:08:55,705 [INFO]   [2] HTML: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Interativo_15DP_CN07.html (Existe: True | Tamanho: 354756 bytes)
+2026-10-19 13:08:55,705 [INFO] ================================================================================
+2026-10-19 13:08:55,705 [INFO] AUDITORIA VISUAL E ELÉTRICA DA 15ª DP (CN07) CONCLUÍDA COM TOTAL SUCESSO!

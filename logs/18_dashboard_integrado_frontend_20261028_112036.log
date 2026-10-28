@@ -1,0 +1,14 @@
+2026-10-28 11:20:36 [INFO] DashboardResilienciaDF - ================================================================================
+2026-10-28 11:20:36 [INFO] DashboardResilienciaDF - INICIANDO SCRIPT 18: DASHBOARD INTEGRADO RESILIÊNCIA DF (RUN_TAG=20261028_112036)
+2026-10-28 11:20:36 [INFO] DashboardResilienciaDF - ================================================================================
+2026-10-28 11:20:36 [INFO] DashboardResilienciaDF - [TN08] Compilando Master_TN08_Calibrado.dss
+2026-10-28 11:20:37 [INFO] DashboardResilienciaDF - [TN08] HRC: kW=460.80 | V(pu)={'A': 1.0022, 'B': 1.0302, 'C': 1.0219} -> ADEQUADA
+2026-10-28 11:20:37 [INFO] DashboardResilienciaDF - [CN07] Compilando Master_CN07_20261019_124919.dss
+2026-10-28 11:20:37 [INFO] DashboardResilienciaDF - [CN07] DP15: kW=75.00 | V(pu)={'A': 0.9248, 'B': 0.9594, 'C': 0.9457} -> FORA DA FAIXA
+2026-10-28 11:20:37 [INFO] DashboardResilienciaDF - [SHP] Compilando Master_SHP_Calibrado.dss
+2026-10-28 11:20:37 [INFO] DashboardResilienciaDF - [SHP] HBDF: kW=90.00 | V(pu)={'A': 0.9566, 'B': 0.9656, 'C': 0.9619} -> ADEQUADA
+2026-10-28 11:20:37 [INFO] DashboardResilienciaDF - [SHP] DP1: kW=97.50 | V(pu)={'A': 1.0138, 'B': 1.0158, 'C': 1.0157} -> ADEQUADA
+2026-10-28 11:20:37 [INFO] DashboardResilienciaDF - [TN08] 328 segmentos MT plotados na Zona 1.
+2026-10-28 11:20:37 [INFO] DashboardResilienciaDF - [CN07] 431 segmentos MT plotados na Zona 1.
+2026-10-28 11:20:37 [INFO] DashboardResilienciaDF - [SHP] 463 segmentos MT plotados na Zona 2.
+2026-10-28 11:20:38 [INFO] DashboardResilienciaDF - SCRIPT 18 CONCLUÍDO COM SUCESSO.

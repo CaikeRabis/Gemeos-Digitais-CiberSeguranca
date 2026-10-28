@@ -1,0 +1,28 @@
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - ================================================================================
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - INICIANDO SCRIPT 17: CORREÇÃO GEOGRÁFICA DA ASA SUL (RUN_TAG=20261028_110652)
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - ================================================================================
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - Buscoords selecionado: Buscoords_SHP_20261028_101044.dss
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - Master selecionado:    Master_SHP_20261028_101044.dss
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - GeoPackage selecionado:geo_shp_20261028_101044.gpkg
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - --------------------------------------------------------------------------------
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - ETAPA 1: ATUALIZAÇÃO DO ARQUIVO BUSCOORDS COM GROUND TRUTH GEOGRÁFICO
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - --------------------------------------------------------------------------------
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - Arquivo Buscoords Original: Buscoords_SHP_20261028_101044.dss
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - Backup do Buscoords original criado: Buscoords_SHP_20261028_101044.dss.bak
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - Barramento HBDF localizado (SHP_HP03_9195_BSB040): Antigo=(-15.821826, -47.925235) -> Novo=(-15.798300, -47.892100)
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - Barramento 1ª DP localizado (SHP_HP04_9025_BSB27A): Antigo=(-15.834658, -47.939720) -> Novo=(-15.834300, -47.939500)
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - Arquivo Buscoords Calibrado gravado com sucesso: Buscoords_SHP_Calibrado.dss (67,598 bytes)
+2026-10-28 11:06:52 [INFO] CorrecaoGeograficaAsaSul - Cópia histórica gravada em: Buscoords_SHP_Calibrado_20261028_110652.dss
+2026-10-28 11:06:53 [INFO] CorrecaoGeograficaAsaSul - Arquivo Master Calibrado gravado com sucesso: Master_SHP_Calibrado.dss
+2026-10-28 11:06:53 [INFO] CorrecaoGeograficaAsaSul - Executando fluxo de potência para extração de métricas elétricas: Master_SHP_Calibrado.dss
+2026-10-28 11:06:53 [INFO] CorrecaoGeograficaAsaSul - Carregando camada de Média Tensão (linhas_mt_ssdmt) do GeoPackage...
+2026-10-28 11:06:57 [INFO] CorrecaoGeograficaAsaSul - Camada MT carregada: 463 trechos primários.
+2026-10-28 11:06:57 [INFO] CorrecaoGeograficaAsaSul - --------------------------------------------------------------------------------
+2026-10-28 11:06:57 [INFO] CorrecaoGeograficaAsaSul - ETAPA 2: REGERAÇÃO DO MAPA INTERATIVO (CENTRO: SMHS / HOSPITAL DE BASE)
+2026-10-28 11:06:57 [INFO] CorrecaoGeograficaAsaSul - --------------------------------------------------------------------------------
+2026-10-28 11:06:58 [INFO] CorrecaoGeograficaAsaSul - Novo Mapa Interativo Corrigido salvo com sucesso: Mapa_Interativo_SHP_Corrigido.html (396,182 bytes)
+2026-10-28 11:06:58 [INFO] CorrecaoGeograficaAsaSul - Dados estruturados salvos em: laudo_correcao_geografica_asa_sul_20261028_110652.json
+2026-10-28 11:06:58 [INFO] CorrecaoGeograficaAsaSul - Painel de confirmação impresso no console.
+2026-10-28 11:06:58 [INFO] CorrecaoGeograficaAsaSul - ================================================================================
+2026-10-28 11:06:58 [INFO] CorrecaoGeograficaAsaSul - SCRIPT 17: CORREÇÃO GEOGRÁFICA E REGERAÇÃO DO MAPA CONCLUÍDAS COM SUCESSO!
+2026-10-28 11:06:58 [INFO] CorrecaoGeograficaAsaSul - ================================================================================

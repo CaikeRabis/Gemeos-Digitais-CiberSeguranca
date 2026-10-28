@@ -1,0 +1,87 @@
+2026-10-19 12:09:30,789 [INFO] ================================================================================
+2026-10-19 12:09:30,789 [INFO] INICIANDO SCRIPT DE AUDITORIA VISUAL DO HRC (GROUND TRUTH)
+2026-10-19 12:09:30,790 [INFO] Timestamp Local: 2026-10-19 12:09:30
+2026-10-19 12:09:30,790 [INFO] ================================================================================
+2026-10-19 12:09:30,792 [INFO] Arquivo Master selecionado:     Master_TN08_20261019_104122.dss
+2026-10-19 12:09:30,792 [INFO] Arquivo GeoPackage selecionado: geo_tn08_20261018_134703.gpkg
+2026-10-19 12:09:30,792 [INFO] Arquivo Buscoords selecionado:  Buscoords_TN08_20261019_093214.dss
+2026-10-19 12:09:30,793 [INFO] ================================================================================
+2026-10-19 12:09:30,793 [INFO] PARTE 1: AUDITORIA ELÉTRICA NO OPENDSS E LIMITES PRODIST (ANEEL)
+2026-10-19 12:09:30,793 [INFO] ================================================================================
+2026-10-19 12:09:30,793 [INFO] Carregando Master DSS: Master_TN08_20261019_104122.dss
+2026-10-19 12:09:31,103 [INFO] Dashboard PRODIST impresso no terminal com sucesso.
+2026-10-19 12:09:31,103 [INFO] Lendo camada de linhas de média tensão (SSDMT) do GeoPackage...
+2026-10-19 12:09:31,287 [INFO] Camada MT carregada: 'linhas_mt_ssdmt' (328 segmentos).
+2026-10-19 12:09:31,289 [INFO] Coordenada geográfica do HRC: Longitude=-48.097722, Latitude=-15.814806
+2026-10-19 12:09:31,290 [INFO] ================================================================================
+2026-10-19 12:09:31,290 [INFO] PARTE 2.1: GERANDO MAPA ESTÁTICO DE ALTA RESOLUÇÃO (MATPLOTLIB)
+2026-10-19 12:09:31,290 [INFO] ================================================================================
+2026-10-19 12:09:32,303 [INFO] Arquivo PNG gerado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Auditoria_HRC.png
+2026-10-19 12:09:32,304 [INFO] ================================================================================
+2026-10-19 12:09:32,304 [INFO] PARTE 2.2: GERANDO MAPA INTERATIVO GEORREFERENCIADO (FOLIUM)
+2026-10-19 12:09:32,304 [INFO] ================================================================================
+2026-10-19 12:09:32,971 [INFO] Arquivo HTML gerado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Interativo_HRC.html
+2026-10-19 12:09:32,972 [INFO] ================================================================================
+2026-10-19 12:09:32,972 [INFO] CONFIRMAÇÃO FORMAL DE GERAÇÃO DOS ARQUIVOS FÍSICOS:
+2026-10-19 12:09:32,976 [INFO]   [1] PNG:  C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Auditoria_HRC.png (Existe: True | Tamanho: 427005 bytes)
+2026-10-19 12:09:32,978 [INFO]   [2] HTML: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Interativo_HRC.html (Existe: True | Tamanho: 269073 bytes)
+2026-10-19 12:09:32,979 [INFO] ================================================================================
+2026-10-19 12:09:32,979 [INFO] AUDITORIA VISUAL DO HRC CONCLUÍDA COM TOTAL SUCESSO!
+2026-10-19 12:19:54,854 [INFO] ================================================================================
+2026-10-19 12:19:54,855 [INFO] INICIANDO SCRIPT DE AUDITORIA VISUAL DO HRC (GROUND TRUTH)
+2026-10-19 12:19:54,856 [INFO] Timestamp Local: 2026-10-19 12:19:54
+2026-10-19 12:19:54,856 [INFO] ================================================================================
+2026-10-19 12:19:54,857 [INFO] Arquivo Master selecionado:     Master_TN08_20261019_104122.dss
+2026-10-19 12:19:54,857 [INFO] Arquivo GeoPackage selecionado: geo_tn08_20261018_134703.gpkg
+2026-10-19 12:19:54,857 [INFO] Arquivo Buscoords selecionado:  Buscoords_TN08_20261019_093214.dss
+2026-10-19 12:19:54,857 [INFO] ================================================================================
+2026-10-19 12:19:54,857 [INFO] PARTE 1: AUDITORIA ELÉTRICA NO OPENDSS E LIMITES PRODIST (ANEEL)
+2026-10-19 12:19:54,857 [INFO] ================================================================================
+2026-10-19 12:19:54,857 [INFO] Carregando Master DSS: Master_TN08_20261019_104122.dss
+2026-10-19 12:19:55,058 [INFO] Dashboard PRODIST impresso no terminal com sucesso.
+2026-10-19 12:19:55,058 [INFO] Lendo camada de linhas de média tensão (SSDMT) do GeoPackage...
+2026-10-19 12:19:55,285 [INFO] Camada MT carregada: 'linhas_mt_ssdmt' (328 segmentos).
+2026-10-19 12:19:55,286 [INFO] Coordenada geográfica do HRC: Longitude=-48.097722, Latitude=-15.814806
+2026-10-19 12:19:55,286 [INFO] ================================================================================
+2026-10-19 12:19:55,286 [INFO] PARTE 2.1: GERANDO MAPA ESTÁTICO DE ALTA RESOLUÇÃO (MATPLOTLIB)
+2026-10-19 12:19:55,287 [INFO] ================================================================================
+2026-10-19 12:19:56,092 [INFO] Arquivo PNG gerado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Auditoria_HRC.png
+2026-10-19 12:19:56,092 [INFO] ================================================================================
+2026-10-19 12:19:56,092 [INFO] PARTE 2.2: GERANDO MAPA INTERATIVO GEORREFERENCIADO (FOLIUM)
+2026-10-19 12:19:56,092 [INFO] ================================================================================
+2026-10-19 12:19:56,423 [INFO] Arquivo HTML gerado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Interativo_HRC.html
+2026-10-19 12:19:56,423 [INFO] ================================================================================
+2026-10-19 12:19:56,423 [INFO] CONFIRMAÇÃO FORMAL DE GERAÇÃO DOS ARQUIVOS FÍSICOS:
+2026-10-19 12:19:56,424 [INFO]   [1] PNG:  C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Auditoria_HRC.png (Existe: True | Tamanho: 427005 bytes)
+2026-10-19 12:19:56,426 [INFO]   [2] HTML: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Interativo_HRC.html (Existe: True | Tamanho: 269506 bytes)
+2026-10-19 12:19:56,426 [INFO] ================================================================================
+2026-10-19 12:19:56,426 [INFO] AUDITORIA VISUAL DO HRC CONCLUÍDA COM TOTAL SUCESSO!
+2026-10-19 12:30:19,173 [INFO] ================================================================================
+2026-10-19 12:30:19,173 [INFO] INICIANDO SCRIPT DE AUDITORIA VISUAL DO HRC (GROUND TRUTH)
+2026-10-19 12:30:19,174 [INFO] Timestamp Local: 2026-10-19 12:30:19
+2026-10-19 12:30:19,174 [INFO] ================================================================================
+2026-10-19 12:30:19,175 [INFO] Arquivo Master selecionado:     Master_TN08_20261019_104122.dss
+2026-10-19 12:30:19,175 [INFO] Arquivo GeoPackage selecionado: geo_tn08_20261018_134703.gpkg
+2026-10-19 12:30:19,175 [INFO] Arquivo Buscoords selecionado:  Buscoords_TN08_20261019_093214.dss
+2026-10-19 12:30:19,175 [INFO] ================================================================================
+2026-10-19 12:30:19,175 [INFO] PARTE 1: AUDITORIA ELÉTRICA NO OPENDSS E LIMITES PRODIST (ANEEL)
+2026-10-19 12:30:19,176 [INFO] ================================================================================
+2026-10-19 12:30:19,176 [INFO] Carregando Master DSS: Master_TN08_20261019_104122.dss
+2026-10-19 12:30:19,398 [INFO] Dashboard PRODIST impresso no terminal com sucesso.
+2026-10-19 12:30:19,398 [INFO] Lendo camada de linhas de média tensão (SSDMT) do GeoPackage...
+2026-10-19 12:30:19,508 [INFO] Camada MT carregada: 'linhas_mt_ssdmt' (328 segmentos).
+2026-10-19 12:30:19,510 [INFO] Coordenada geográfica do HRC: Longitude=-48.097722, Latitude=-15.814806
+2026-10-19 12:30:19,510 [INFO] ================================================================================
+2026-10-19 12:30:19,510 [INFO] PARTE 2.1: GERANDO MAPA ESTÁTICO DE ALTA RESOLUÇÃO (MATPLOTLIB)
+2026-10-19 12:30:19,510 [INFO] ================================================================================
+2026-10-19 12:30:20,212 [INFO] Arquivo PNG gerado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Auditoria_HRC.png
+2026-10-19 12:30:20,212 [INFO] ================================================================================
+2026-10-19 12:30:20,212 [INFO] PARTE 2.2: GERANDO MAPA INTERATIVO GEORREFERENCIADO (FOLIUM)
+2026-10-19 12:30:20,212 [INFO] ================================================================================
+2026-10-19 12:30:20,481 [INFO] Arquivo HTML gerado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Interativo_HRC.html
+2026-10-19 12:30:20,481 [INFO] ================================================================================
+2026-10-19 12:30:20,481 [INFO] CONFIRMAÇÃO FORMAL DE GERAÇÃO DOS ARQUIVOS FÍSICOS:
+2026-10-19 12:30:20,482 [INFO]   [1] PNG:  C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Auditoria_HRC.png (Existe: True | Tamanho: 427005 bytes)
+2026-10-19 12:30:20,484 [INFO]   [2] HTML: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Interativo_HRC.html (Existe: True | Tamanho: 269486 bytes)
+2026-10-19 12:30:20,484 [INFO] ================================================================================
+2026-10-19 12:30:20,484 [INFO] AUDITORIA VISUAL DO HRC CONCLUÍDA COM TOTAL SUCESSO!

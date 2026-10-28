@@ -1,0 +1,31 @@
+2026-10-28 10:30:15,734 [INFO] ================================================================================
+2026-10-28 10:30:15,734 [INFO] INICIANDO AUDITORIA VISUAL E ELÉTRICA — ZONA 2 (SUBESTAÇÃO SHP / SPOF)
+2026-10-28 10:30:15,735 [INFO] RUN_TAG: 20261028_103015
+2026-10-28 10:30:15,735 [INFO] ================================================================================
+2026-10-28 10:30:15,736 [INFO] Master OpenDSS selecionado:   Master_SHP_20261028_101044.dss
+2026-10-28 10:30:15,736 [INFO] GeoPackage selecionado:       geo_shp_20261028_101044.gpkg
+2026-10-28 10:30:15,737 [INFO] Buscoords selecionado:        Buscoords_SHP_20261028_101044.dss
+2026-10-28 10:30:15,737 [INFO] ================================================================================
+2026-10-28 10:30:15,737 [INFO] PARTE 1: AUDITORIA ELÉTRICA NO OPENDSS E LIMITES PRODIST (ZONA 2 - ASA SUL)
+2026-10-28 10:30:15,737 [INFO] ================================================================================
+2026-10-28 10:30:15,737 [INFO] Carregando Master DSS: Master_SHP_20261028_101044.dss
+2026-10-28 10:30:15,791 [INFO] Dashboard PRODIST da Subestação SHP impresso no terminal com sucesso.
+2026-10-28 10:30:15,791 [INFO] Carregando camada de Média Tensão (linhas_mt_ssdmt) do GeoPackage...
+2026-10-28 10:30:15,878 [INFO] Camada MT carregada com sucesso: 463 trechos primários.
+2026-10-28 10:30:15,880 [INFO] Coordenada da Subestação SHP: Lon=-47.943180, Lat=-15.841081
+2026-10-28 10:30:15,880 [INFO] Coordenada do HBDF (HP03):     Lon=-47.925235, Lat=-15.821826
+2026-10-28 10:30:15,880 [INFO] Coordenada da 1ª DP (HP04):    Lon=-47.939720, Lat=-15.834658
+2026-10-28 10:30:15,880 [INFO] ================================================================================
+2026-10-28 10:30:15,880 [INFO] PARTE 2.1: GERANDO MAPA ESTÁTICO DE ALTA RESOLUÇÃO (MATPLOTLIB 300 DPI)
+2026-10-28 10:30:15,881 [INFO] ================================================================================
+2026-10-28 10:30:18,324 [INFO] Mapa estático gravado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Auditoria_SHP_SPOF.png (841,916 bytes)
+2026-10-28 10:30:18,324 [INFO] ================================================================================
+2026-10-28 10:30:18,324 [INFO] PARTE 2.2: GERANDO MAPA INTERATIVO GEORREFERENCIADO (FOLIUM / ESRI SATELLITE)
+2026-10-28 10:30:18,324 [INFO] ================================================================================
+2026-10-28 10:30:18,738 [INFO] Mapa interativo gravado com sucesso: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Interativo_SHP_SPOF.html (393,122 bytes)
+2026-10-28 10:30:18,739 [INFO] ================================================================================
+2026-10-28 10:30:18,739 [INFO] CONFIRMAÇÃO FORMAL DE GERAÇÃO DOS ARTEFATOS VISUAIS DA ZONA 2:
+2026-10-28 10:30:18,740 [INFO]   [1] PNG:  C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Auditoria_SHP_SPOF.png (Existe: True | Tamanho: 841,916 bytes)
+2026-10-28 10:30:18,741 [INFO]   [2] HTML: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\Mapa_Interativo_SHP_SPOF.html (Existe: True | Tamanho: 393,122 bytes)
+2026-10-28 10:30:18,741 [INFO] ================================================================================
+2026-10-28 10:30:18,741 [INFO] AUDITORIA VISUAL E ELÉTRICA DA ZONA 2 (ASA SUL / SPOF) CONCLUÍDA COM SUCESSO!

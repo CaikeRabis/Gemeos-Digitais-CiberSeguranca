@@ -1,0 +1,18 @@
+2026-10-15 17:30:49 | INFO | Início do teste de hipóteses (somente leitura).
+2026-10-15 17:30:51 | INFO | Camada SUB -> SUB
+2026-10-15 17:30:51 | INFO | Camada SSDMT -> SSDMT
+2026-10-15 17:30:51 | INFO | Camada SSDBT -> SSDBT
+2026-10-15 17:30:51 | INFO | Camada UNTRMT -> UNTRMT
+2026-10-15 17:30:51 | INFO | Camada UCMT -> UCMT_tab
+2026-10-15 17:30:51 | INFO | Camada UCBT -> UCBT_tab
+2026-10-15 17:30:51 | INFO | Camada PONNOT -> PONNOT
+2026-10-15 17:30:51 | INFO | Camada CTMT -> CTMT
+2026-10-15 17:30:51 | INFO | Camada UCAT -> UCAT_tab
+2026-10-15 17:30:52 | INFO | Nome do hospital (Hospital Regional de Ceilândia (HRC)) confirmado no CSV.
+2026-10-15 17:30:52 | INFO | PONNOT na janela (buffer + 1500 m): 42194
+2026-10-15 17:30:53 | INFO | H1=8 H2=19 H4=592 | MT com CNAE86 e PP/SP: 0
+2026-10-15 17:30:53 | INFO | Polígonos SUB que contêm o HRC: 0 | SUB lidos: 52
+2026-10-15 17:30:53 | INFO | Circuitos H5: ['CS05', 'TN08', 'TN10'] | SUB de referência (SUB dos 20 segmentos SSDMT mais próximos (nenhum polígono SUB contém o HRC)): ['SCS', 'STN']
+2026-10-15 17:30:53 | INFO | CSVs gravados: hipoteses_h1_h4_ucs_candidatas_hrc.csv, hipoteses_h5_subestacao_e_circuitos_hrc.csv, distribuicao_clas_sub_entorno_hrc.csv
+2026-10-15 17:30:55 | INFO | Relatório salvo em C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\relatorio_hipoteses_alimentador_hrc.txt
+2026-10-15 17:30:55 | INFO | Concluído em 6.4 s.

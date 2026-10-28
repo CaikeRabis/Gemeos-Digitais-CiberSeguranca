@@ -1,0 +1,45 @@
+2026-10-28 10:10:44,912 [INFO] Iniciando pipeline de extração, modelagem OpenDSS e baseline elétrico da Asa Sul...
+2026-10-28 10:10:44,912 [INFO] ================================================================================
+2026-10-28 10:10:44,912 [INFO] INICIANDO EXTRAÇÃO E CONVERSÃO OPENDSS — SUBESTAÇÃO SHP (HP03 / HP04)
+2026-10-28 10:10:44,922 [INFO] RUN_TAG: 20261028_101044
+2026-10-28 10:10:44,922 [INFO] ================================================================================
+2026-10-28 10:10:44,929 [INFO] BDGD Bruta:           Neoenergia_Brasilia_5160_2025-12-31_V11_20260821-0031.gdb
+2026-10-28 10:10:44,935 [INFO] UCMT Consolidada:     UCMT_consolidada_20261018_131447.csv
+2026-10-28 10:10:44,935 [INFO] UCBT Consolidada:     UCBT_consolidada_20261018_131447.csv
+2026-10-28 10:10:44,936 [INFO] Extraindo trechos de Média Tensão (SSDMT) para HP03 e HP04...
+2026-10-28 10:10:49,822 [INFO] SSDMT carregado: 463 segmentos primários.
+2026-10-28 10:10:49,822 [INFO] Extraindo trechos de Baixa Tensão (SSDBT) para HP03 e HP04...
+2026-10-28 10:10:58,858 [INFO] SSDBT carregado: 935 segmentos secundários.
+2026-10-28 10:10:58,858 [INFO] Extraindo transformadores MT/BT (UNTRMT) para HP03 e HP04...
+2026-10-28 10:10:59,829 [INFO] UNTRMT carregado: 54 transformadores de distribuição.
+2026-10-28 10:10:59,829 [INFO] Extraindo chaves seccionadoras (UNSEMT) para HP03 e HP04...
+2026-10-28 10:11:01,033 [INFO] UNSEMT carregado: 125 chaves seccionadoras.
+2026-10-28 10:11:01,033 [INFO] Carregando catálogo de condutores (SEGCON)...
+2026-10-28 10:11:01,386 [INFO] Carregando parâmetros de transformadores (EQTRMT)...
+2026-10-28 10:11:03,348 [INFO] Carregando UCs de Média Tensão (UCMT)...
+2026-10-28 10:11:03,985 [INFO] UCMT conectadas a HP03/HP04: 47 UCs.
+2026-10-28 10:11:03,985 [INFO] Carregando UCs de Baixa Tensão (UCBT) com Fator de Coincidência...
+2026-10-28 10:11:18,574 [INFO] UCBT conectadas a HP03/HP04: 686 UCs.
+2026-10-28 10:11:18,851 [INFO] Lines gravado: Lines_SHP_20261028_101044.dss (1400 segmentos)
+2026-10-28 10:11:18,859 [INFO] Transformers gravado: Transformers_SHP_20261028_101044.dss (54 trafos)
+2026-10-28 10:11:18,872 [INFO] Switches gravado: Switches_SHP_20261028_101044.dss (122 fechadas, 3 abertas)
+2026-10-28 10:11:18,938 [INFO] Demanda Total Recalculada em BT para SHP (HP03/HP04): 1074.12 kW (1.074 MW)
+2026-10-28 10:11:18,974 [INFO] Loads gravado: Loads_SHP_20261028_101044.dss (47 UCMT, 686 UCBT)
+2026-10-28 10:11:18,978 [INFO] Buscoords gravado: Buscoords_SHP_20261028_101044.dss (1575 barras)
+2026-10-28 10:11:18,979 [INFO] Master gravado com sucesso: Master_SHP_20261028_101044.dss
+2026-10-28 10:11:18,979 [INFO] Exportando camadas espaciais para geo_shp.gpkg...
+2026-10-28 10:11:21,818 [INFO] Created 463 records
+2026-10-28 10:11:21,964 [INFO] Created 935 records
+2026-10-28 10:11:22,073 [INFO] Created 54 records
+2026-10-28 10:11:22,202 [INFO] GeoPackage gravado: geo_shp_20261028_101044.gpkg
+2026-10-28 10:11:22,556 [INFO] ================================================================================
+2026-10-28 10:11:22,556 [INFO] EXECUTANDO FLUXO DE POTÊNCIA E AUDITORIA PRODIST (ZONA 2 - ASA SUL)
+2026-10-28 10:11:22,556 [INFO] ================================================================================
+2026-10-28 10:11:22,556 [INFO] Compilando circuito: Master_SHP_20261028_101044.dss
+2026-10-28 10:11:22,885 [INFO] Fluxo de Potência convergiu com sucesso em 4 iterações (Snapshot Newton-Raphson)!
+2026-10-28 10:11:22,904 [INFO] Dashboard PRODIST da Subestação SHP impresso no terminal com sucesso.
+2026-10-28 10:11:22,904 [INFO] ================================================================================
+2026-10-28 10:11:22,904 [INFO] EXTRAÇÃO E BASELINE ELÉTRICO DA ZONA 2 (ASA SUL) CONCLUÍDOS COM TOTAL SUCESSO!
+2026-10-28 10:11:22,904 [INFO] Master OpenDSS: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\opendss\Master_SHP_20261028_101044.dss
+2026-10-28 10:11:22,904 [INFO] GeoPackage:     C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\opendss\geo_shp_20261028_101044.gpkg
+2026-10-28 10:11:22,905 [INFO] ================================================================================

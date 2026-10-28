@@ -1,0 +1,48 @@
+2026-10-18 11:26:14 | INFO | Iniciando analise de complementaridade dos ambiguos (RUN_TAG=20261018_112614)
+2026-10-18 11:26:14 | INFO | Arquivo de entrada: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\ambiguos_cascata_linhas_20261017_180249.csv
+2026-10-18 11:26:14 | INFO | Linhas carregadas do CSV de entrada: 205
+2026-10-18 11:26:14 | INFO | === Passo 1: Aplicacao da cascata R3 sobre os grupos ===
+2026-10-18 11:26:14 | INFO | Resultado da cascata: resolvidos=0, ambiguos=102, perdidos=0
+2026-10-18 11:26:14 | INFO | Confirmacao Passo 1: 102 grupos ambiguos reproduzidos com sucesso (205 linhas remanescentes)
+2026-10-18 11:26:14 | INFO | === Passo 2.1: Tratamento das 24 series de consumo (ENE e DEM) ===
+2026-10-18 11:26:14 | INFO | Coluna ENE_01: 0 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna ENE_02: 0 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna ENE_03: 0 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna ENE_04: 0 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna ENE_05: 0 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna ENE_06: 0 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna ENE_07: 0 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna ENE_08: 0 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna ENE_09: 0 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna ENE_10: 0 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna ENE_11: 0 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna ENE_12: 0 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna DEM_01: 205 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna DEM_02: 205 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna DEM_03: 205 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna DEM_04: 205 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna DEM_05: 205 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna DEM_06: 205 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna DEM_07: 205 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna DEM_08: 205 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna DEM_09: 205 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna DEM_10: 205 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna DEM_11: 205 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | Coluna DEM_12: 205 nulos/vazios tratados como zero | 0 valores nao convertidos
+2026-10-18 11:26:14 | INFO | === Passo 2.2 e 3: Comparacao de pares e analise topologica ===
+2026-10-18 11:26:15 | INFO | === RESULTADOS CONSOLIDADOS (Passo 4) ===
+2026-10-18 11:26:15 | INFO | [Passo 4 - Classes de Consumo (Criterio Estrito de Identico)] identico_consumo = 27.0 (Os 24 meses sao iguais entre A e B (todos os 27 tem 24 meses zerados em ambas as linhas))
+2026-10-18 11:26:15 | INFO | [Passo 4 - Classes de Consumo (Criterio Estrito de Identico)] zerado = 23.0 (Uma linha com 24 meses zerados/nulos e outra linha com consumo positivo)
+2026-10-18 11:26:15 | INFO | [Passo 4 - Classes de Consumo (Criterio Estrito de Identico)] sobreposto_diferente = 11.0 (Sobreposicao > 0 meses e valores nao identicos)
+2026-10-18 11:26:15 | INFO | [Passo 4 - Classes de Consumo (Criterio Estrito de Identico)] complementar = 41.0 (Sobreposicao = 0 meses e ambas as linhas possuem ao menos um mes positivo cada)
+2026-10-18 11:26:15 | INFO | [Passo 4 - Classes de Consumo (Criterio Alternativo Zerado Precedente)] zerado_amplo = 50.0 (Pelo menos uma linha com 24 meses zerados (soma de 23 com uma linha + 27 com ambas))
+2026-10-18 11:26:15 | INFO | [Passo 4 - Classes de Consumo (Criterio Alternativo Zerado Precedente)] identico_consumo_se_zerado_preceder = 0.0 (Nenhum par possui consumo identico positivo nao-zerado)
+2026-10-18 11:26:15 | INFO | [Passo 4 - Topologia] grupos_topologia_divergente = 11.0 (Ao menos uma diferenca em PAC, RAMAL, PN_CON ou UNI_TR_MT no mesmo par)
+2026-10-18 11:26:15 | INFO | [Passo 4 - Topologia] grupos_cep_diferente_sem_pac_mudar = 1.0 (Grupos com CEP diferente entre linhas mas com PAC identico)
+2026-10-18 11:26:15 | INFO | [Passo 4 - Sobreposicao em Sobreposto Diferente] media_meses_sobrepostos = 11.82 (Media de meses positivos simultaneos entre os 11 grupos sobreposto_diferente)
+2026-10-18 11:26:15 | INFO | [Passo 4 - Sobreposicao em Sobreposto Diferente] maximo_meses_sobrepostos = 12.0 (Maximo de meses positivos simultaneos entre os 11 grupos sobreposto_diferente)
+2026-10-18 11:26:15 | INFO | CSV de grupos gravado: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\complementaridade_grupos_20261018_112614.csv
+2026-10-18 11:26:15 | INFO | CSV de pares gravado: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\complementaridade_pares_20261018_112614.csv
+2026-10-18 11:26:15 | INFO | CSV de resumo gravado: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\complementaridade_resumo_20261018_112614.csv
+2026-10-18 11:26:15 | INFO | CSV de topologia gravado: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\topologia_divergente_20261018_112614.csv
+2026-10-18 11:26:15 | INFO | Processamento concluido com sucesso.

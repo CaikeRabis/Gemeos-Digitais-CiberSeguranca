@@ -1,0 +1,32 @@
+2026-10-28 10:42:46 [INFO] CalibracaoGroundTruthHRC - ================================================================================
+2026-10-28 10:42:46 [INFO] CalibracaoGroundTruthHRC - INICIANDO SCRIPT 16: CALIBRAÇÃO GROUND TRUTH DO HRC (RUN_TAG=20261028_104246)
+2026-10-28 10:42:46 [INFO] CalibracaoGroundTruthHRC - ================================================================================
+2026-10-28 10:42:46 [INFO] CalibracaoGroundTruthHRC - Arquivos base identificados: Loads_TN08_20261019_104122.dss | Master_TN08_20261019_104122.dss
+2026-10-28 10:42:46 [INFO] CalibracaoGroundTruthHRC - --------------------------------------------------------------------------------
+2026-10-28 10:42:46 [INFO] CalibracaoGroundTruthHRC - SIMULAÇÃO 1: BASELINE NOMINAL PRÉ-CALIBRAÇÃO (DEMANDA ANTERIOR = 110.22 kW)
+2026-10-28 10:42:46 [INFO] CalibracaoGroundTruthHRC - --------------------------------------------------------------------------------
+2026-10-28 10:42:46 [INFO] CalibracaoGroundTruthHRC - Compilando circuito OpenDSS: Master_TN08_20261019_104122.dss
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Fluxo de Potência convergiu com sucesso em 4 iterações.
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Pré-Calibração: Tensão HRC Fase A = 1.0053 pu | Perdas = 306.43 kW
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - --------------------------------------------------------------------------------
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - ETAPA 1: ATUALIZAÇÃO DO MODELO OPENDSS COM GROUND TRUTH (LAI / NEOENERGIA)
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - --------------------------------------------------------------------------------
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Arquivo Loads Original: Loads_TN08_20261019_104122.dss
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Arquivo Master Original: Master_TN08_20261019_104122.dss
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Linha de carga do HRC localizada e atualizada com sucesso no arquivo de Loads!
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Arquivo de cargas calibrado salvo em: Loads_TN08_Calibrado.dss (Tamanho: 536,915 bytes)
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Cópia com timestamp salva em: Loads_TN08_Calibrado_20261028_104246.dss
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Arquivo Master calibrado salvo em: Master_TN08_Calibrado.dss (Tamanho: 8,190 bytes)
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Cópia com timestamp salva em: Master_TN08_Calibrado_20261028_104246.dss
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - --------------------------------------------------------------------------------
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - SIMULAÇÃO 2: MODELO CALIBRADO COM GROUND TRUTH (DEMANDA REAL = 460.80 kW)
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - --------------------------------------------------------------------------------
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Compilando circuito OpenDSS: Master_TN08_Calibrado.dss
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Fluxo de Potência convergiu com sucesso em 4 iterações.
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Pós-Calibração: Tensão HRC Fase A = 1.0022 pu | Perdas = 316.92 kW
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Painel de Auditoria Calibrado impresso no console com sucesso.
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Dados estruturados salvos em JSON: laudo_calibracao_ground_truth_hrc_20261028_104246.json
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - Laudo técnico formal em Markdown gerado em: 3_Laudo_Calibracao_Ground_Truth_HRC.md
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - ================================================================================
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - CALIBRAÇÃO GROUND TRUTH DO HRC E AUDITORIA PRODIST FINALIZADAS COM SUCESSO!
+2026-10-28 10:42:47 [INFO] CalibracaoGroundTruthHRC - ================================================================================

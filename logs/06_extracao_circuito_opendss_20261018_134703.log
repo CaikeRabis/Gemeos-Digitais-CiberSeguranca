@@ -1,0 +1,51 @@
+2026-10-18 13:47:03 | INFO | ================================================================================
+2026-10-18 13:47:03 | INFO | INICIANDO ETAPA E5: EXTRACAO DE ATIVOS E MODELAGEM OPENDSS DO TN08 (RUN_TAG=20261018_134703)
+2026-10-18 13:47:03 | INFO | ================================================================================
+2026-10-18 13:47:03 | INFO | Base BDGD de origem: Neoenergia_Brasilia_5160_2025-12-31_V11_20260821-0031.gdb
+2026-10-18 13:47:03 | INFO | Base UCMT consolidada: UCMT_consolidada_20261018_131447.csv
+2026-10-18 13:47:03 | INFO | Base UCBT consolidada: UCBT_consolidada_20261018_131447.csv
+2026-10-18 13:47:03 | INFO | Carregando metadados do circuito CTMT TN08 e Subestacao STN...
+2026-10-18 13:47:03 | INFO | Alimentador: TN08 | Subestacao: STN | PAC Inicial: TN_ALTN08 | Tensao Operacao: 13.8 kV
+2026-10-18 13:47:03 | INFO | Extraindo segmentos de Media Tensao (SSDMT) para CTMT == 'TN08'...
+2026-10-18 13:47:05 | INFO | SSDMT extraido: 328 trechos de Media Tensao.
+2026-10-18 13:47:05 | INFO | Extraindo segmentos de Baixa Tensao (SSDBT) para CTMT == 'TN08'...
+2026-10-18 13:47:10 | INFO | SSDBT extraido: 885 trechos de Baixa Tensao.
+2026-10-18 13:47:10 | INFO | Extraindo transformadores de distribuicao (UNTRMT) para CTMT == 'TN08'...
+2026-10-18 13:47:10 | INFO | UNTRMT extraido: 60 transformadores de distribuicao.
+2026-10-18 13:47:10 | INFO | Extraindo parametros eletricos de transformadores (EQTRMT)...
+2026-10-18 13:47:12 | INFO | Extraindo catalogo de cabos e condutores (SEGCON)...
+2026-10-18 13:47:12 | INFO | Carregando UCs de Media Tensao (UCMT)...
+2026-10-18 13:47:12 | INFO | UCMT conectadas ao TN08: 22 UCs.
+2026-10-18 13:47:12 | INFO | Carregando UCs de Baixa Tensao (UCBT)...
+2026-10-18 13:47:22 | INFO | UCBT conectadas ao TN08: 5046 UCs.
+2026-10-18 13:47:22 | INFO | Mapeando LineCodes de condutores de MT e BT...
+2026-10-18 13:47:22 | INFO | Gerando arquivo de linhas de transmissao e distribuicao...
+2026-10-18 13:47:22 | INFO | Lines gravado com sucesso: Lines_TN08_20261018_134703.dss (1213 linhas)
+2026-10-18 13:47:22 | INFO | Gerando arquivo de transformadores MT/BT...
+2026-10-18 13:47:22 | INFO | Transformers gravado com sucesso: Transformers_TN08_20261018_134703.dss (60 transformadores)
+2026-10-18 13:47:22 | INFO | Gerando arquivo de cargas eletricas (UCMT e UCBT)...
+2026-10-18 13:47:23 | INFO | Loads gravado com sucesso: Loads_TN08_20261018_134703.dss (22 UCMT, 5046 UCBT)
+2026-10-18 13:47:23 | INFO |   * UCBT conectadas no poste da rede BT: 4989 (98.9%)
+2026-10-18 13:47:23 | INFO |   * UCBT conectadas no barramento do transformador: 57 (1.1%)
+2026-10-18 13:47:23 | INFO | Exportando coordenadas de 1273 barras...
+2026-10-18 13:47:23 | INFO | Buscoords gravado com sucesso: Buscoords_TN08_20261018_134703.dss (1273 barras)
+2026-10-18 13:47:23 | INFO | Gerando arquivo Master_TN08.dss...
+2026-10-18 13:47:23 | INFO | Master gravado com sucesso: Master_TN08_20261018_134703.dss
+2026-10-18 13:47:23 | INFO | Salvando camadas espaciais no GeoPackage geo_tn08.gpkg...
+2026-10-18 13:47:23 | INFO | GeoPackage gravado com sucesso: geo_tn08_20261018_134703.gpkg
+2026-10-18 13:47:23 | INFO | ================================================================================
+2026-10-18 13:47:23 | INFO | RESUMO DA EXTRACAO E CONVERSAO DO CIRCUITO TN08 (OPENDSS):
+2026-10-18 13:47:23 | INFO | ================================================================================
+2026-10-18 13:47:23 | INFO |   * Subestacao: STN (138 kV) -> Trafo T-1_STN (32 MVA, 138/13.8 kV)
+2026-10-18 13:47:23 | INFO |   * Segmentos de Média Tensão (SSDMT): 328 linhas
+2026-10-18 13:47:23 | INFO |   * Segmentos de Baixa Tensão (SSDBT): 885 linhas
+2026-10-18 13:47:23 | INFO |   * Total de Linhas: 1214 (inclui segmento da SE)
+2026-10-18 13:47:23 | INFO |   * Transformadores MT/BT (UNTRMT): 60 transformadores de distribuicao
+2026-10-18 13:47:23 | INFO |   * Total de Transformadores: 61 (inclui T-1_STN)
+2026-10-18 13:47:23 | INFO |   * Cargas de Media Tensao (UCMT): 22 UCs (com HRC Carga Prioritaria)
+2026-10-18 13:47:23 | INFO |   * Cargas de Baixa Tensao (UCBT): 5046 UCs
+2026-10-18 13:47:23 | INFO |   * Total de Cargas Convertidas: 5068 cargas
+2026-10-18 13:47:23 | INFO |   * Catalogo de Condutores (LineCodes): 38 codigos
+2026-10-18 13:47:23 | INFO |   * Barras Mapeadas com Coordenadas Geograficas: 1273 barras
+2026-10-18 13:47:23 | INFO | ================================================================================
+2026-10-18 13:47:23 | INFO | Etapa E5 (Extracao OpenDSS do TN08) concluida com exito.

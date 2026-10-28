@@ -1,0 +1,45 @@
+2026-10-17 16:23:05 | INFO | Iniciando execucao de 03h_amostra_grupos_duplicados | RUN_TAG=20261017_162305
+2026-10-17 16:23:05 | INFO | GDB de entrada localizado: Neoenergia_Brasilia_5160_2025-12-31_V11_20260821-0031.gdb
+2026-10-17 16:23:05 | INFO | === PASSO 1: Leitura de Metadados e Mapeamento de Colunas ===
+2026-10-17 16:23:06 | INFO | UCMT_tab: 76 colunas, 6275 feicoes
+2026-10-17 16:23:06 | INFO | UCBT_tab: 65 colunas, 1310713 feicoes
+2026-10-17 16:23:06 | INFO | Mapeamento case-insensitive para UCMT_tab (25 colunas mapeadas): {'COD_ID': 'COD_ID', 'PAC': 'PAC', 'PN_CON': 'PN_CON', 'CTMT': 'CTMT', 'SUB': 'SUB', 'ENE_01': 'ENE_01', 'ENE_02': 'ENE_02', 'ENE_03': 'ENE_03', 'ENE_04': 'ENE_04', 'ENE_05': 'ENE_05', 'ENE_06': 'ENE_06', 'ENE_07': 'ENE_07', 'ENE_08': 'ENE_08', 'ENE_09': 'ENE_09', 'ENE_10': 'ENE_10', 'ENE_11': 'ENE_11', 'ENE_12': 'ENE_12', 'DIC_01': 'DIC_01', 'FIC_01': 'FIC_01', 'DEM_01': 'DEM_01', 'DEM_CONT': 'DEM_CONT', 'SIT_ATIV': 'SIT_ATIV', 'DAT_CON': 'DAT_CON', 'CLAS_SUB': 'CLAS_SUB', 'CAR_INST': 'CAR_INST'}
+2026-10-17 16:23:06 | INFO | Mapeamento case-insensitive para UCBT_tab (25 colunas mapeadas): {'COD_ID': 'COD_ID', 'PAC': 'PAC', 'RAMAL': 'RAMAL', 'PN_CON': 'PN_CON', 'UNI_TR_MT': 'UNI_TR_MT', 'CTMT': 'CTMT', 'SUB': 'SUB', 'ENE_01': 'ENE_01', 'ENE_02': 'ENE_02', 'ENE_03': 'ENE_03', 'ENE_04': 'ENE_04', 'ENE_05': 'ENE_05', 'ENE_06': 'ENE_06', 'ENE_07': 'ENE_07', 'ENE_08': 'ENE_08', 'ENE_09': 'ENE_09', 'ENE_10': 'ENE_10', 'ENE_11': 'ENE_11', 'ENE_12': 'ENE_12', 'DIC_01': 'DIC_01', 'FIC_01': 'FIC_01', 'SIT_ATIV': 'SIT_ATIV', 'DAT_CON': 'DAT_CON', 'CLAS_SUB': 'CLAS_SUB', 'CAR_INST': 'CAR_INST'}
+2026-10-17 16:23:06 | INFO | Teste conversao DAT_CON em UCMT_tab: 6275 valores validos, 0 valores nao convertem (NaT/nulo) em 6275 linhas
+2026-10-17 16:23:08 | INFO | Teste conversao DAT_CON em UCBT_tab (lote 100k): 100000 validos, 0 nao convertem (NaT/nulo) em 100000 linhas
+2026-10-17 16:23:08 | INFO | === PASSO 2: Amostra de Linhas Completas em UCMT_tab ===
+2026-10-17 16:23:09 | INFO | UCMT_tab: total de COD_ID repetidos/divergentes: 645
+2026-10-17 16:23:09 | INFO | UCMT_tab: 5 COD_ID sorteados para inspecao detalhada: ['089f638163f2d84faf79a96c8a59727a77b869f60422eb3865d8e81a44d12af4', '2c3c3491d7f873b91f1474103f6d8ed5afe1be51c0761427ea6adf7a374eec2e', '6029ecdd59901a7dab85088d776f15594ffd99ca93d9741e6cdf9144556516cf', '68e16b25a471a3a5f8404e7cf34326fc28995d2c527921aef5ad59165656c01e', '72426ad0401c7a44a9ecd479b475caf7417b6c95f69014b74dc16e140c4d8291']
+2026-10-17 16:23:15 | INFO | === PASSO 3: Amostra de Linhas Completas em UCBT_tab por Balde ===
+2026-10-17 16:23:15 | INFO | Configuracao: N_BALDES=20, LOTE=100000, AMOSTRA_BALDE=500, SEED=42
+2026-10-17 16:23:43 | INFO | Balde 00/19 concluido: 6181 repetidos, 500 amostrados, tempo=28.58s
+2026-10-17 16:24:00 | INFO | Balde 01/19 concluido: 6208 repetidos, 500 amostrados, tempo=17.06s
+2026-10-17 16:24:34 | INFO | Balde 02/19 concluido: 6103 repetidos, 500 amostrados, tempo=33.64s
+2026-10-17 16:25:01 | INFO | Balde 03/19 concluido: 6276 repetidos, 500 amostrados, tempo=26.64s
+2026-10-17 16:25:17 | INFO | Balde 04/19 concluido: 6281 repetidos, 500 amostrados, tempo=16.42s
+2026-10-17 16:25:48 | INFO | Balde 05/19 concluido: 6241 repetidos, 500 amostrados, tempo=31.21s
+2026-10-17 16:26:38 | INFO | Balde 06/19 concluido: 6134 repetidos, 500 amostrados, tempo=49.29s
+2026-10-17 16:27:04 | INFO | Balde 07/19 concluido: 6199 repetidos, 500 amostrados, tempo=26.62s
+2026-10-17 16:27:28 | INFO | Balde 08/19 concluido: 6121 repetidos, 500 amostrados, tempo=23.21s
+2026-10-17 16:27:53 | INFO | Balde 09/19 concluido: 6276 repetidos, 500 amostrados, tempo=25.19s
+2026-10-17 16:28:08 | INFO | Balde 10/19 concluido: 6220 repetidos, 500 amostrados, tempo=15.55s
+2026-10-17 16:28:24 | INFO | Balde 11/19 concluido: 6098 repetidos, 500 amostrados, tempo=16.18s
+2026-10-17 16:28:39 | INFO | Balde 12/19 concluido: 6227 repetidos, 500 amostrados, tempo=14.98s
+2026-10-17 16:28:55 | INFO | Balde 13/19 concluido: 6326 repetidos, 500 amostrados, tempo=15.85s
+2026-10-17 16:29:16 | INFO | Balde 14/19 concluido: 6184 repetidos, 500 amostrados, tempo=20.76s
+2026-10-17 16:29:44 | INFO | Balde 15/19 concluido: 6248 repetidos, 500 amostrados, tempo=28.10s
+2026-10-17 16:30:04 | INFO | Balde 16/19 concluido: 6216 repetidos, 500 amostrados, tempo=19.74s
+2026-10-17 16:30:38 | INFO | Balde 17/19 concluido: 6318 repetidos, 500 amostrados, tempo=33.72s
+2026-10-17 16:30:51 | INFO | Balde 18/19 concluido: 6230 repetidos, 500 amostrados, tempo=13.71s
+2026-10-17 16:31:08 | INFO | Balde 19/19 concluido: 6137 repetidos, 500 amostrados, tempo=17.18s
+2026-10-17 16:31:08 | INFO | Verificacao da soma: total amostrados = 10000, distintos = 10000
+2026-10-17 16:31:08 | INFO | Releitura da tabela UCBT_tab completa em lotes para extrair linhas dos 10.000 IDs...
+2026-10-17 16:31:52 | INFO | Releitura concluida em 43.81s: 20217 linhas carregadas para os 10.000 COD_ID
+2026-10-17 16:31:52 | INFO | UCBT_tab: 5 COD_ID sorteados para impressao detalhada: ['0bc0651fc6bb4bf61b272a46d0a93430abb1dd344374b870391768854457f3af', '28ce223403a6217e91e83b56b41f2073fa5b35c2348116a56fdc0418610716e1', '54359c87c0428a0f63a6a851515a175239ec3310ebd3d9c681e26e06d8999d08', '5ba7909271167848b810677b8bdf96fce2a59dd7688da3ba4a8d2daa2d7a90d7', '68faacf157259b36725e0a4991efceae5718ec0f2533c26e74e932a0187e456e']
+2026-10-17 16:32:54 | INFO | Consolidando amostra_grupos_duplicados (UCMT: 1311 linhas, UCBT: 20217 linhas)...
+2026-10-17 16:32:55 | INFO | === PASSO 4: Contagem de Combinacoes de Valores e Variacao por Coluna ===
+2026-10-17 16:32:58 | INFO | Gravando amostra_grupos_duplicados_20261017_162305.csv...
+2026-10-17 16:32:59 | INFO | Gravando combinacoes_valores_20261017_162305.csv...
+2026-10-17 16:32:59 | INFO | Gravando regras_candidatas_amostra_20261017_162305.csv...
+2026-10-17 16:32:59 | INFO | Gravando controle_amostra_20261017_162305.csv...
+2026-10-17 16:32:59 | INFO | Execucao finalizada com exito absoluto | RUN_TAG=20261017_162305

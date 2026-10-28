@@ -1,0 +1,14 @@
+2026-10-17 16:00:43 | INFO | Iniciando 03h_amostra_grupos_duplicados | RUN_TAG=20261017_160043
+2026-10-17 16:00:43 | INFO | GDB: Neoenergia_Brasilia_5160_2025-12-31_V11_20260821-0031.gdb
+2026-10-17 16:00:43 | INFO | === Processando UCMT_tab ===
+2026-10-17 16:00:43 | INFO | UCMT_tab: total de COD_ID repetidos/divergentes: 645
+2026-10-17 16:00:43 | INFO | UCMT_tab: 5 COD_ID selecionados para impressao detalhada: ['fc0b1de4432962480559266225b124710206088c2e4160e2b9505f0ddc819db1', 'e974843ff98d19f6dd5491a6ff73f22fc5ea708a24164f0cb53bfb819ce2cefe', 'eda7f872321b3c901a8d871be8e98c79d128b1ec3d12a903656075b78b586f22', '7611ba92dc82ce355e075e4c5250dfb4215bc7da0f4a66970526f50cda89e6df', '1c07c463505e78370f48e1c363174641f85636e889d1f48b429f3573b7b61799']
+2026-10-17 16:00:43 | INFO | === Processando UCBT_tab ===
+2026-10-17 16:00:43 | INFO | UCBT_tab: lendo COD_ID em lotes...
+2026-10-17 16:00:59 | INFO | UCBT_tab: total de COD_ID repetidos/divergentes: 124224
+2026-10-17 16:00:59 | INFO | UCBT_tab: 5 COD_ID selecionados para impressao detalhada: ['95bccdc419421ea0c1cebe87f69bf8a00d52a70180975085503f97fd93266b69', 'f85e655a0b072e300c957e2c68fd573e817af269451b576540dc5bb236b613c2', '0d8ba2bd5c62e487b322fc6f336e46f525d9daba3bd9b8de370d2bda9787d1ae', '77c7fd7491d60262a48878de276e976789d53e15161564c4399e9cfccb1a9828', '3e5e9c944e38883b5510e7f5696c5e9180bbb60efc1e8550d3263faf5cd87847']
+2026-10-17 16:00:59 | INFO | UCBT_tab: lendo linhas completas para os IDs da amostra...
+2026-10-17 16:02:01 | INFO | UCBT_tab: total de linhas carregadas para a amostra: 20223
+2026-10-17 16:02:01 | INFO | Gravando amostra_grupos_duplicados_20261017_160043.csv...
+2026-10-17 16:02:03 | INFO | Gravando regras_candidatas_amostra_20261017_160043.csv...
+2026-10-17 16:02:03 | INFO | Concluido 03h_amostra_grupos_duplicados com sucesso | RUN_TAG=20261017_160043

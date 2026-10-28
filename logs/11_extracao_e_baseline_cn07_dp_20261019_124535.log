@@ -1,0 +1,38 @@
+2026-10-19 12:45:35,944 [INFO] ================================================================================
+2026-10-19 12:45:35,944 [INFO] INICIANDO MODELAGEM E BASELINE ELÉTRICO DO CIRCUITO CN07 (SE SCN)
+2026-10-19 12:45:35,944 [INFO] FOCO: 15ª DELEGACIA DE POLÍCIA CIVIL DE CEILÂNDIA | RUN_TAG: 20261019_124535
+2026-10-19 12:45:35,944 [INFO] ================================================================================
+2026-10-19 12:45:35,946 [INFO] BDGD Bruta:           Neoenergia_Brasilia_5160_2025-12-31_V11_20260821-0031.gdb
+2026-10-19 12:45:35,947 [INFO] UCMT Consolidada:     UCMT_consolidada_20261018_131447.csv
+2026-10-19 12:45:35,947 [INFO] UCBT Consolidada:     UCBT_consolidada_20261018_131447.csv
+2026-10-19 12:45:35,947 [INFO] Carregando metadados do circuito CTMT CN07 e Subestação SCN...
+2026-10-19 12:45:35,993 [INFO] Alimentador: CN07 | Subestação: SCN | PAC Inicial: CN_ALCN07 | Tensão: 13.8 kV
+2026-10-19 12:45:35,994 [INFO] Extraindo trechos de Média Tensão (SSDMT) para CTMT == 'CN07'...
+2026-10-19 12:45:38,087 [INFO] SSDMT carregado: 431 segmentos.
+2026-10-19 12:45:38,087 [INFO] Extraindo trechos de Baixa Tensão (SSDBT) para CTMT == 'CN07'...
+2026-10-19 12:45:42,896 [INFO] SSDBT carregado: 1240 segmentos.
+2026-10-19 12:45:42,896 [INFO] Extraindo transformadores MT/BT (UNTRMT) para CTMT == 'CN07'...
+2026-10-19 12:45:43,240 [INFO] UNTRMT carregado: 77 transformadores de distribuição.
+2026-10-19 12:45:43,240 [INFO] Extraindo chaves seccionadoras (UNSEMT) para CTMT == 'CN07'...
+2026-10-19 12:45:43,787 [INFO] UNSEMT carregado: 138 chaves seccionadoras.
+2026-10-19 12:45:43,787 [INFO] Carregando parâmetros elétricos de transformadores (EQTRMT)...
+2026-10-19 12:45:45,525 [INFO] Carregando catálogo de condutores (SEGCON)...
+2026-10-19 12:45:45,708 [INFO] Carregando UCs de Média Tensão (UCMT)...
+2026-10-19 12:45:45,796 [INFO] UCMT conectadas ao CN07: 46 UCs.
+2026-10-19 12:45:45,796 [INFO] Carregando UCs de Baixa Tensão (UCBT) com Fator de Coincidência...
+2026-10-19 12:45:55,733 [INFO] UCBT conectadas ao CN07: 7585 UCs.
+2026-10-19 12:45:56,037 [INFO] Lines gravado: Lines_CN07_20261019_124535.dss (1671 segmentos)
+2026-10-19 12:45:56,049 [INFO] Transformers gravado: Transformers_CN07_20261019_124535.dss (77 trafos)
+2026-10-19 12:45:56,067 [INFO] Switches gravado: Switches_CN07_20261019_124535.dss (126 fechadas, 12 abertas)
+2026-10-19 12:45:56,182 [INFO] Demanda Total Recalculada em BT para CN07: 3123.23 kW (3.123 MW)
+2026-10-19 12:45:56,544 [INFO] Loads gravado: Loads_CN07_20261019_124535.dss (46 UCMT, 7585 UCBT)
+2026-10-19 12:45:56,551 [INFO] Buscoords gravado: Buscoords_CN07_20261019_124535.dss (1865 barras)
+2026-10-19 12:45:56,553 [INFO] Master gravado com sucesso: Master_CN07_20261019_124535.dss
+2026-10-19 12:45:56,553 [INFO] Exportando camadas espaciais para geo_cn07.gpkg...
+2026-10-19 12:45:57,501 [INFO] Created 431 records
+2026-10-19 12:45:57,629 [INFO] Created 1,240 records
+2026-10-19 12:45:57,744 [INFO] Created 77 records
+2026-10-19 12:45:57,818 [INFO] GeoPackage gravado: geo_cn07_20261019_124535.gpkg
+2026-10-19 12:45:57,818 [INFO] ================================================================================
+2026-10-19 12:45:57,818 [INFO] EXECUTANDO FLUXO DE POTÊNCIA E AUDITORIA PRODIST (15ª DP)
+2026-10-19 12:45:57,818 [INFO] ================================================================================

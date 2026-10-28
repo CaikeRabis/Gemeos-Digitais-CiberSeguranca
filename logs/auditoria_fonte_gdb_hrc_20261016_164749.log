@@ -1,0 +1,3 @@
+2026-10-16 16:47:49 | INFO | Início da auditoria da fonte no geodatabase: Neoenergia_Brasilia_5160_2025-12-31_V11_20260821-0031.gdb
+2026-10-16 16:48:08 | INFO | Hashes de entrada calculados; arquivos internos da GDB: 209
+2026-10-16 16:48:13 | INFO | Teste A UCMT_tab: linhas=6275, COD_ID distintos=5609

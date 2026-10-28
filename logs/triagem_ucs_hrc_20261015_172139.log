@@ -1,0 +1,17 @@
+2026-10-15 17:21:39 | INFO | Início da triagem de UCs.
+2026-10-15 17:21:39 | INFO | SHA-256 de entrada (antes): ff092057e6145f860799f6cafacdc4bf298e79736da0ba4b6d174cefdc39cee5
+2026-10-15 17:21:39 | INFO | Cabeçalho: ['COD_ID', 'TABELA_ORIGEM', 'CLAS_SUB', 'CNAE', 'CAR_INST', 'DEM_CONT', 'PN_CON', 'UNI_TR_MT', 'CTMT', 'SUB', 'METODO_VINCULO']
+2026-10-15 17:21:39 | INFO | Colunas mapeadas: {'id': 'COD_ID', 'origem': 'TABELA_ORIGEM', 'clas_sub': 'CLAS_SUB', 'cnae': 'CNAE', 'ctmt': 'CTMT', 'sub': 'SUB', 'car_inst': 'CAR_INST', 'dem_cont': 'DEM_CONT', 'metodo': 'METODO_VINCULO'}
+2026-10-15 17:21:39 | INFO | Linhas lidas: 98053
+2026-10-15 17:21:39 | INFO | Universo MT: 236 | BT (fora da triagem): 97817
+2026-10-15 17:21:39 | INFO | universo_mt: 236 | CTMT=27 | SUB=4
+2026-10-15 17:21:39 | INFO | f1_publicas: 27 | CTMT=16 | SUB=4
+2026-10-15 17:21:39 | INFO | f2_cnae: 27 | CTMT=14 | SUB=4
+2026-10-15 17:21:39 | INFO | f3_intersecao: 19 | CTMT=11 | SUB=4
+2026-10-15 17:21:39 | INFO | Gravado triagem_ucs_mt_publicas_hrc.csv (27 linhas)
+2026-10-15 17:21:39 | INFO | Gravado triagem_ucs_mt_cnae_saude_seguranca_hrc.csv (27 linhas)
+2026-10-15 17:21:39 | INFO | Gravado triagem_candidatas_hrc_interseccao.csv (19 linhas)
+2026-10-15 17:21:39 | INFO | Gravado triagem_agregada_ctmt_sub_hrc.csv (27 linhas)
+2026-10-15 17:21:39 | INFO | SHA-256 de entrada (depois): ff092057e6145f860799f6cafacdc4bf298e79736da0ba4b6d174cefdc39cee5
+2026-10-15 17:21:39 | INFO | Relatório salvo em C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\relatorio_triagem_ucs_hrc.txt
+2026-10-15 17:21:39 | INFO | Triagem concluída em 0.5 s.

@@ -1,0 +1,21 @@
+2026-10-28 12:26:29 [INFO] DashboardDefinitivoDF - ================================================================================
+2026-10-28 12:26:29 [INFO] DashboardDefinitivoDF - INICIANDO SCRIPT 21: DASHBOARD DEFINITIVO DE RESILIÊNCIA DF (RUN_TAG=20261028_122629)
+2026-10-28 12:26:29 [INFO] DashboardDefinitivoDF - ================================================================================
+2026-10-28 12:26:29 [INFO] DashboardDefinitivoDF - Resolvendo os 4 modelos OpenDSS calibrados...
+2026-10-28 12:26:29 [INFO] DashboardDefinitivoDF - [TN08] Compilando modelo OpenDSS: Master_TN08_Calibrado.dss
+2026-10-28 12:26:30 [INFO] DashboardDefinitivoDF - [TN08] HRC: kW=460.80 | V(pu)={'A': 1.0022, 'B': 1.0302, 'C': 1.0219} -> ADEQUADA
+2026-10-28 12:26:30 [INFO] DashboardDefinitivoDF - [CN07] Compilando modelo OpenDSS: Master_CN07_20261019_124919.dss
+2026-10-28 12:26:30 [INFO] DashboardDefinitivoDF - [CN07] 15ª DP: kW=75.00 | V(pu)={'A': 0.9248, 'B': 0.9594, 'C': 0.9457} -> PRECÁRIA
+2026-10-28 12:26:30 [INFO] DashboardDefinitivoDF - [SBG] Compilando modelo OpenDSS: Master_SBG.dss
+2026-10-28 12:26:31 [INFO] DashboardDefinitivoDF - [SBG] HBDF: kW=1700.68 | V(pu)={'A': 0.9514, 'B': 0.9922, 'C': 0.9857} -> ADEQUADA
+2026-10-28 12:26:31 [INFO] DashboardDefinitivoDF - [SHP] Compilando modelo OpenDSS: Master_SHP_Calibrado.dss
+2026-10-28 12:26:31 [INFO] DashboardDefinitivoDF - [SHP] 1ª DP: kW=97.50 | V(pu)={'A': 1.0138, 'B': 1.0158, 'C': 1.0157} -> ADEQUADA
+2026-10-28 12:26:31 [INFO] DashboardDefinitivoDF - Construindo mapa interativo com Esri Satellite...
+2026-10-28 12:26:31 [INFO] DashboardDefinitivoDF - [TN08] 328 trechos MT plotados (#22d3ee) na Zona 1 — Ceilândia.
+2026-10-28 12:26:31 [INFO] DashboardDefinitivoDF - [CN07] 431 trechos MT plotados (#fb923c) na Zona 1 — Ceilândia.
+2026-10-28 12:26:31 [INFO] DashboardDefinitivoDF - [SBG] 2040 trechos MT plotados (#22c55e) na Zona 2 — Asa Sul / Plano Piloto.
+2026-10-28 12:26:31 [INFO] DashboardDefinitivoDF - [SHP] 160 trechos MT plotados (#facc15) na Zona 2 — Asa Sul / Plano Piloto.
+2026-10-28 12:26:31 [INFO] DashboardDefinitivoDF - Montando frontend HTML/CSS com nova arquitetura segregada...
+2026-10-28 12:26:31 [INFO] DashboardDefinitivoDF - Gravando arquivo final autocontido em: Dashboard_Resiliencia_DF_Definitivo.html
+2026-10-28 12:26:34 [INFO] DashboardDefinitivoDF - Status JSON gravado: dashboard_resiliencia_df_definitivo_status.json
+2026-10-28 12:26:34 [INFO] DashboardDefinitivoDF - SCRIPT 21 EXECUTADO COM SUCESSO TOTAL.

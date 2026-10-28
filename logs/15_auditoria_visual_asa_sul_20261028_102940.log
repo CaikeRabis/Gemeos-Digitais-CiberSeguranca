@@ -1,0 +1,14 @@
+2026-10-28 10:29:40,080 [INFO] ================================================================================
+2026-10-28 10:29:40,080 [INFO] INICIANDO AUDITORIA VISUAL E ELÉTRICA — ZONA 2 (SUBESTAÇÃO SHP / SPOF)
+2026-10-28 10:29:40,080 [INFO] RUN_TAG: 20261028_102940
+2026-10-28 10:29:40,080 [INFO] ================================================================================
+2026-10-28 10:29:40,082 [INFO] Master OpenDSS selecionado:   Master_SHP_20261028_101044.dss
+2026-10-28 10:29:40,082 [INFO] GeoPackage selecionado:       geo_shp_20261028_101044.gpkg
+2026-10-28 10:29:40,083 [INFO] Buscoords selecionado:        Buscoords_SHP_20261028_101044.dss
+2026-10-28 10:29:40,083 [INFO] ================================================================================
+2026-10-28 10:29:40,083 [INFO] PARTE 1: AUDITORIA ELÉTRICA NO OPENDSS E LIMITES PRODIST (ZONA 2 - ASA SUL)
+2026-10-28 10:29:40,083 [INFO] ================================================================================
+2026-10-28 10:29:40,083 [INFO] Carregando Master DSS: Master_SHP_20261028_101044.dss
+2026-10-28 10:29:40,272 [INFO] Dashboard PRODIST da Subestação SHP impresso no terminal com sucesso.
+2026-10-28 10:29:40,272 [INFO] Carregando camada de Média Tensão (linhas_mt_ssdmt) do GeoPackage...
+2026-10-28 10:29:43,321 [INFO] Camada MT carregada com sucesso: 463 trechos primários.

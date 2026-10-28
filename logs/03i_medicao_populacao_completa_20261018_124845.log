@@ -1,0 +1,96 @@
+2026-10-18 12:48:45 | INFO | ================================================================================
+2026-10-18 12:48:45 | INFO | INICIANDO SCRIPT 03i: MEDICAO POPULACIONAL COMPLETA (RUN_TAG=20261018_124845)
+2026-10-18 12:48:45 | INFO | ================================================================================
+2026-10-18 12:48:45 | INFO | Base GDB identificada: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\raw\Neoenergia_Brasilia_5160_2025-12-31_V11_20260821-0031.gdb
+2026-10-18 12:48:45 | INFO | ================================================================================
+2026-10-18 12:48:45 | INFO | INICIANDO PROCESSAMENTO DA CAMADA: UCMT_tab
+2026-10-18 12:48:45 | INFO | ================================================================================
+2026-10-18 12:48:45 | INFO | Total de features na camada: 6275
+2026-10-18 12:48:45 | INFO | Colunas solicitadas que existem na camada (29): ['COD_ID', 'SIT_ATIV', 'DAT_CON', 'PAC', 'PN_CON', 'ENE_01', 'ENE_02', 'ENE_03', 'ENE_04', 'ENE_05', 'ENE_06', 'ENE_07', 'ENE_08', 'ENE_09', 'ENE_10', 'ENE_11', 'ENE_12', 'DEM_01', 'DEM_02', 'DEM_03', 'DEM_04', 'DEM_05', 'DEM_06', 'DEM_07', 'DEM_08', 'DEM_09', 'DEM_10', 'DEM_11', 'DEM_12']
+2026-10-18 12:48:45 | INFO | Colunas ausentes na camada (preenchidas com default) (2): ['RAMAL', 'UNI_TR_MT']
+2026-10-18 12:48:45 | INFO | Passo 1: Identificando COD_IDs duplicados...
+2026-10-18 12:48:45 | INFO | Passo 1 concluido em 0.12s: 645 COD_IDs duplicados identificados.
+2026-10-18 12:48:45 | INFO | Passo 2: Lendo dados em chunks de 100000 e particionando em 20 baldes...
+2026-10-18 12:48:45 | INFO | Chunk features 0-6275 (0.25s): 1311 linhas de duplicados retidas (acumulado: 1311)
+2026-10-18 12:48:45 | INFO | Passo 2 concluido em 0.27s: 1311 linhas totais distribuidas nos 20 baldes.
+2026-10-18 12:48:45 | INFO | Passo 3: Processando cascata R3 e hipoteses H1-H4 por balde...
+2026-10-18 12:48:45 | INFO | Balde 00/20 (0.15s): 38 CIDs | R3 Resolv=38, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:45 | INFO | Balde 01/20 (0.07s): 28 CIDs | R3 Resolv=28, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:45 | INFO | Balde 02/20 (0.07s): 32 CIDs | R3 Resolv=32, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:45 | INFO | Balde 03/20 (0.09s): 34 CIDs | R3 Resolv=34, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:45 | INFO | Balde 04/20 (0.07s): 32 CIDs | R3 Resolv=32, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:46 | INFO | Balde 05/20 (0.07s): 29 CIDs | R3 Resolv=29, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:46 | INFO | Balde 06/20 (0.08s): 39 CIDs | R3 Resolv=39, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:46 | INFO | Balde 07/20 (0.07s): 30 CIDs | R3 Resolv=30, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:46 | INFO | Balde 08/20 (0.07s): 34 CIDs | R3 Resolv=34, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:46 | INFO | Balde 09/20 (0.08s): 38 CIDs | R3 Resolv=38, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:46 | INFO | Balde 10/20 (0.08s): 32 CIDs | R3 Resolv=32, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:46 | INFO | Balde 11/20 (0.06s): 26 CIDs | R3 Resolv=26, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:46 | INFO | Balde 12/20 (0.08s): 39 CIDs | R3 Resolv=39, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:46 | INFO | Balde 13/20 (0.06s): 21 CIDs | R3 Resolv=21, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:46 | INFO | Balde 14/20 (0.07s): 24 CIDs | R3 Resolv=24, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:46 | INFO | Balde 15/20 (0.07s): 31 CIDs | R3 Resolv=31, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:47 | INFO | Balde 16/20 (0.08s): 35 CIDs | R3 Resolv=35, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:47 | INFO | Balde 17/20 (0.08s): 39 CIDs | R3 Resolv=39, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:47 | INFO | Balde 18/20 (0.08s): 39 CIDs | R3 Resolv=39, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:47 | INFO | Balde 19/20 (0.06s): 25 CIDs | R3 Resolv=25, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:47 | INFO | CAMADA UCMT_tab CONCLUIDA EM 2.34s: Total CIDs=645 | R3: Resolv=645, Amb=0 | H1=0, H2=0, H3=0, H4=0
+2026-10-18 12:48:47 | INFO | ================================================================================
+2026-10-18 12:48:47 | INFO | INICIANDO PROCESSAMENTO DA CAMADA: UCBT_tab
+2026-10-18 12:48:47 | INFO | ================================================================================
+2026-10-18 12:48:47 | INFO | Total de features na camada: 1310713
+2026-10-18 12:48:47 | INFO | Colunas solicitadas que existem na camada (19): ['COD_ID', 'SIT_ATIV', 'DAT_CON', 'PAC', 'RAMAL', 'PN_CON', 'UNI_TR_MT', 'ENE_01', 'ENE_02', 'ENE_03', 'ENE_04', 'ENE_05', 'ENE_06', 'ENE_07', 'ENE_08', 'ENE_09', 'ENE_10', 'ENE_11', 'ENE_12']
+2026-10-18 12:48:47 | INFO | Colunas ausentes na camada (preenchidas com default) (12): ['DEM_01', 'DEM_02', 'DEM_03', 'DEM_04', 'DEM_05', 'DEM_06', 'DEM_07', 'DEM_08', 'DEM_09', 'DEM_10', 'DEM_11', 'DEM_12']
+2026-10-18 12:48:47 | INFO | Passo 1: Identificando COD_IDs duplicados...
+2026-10-18 12:49:06 | INFO | Passo 1 concluido em 18.63s: 124224 COD_IDs duplicados identificados.
+2026-10-18 12:49:06 | INFO | Passo 2: Lendo dados em chunks de 100000 e particionando em 20 baldes...
+2026-10-18 12:49:07 | INFO | Chunk features 0-100000 (1.68s): 23777 linhas de duplicados retidas (acumulado: 23777)
+2026-10-18 12:49:09 | INFO | Chunk features 100000-200000 (1.65s): 26902 linhas de duplicados retidas (acumulado: 50679)
+2026-10-18 12:49:11 | INFO | Chunk features 200000-300000 (1.79s): 21849 linhas de duplicados retidas (acumulado: 72528)
+2026-10-18 12:49:12 | INFO | Chunk features 300000-400000 (1.67s): 25875 linhas de duplicados retidas (acumulado: 98403)
+2026-10-18 12:49:14 | INFO | Chunk features 400000-500000 (1.88s): 19688 linhas de duplicados retidas (acumulado: 118091)
+2026-10-18 12:49:16 | INFO | Chunk features 500000-600000 (2.18s): 18633 linhas de duplicados retidas (acumulado: 136724)
+2026-10-18 12:49:19 | INFO | Chunk features 600000-700000 (2.14s): 11394 linhas de duplicados retidas (acumulado: 148118)
+2026-10-18 12:49:21 | INFO | Chunk features 700000-800000 (2.06s): 12903 linhas de duplicados retidas (acumulado: 161021)
+2026-10-18 12:49:22 | INFO | Chunk features 800000-900000 (1.69s): 10445 linhas de duplicados retidas (acumulado: 171466)
+2026-10-18 12:49:24 | INFO | Chunk features 900000-1000000 (1.72s): 15938 linhas de duplicados retidas (acumulado: 187404)
+2026-10-18 12:49:26 | INFO | Chunk features 1000000-1100000 (1.73s): 15761 linhas de duplicados retidas (acumulado: 203165)
+2026-10-18 12:49:27 | INFO | Chunk features 1100000-1200000 (1.72s): 22733 linhas de duplicados retidas (acumulado: 225898)
+2026-10-18 12:49:29 | INFO | Chunk features 1200000-1300000 (1.68s): 22439 linhas de duplicados retidas (acumulado: 248337)
+2026-10-18 12:49:30 | INFO | Chunk features 1300000-1310713 (0.45s): 2813 linhas de duplicados retidas (acumulado: 251150)
+2026-10-18 12:49:30 | INFO | Passo 2 concluido em 24.07s: 251150 linhas totais distribuidas nos 20 baldes.
+2026-10-18 12:49:30 | INFO | Passo 3: Processando cascata R3 e hipoteses H1-H4 por balde...
+2026-10-18 12:49:39 | INFO | Balde 00/20 (9.14s): 6181 CIDs | R3 Resolv=6114, Amb=67 | H1=34, H2=6, H3=27, H4=6
+2026-10-18 12:49:48 | INFO | Balde 01/20 (9.01s): 6208 CIDs | R3 Resolv=6132, Amb=76 | H1=31, H2=10, H3=35, H4=10
+2026-10-18 12:49:57 | INFO | Balde 02/20 (8.90s): 6103 CIDs | R3 Resolv=6043, Amb=60 | H1=24, H2=7, H3=29, H4=7
+2026-10-18 12:50:06 | INFO | Balde 03/20 (9.31s): 6276 CIDs | R3 Resolv=6213, Amb=63 | H1=34, H2=5, H3=24, H4=5
+2026-10-18 12:50:15 | INFO | Balde 04/20 (8.81s): 6281 CIDs | R3 Resolv=6206, Amb=75 | H1=31, H2=10, H3=34, H4=10
+2026-10-18 12:50:24 | INFO | Balde 05/20 (8.60s): 6241 CIDs | R3 Resolv=6184, Amb=57 | H1=27, H2=4, H3=26, H4=4
+2026-10-18 12:50:32 | INFO | Balde 06/20 (8.41s): 6134 CIDs | R3 Resolv=6080, Amb=54 | H1=23, H2=5, H3=26, H4=5
+2026-10-18 12:50:41 | INFO | Balde 07/20 (8.46s): 6199 CIDs | R3 Resolv=6141, Amb=58 | H1=28, H2=4, H3=26, H4=4
+2026-10-18 12:50:49 | INFO | Balde 08/20 (8.79s): 6121 CIDs | R3 Resolv=6055, Amb=66 | H1=29, H2=11, H3=26, H4=11
+2026-10-18 12:50:59 | INFO | Balde 09/20 (9.40s): 6276 CIDs | R3 Resolv=6205, Amb=71 | H1=38, H2=2, H3=31, H4=3
+2026-10-18 12:51:08 | INFO | Balde 10/20 (9.34s): 6220 CIDs | R3 Resolv=6147, Amb=73 | H1=31, H2=10, H3=32, H4=10
+2026-10-18 12:51:17 | INFO | Balde 11/20 (8.56s): 6098 CIDs | R3 Resolv=6038, Amb=60 | H1=26, H2=10, H3=24, H4=10
+2026-10-18 12:51:26 | INFO | Balde 12/20 (8.78s): 6227 CIDs | R3 Resolv=6170, Amb=57 | H1=31, H2=4, H3=22, H4=4
+2026-10-18 12:51:35 | INFO | Balde 13/20 (9.02s): 6326 CIDs | R3 Resolv=6263, Amb=63 | H1=31, H2=4, H3=28, H4=4
+2026-10-18 12:51:43 | INFO | Balde 14/20 (8.73s): 6184 CIDs | R3 Resolv=6126, Amb=58 | H1=31, H2=5, H3=22, H4=5
+2026-10-18 12:51:52 | INFO | Balde 15/20 (9.02s): 6248 CIDs | R3 Resolv=6184, Amb=64 | H1=25, H2=6, H3=33, H4=6
+2026-10-18 12:52:01 | INFO | Balde 16/20 (8.71s): 6216 CIDs | R3 Resolv=6156, Amb=60 | H1=38, H2=7, H3=15, H4=8
+2026-10-18 12:52:10 | INFO | Balde 17/20 (8.77s): 6318 CIDs | R3 Resolv=6257, Amb=61 | H1=29, H2=8, H3=24, H4=8
+2026-10-18 12:52:19 | INFO | Balde 18/20 (8.95s): 6230 CIDs | R3 Resolv=6166, Amb=64 | H1=31, H2=6, H3=27, H4=6
+2026-10-18 12:52:28 | INFO | Balde 19/20 (8.65s): 6137 CIDs | R3 Resolv=6079, Amb=58 | H1=30, H2=3, H3=25, H4=3
+2026-10-18 12:52:28 | INFO | CAMADA UCBT_tab CONCLUIDA EM 220.78s: Total CIDs=124224 | R3: Resolv=122959, Amb=1265 | H1=602, H2=127, H3=536, H4=129
+2026-10-18 12:52:28 | INFO | ================================================================================
+2026-10-18 12:52:28 | INFO | RELATORIO FINAL CONSOLIDADO (POPULACAO TOTAL)
+2026-10-18 12:52:28 | INFO | ================================================================================
+2026-10-18 12:52:28 | INFO | [UCMT_tab] Total Grupos: 645 | Resolvidos R3: 645 (100.00%) | Ambiguos R3: 0 (0.00%)
+2026-10-18 12:52:28 | INFO | [UCBT_tab] Total Grupos: 124224 | Resolvidos R3: 122959 (98.98%) | Ambiguos R3: 1265 (1.02%)
+2026-10-18 12:52:28 | INFO |   Distribuição dos Ambíguos em UCBT_tab:
+2026-10-18 12:52:28 | INFO |   - H1 (Complementar): 602 (47.59%)
+2026-10-18 12:52:28 | INFO |   - H2 (Sobreposto Diferente): 127 (10.04%)
+2026-10-18 12:52:28 | INFO |   - H3 (Zerado/Dormente): 536 (42.37%)
+2026-10-18 12:52:28 | INFO |   - H4 (Divergência Topológica): 129 (10.20%)
+2026-10-18 12:52:28 | INFO | Resultado salvo com sucesso em: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\populacao_ambiguos_20261018_124845.csv
+2026-10-18 12:52:28 | INFO | Log registrado em: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\logs\03i_medicao_populacao_completa_20261018_124845.log
+2026-10-18 12:52:28 | INFO | Script 03i finalizado com exito.

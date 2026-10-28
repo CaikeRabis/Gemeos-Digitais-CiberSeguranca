@@ -1,0 +1,40 @@
+2026-10-28 12:36:34,523 [INFO] ================================================================================
+2026-10-28 12:36:34,523 [INFO] INICIANDO PROTOCOLO DE HIGIENIZAÇÃO DO REPOSITÓRIO
+2026-10-28 12:36:34,524 [INFO] Diretório Base: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF
+2026-10-28 12:36:34,524 [INFO] Mapa Preservado: Dashboard_Resiliencia_DF_Definitivo.html
+2026-10-28 12:36:34,524 [INFO] ================================================================================
+2026-10-28 12:36:34,527 [INFO] Removido HTML intermediário: Mapa_Interativo_15DP_CN07.html (346.4 KB)
+2026-10-28 12:36:34,531 [INFO] Removido HTML intermediário: Mapa_Interativo_HRC.html (263.2 KB)
+2026-10-28 12:36:34,539 [INFO] Removido HTML intermediário: Mapa_Interativo_HRC_20261019_103945.html (269.2 KB)
+2026-10-28 12:36:34,541 [INFO] Removido HTML intermediário: Mapa_Interativo_HRC_20261019_104122.html (267.7 KB)
+2026-10-28 12:36:34,549 [INFO] Removido HTML intermediário: Mapa_Interativo_SHP_Corrigido.html (386.9 KB)
+2026-10-28 12:36:34,550 [INFO] Removido HTML intermediário: Mapa_Interativo_SHP_SPOF.html (383.9 KB)
+2026-10-28 12:36:34,551 [INFO] Removido HTML intermediário: Dashboard_Resiliencia_DF.html (1000.3 KB)
+2026-10-28 12:36:34,554 [INFO] Removido PNG intermediário: Mapa_Auditoria_15DP_CN07.png (559.0 KB)
+2026-10-28 12:36:34,555 [INFO] Removido PNG intermediário: Mapa_Auditoria_HRC.png (417.0 KB)
+2026-10-28 12:36:34,565 [INFO] Removido PNG intermediário: Mapa_Auditoria_HRC_20261019_103945.png (759.3 KB)
+2026-10-28 12:36:34,601 [INFO] Removido PNG intermediário: Mapa_Auditoria_HRC_20261019_104122.png (759.7 KB)
+2026-10-28 12:36:34,603 [INFO] Removido PNG intermediário: Mapa_Auditoria_SHP_SPOF.png (822.2 KB)
+2026-10-28 12:36:34,604 [INFO] Removido PNG intermediário: mapa_topologia.png (1334.0 KB)
+2026-10-28 12:36:34,604 [INFO] Removido PNG intermediário: validacao_visual_subrede_hrc.png (2749.7 KB)
+2026-10-28 12:36:34,606 [INFO] Removido backup OpenDSS: Buscoords_SHP_20261028_101044.dss.bak (66.0 KB)
+2026-10-28 12:36:34,606 [INFO] Removido backup OpenDSS: Loads_TN08_20261019_104122.dss.bak (524.0 KB)
+2026-10-28 12:36:34,607 [INFO] Removido backup OpenDSS: Master_TN08_20261019_104122.dss.bak (7.6 KB)
+2026-10-28 12:36:34,610 [INFO] Removido arquivo de scratch: buscar_1dp_ucbt.py (0.5 KB)
+2026-10-28 12:36:34,611 [INFO] Removido arquivo de scratch: Buscoords_Test.dss (425.5 KB)
+2026-10-28 12:36:34,614 [INFO] Removido arquivo de scratch: checar_coords_sub_shp.py (0.7 KB)
+2026-10-28 12:36:34,623 [INFO] Removido arquivo de scratch: escanear_ucbt_asa_sul.py (0.9 KB)
+2026-10-28 12:36:34,625 [INFO] Removido arquivo de scratch: explorar_asa_sul.py (1.1 KB)
+2026-10-28 12:36:34,630 [INFO] Removido arquivo de scratch: inspecionar_cargas_shp.py (1.0 KB)
+2026-10-28 12:36:34,631 [INFO] Removido arquivo de scratch: Lines_Test.dss (1282.7 KB)
+2026-10-28 12:36:34,632 [INFO] Removido arquivo de scratch: Loads_Test.dss (1625.6 KB)
+2026-10-28 12:36:34,632 [INFO] Removido arquivo de scratch: Master_Test.dss (0.6 KB)
+2026-10-28 12:36:34,633 [INFO] Removido arquivo de scratch: Switches_Test.dss (52.9 KB)
+2026-10-28 12:36:34,635 [INFO] Removido arquivo de scratch: testar_conectividade_shp.py (1.7 KB)
+2026-10-28 12:36:34,636 [INFO] Removido arquivo de scratch: Transformers_Test.dss (44.2 KB)
+2026-10-28 12:36:34,637 [INFO] Removido arquivo de scratch: verificar_detalhes_asa_sul.py (1.0 KB)
+2026-10-28 12:36:34,637 [INFO] ================================================================================
+2026-10-28 12:36:34,637 [INFO] HIGIENIZAÇÃO CONCLUÍDA: 30 arquivos removidos.
+2026-10-28 12:36:34,638 [INFO] Espaço Total Liberado em Disco: 14.02 MB (14,699,113 bytes).
+2026-10-28 12:36:34,638 [INFO] ================================================================================
+2026-10-28 12:36:34,638 [INFO] Integridade verificada: Dashboard_Resiliencia_DF_Definitivo.html (2,458,982 bytes).

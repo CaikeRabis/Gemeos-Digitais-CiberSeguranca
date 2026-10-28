@@ -1,0 +1,24 @@
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - ================================================================================
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - INICIANDO SCRIPT 19: RASTREAMENTO ESPACIAL E BUFFER HBDF (RUN_TAG=20261028_113519)
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - ================================================================================
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - UCMT Consolidada: UCMT_consolidada_20261018_131447.csv
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - GDB Fonte BDGD:   Neoenergia_Brasilia_5160_2025-12-31_V11_20260821-0031.gdb
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - --------------------------------------------------------------------------------
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - ETAPA 1: CRIAÇÃO DO BUFFER MÉTRICO DE 500 METROS EM TORNO DO HBDF (SMHS)
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - --------------------------------------------------------------------------------
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - Coordenada Alvo: Lat -15.798300, Lon -47.892100
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - Raio de Varredura: 500.0 metros | CRS Projetado: EPSG:31983
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - BBox geográfica de leitura: (np.float64(-47.89676261957501), np.float64(-15.802814498619522), np.float64(-47.88743735972413), np.float64(-15.79378549925432))
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - Carregando camada de infraestrutura física (PONNOT) da BDGD no entorno do SMHS...
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - Pontos físicos notáveis (PONNOT) interceptados na BBox: 2,509
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - Pontos notáveis estritamente contidos no buffer de 500m: 1,879
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - Carregando base de Média Tensão consolidada: UCMT_consolidada_20261018_131447.csv
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - Total de registros em UCMT consolidada: 5,609
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - UCs vinculadas geograficamente por PN_CON: 117
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - UCs vinculadas geograficamente por PAC: 0
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - Total de UCs de Média Tensão ÚNICAS no buffer de 500m: 117
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - Metadados exportados com sucesso para: verdadeiro_hbdf_buffer.json (70,262 bytes)
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - Dashboard de varredura espacial e diagnóstico impresso no console.
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - ================================================================================
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - VARREDURA ESPACIAL DO HBDF CONCLUÍDA COM SUCESSO!
+2026-10-28 11:35:19 [INFO] RastreamentoEspacialHBDF - ================================================================================

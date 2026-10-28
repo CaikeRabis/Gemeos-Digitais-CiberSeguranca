@@ -1,0 +1,55 @@
+2026-10-15 16:08:51 | INFO | Início da validação.
+2026-10-15 16:08:51 | INFO | GeoPackage: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\subrede_hospitais.gpkg
+2026-10-15 16:08:51 | INFO | CSV: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\raw\hospitais_df.csv
+2026-10-15 16:08:51 | INFO | BDGD: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\raw\Neoenergia_Brasilia_5160_2025-12-31_V11_20260821-0031.gdb
+2026-10-15 16:08:51 | INFO | Camadas no GeoPackage: {'hospitais': 'Point', 'buffer_3000m': 'Polygon', 'SSDMT': 'LineString', 'SSDAT': 'LineString', 'SSDBT': 'LineString', 'UNTRMT': 'Point', 'UNTRAT': 'Point'}
+2026-10-15 16:08:51 | INFO | Correspondência de camadas: {'hospitais': 'hospitais', 'buffer': 'buffer_3000m', 'SSDMT': 'SSDMT', 'SSDAT': 'SSDAT', 'SSDBT': 'SSDBT', 'UNTRMT': 'UNTRMT', 'UNTRAT': 'UNTRAT'}
+2026-10-15 16:08:51 | INFO | hospitais | CRS=EPSG:31983 | tipos={'Point': 1} | n=1 | nulas=0 vazias=0 inválidas=0 | campos=3 | ids={'nome': ['Hospital Regional de Ceilândia (HRC)']}
+2026-10-15 16:08:51 | INFO | [OK] Camada hospitais em EPSG:31983.
+2026-10-15 16:08:51 | INFO | buffer_3000m | CRS=EPSG:31983 | tipos={'Polygon': 1} | n=1 | nulas=0 vazias=0 inválidas=0 | campos=3 | ids={'nome': ['Hospital Regional de Ceilândia (HRC)']}
+2026-10-15 16:08:51 | INFO | [OK] Camada buffer_3000m em EPSG:31983.
+2026-10-15 16:08:52 | INFO | SSDMT | CRS=EPSG:31983 | tipos={'LineString': 6932} | n=6932 | nulas=0 vazias=0 inválidas=0 | campos=23 | ids={}
+2026-10-15 16:08:52 | INFO | [OK] Camada SSDMT em EPSG:31983.
+2026-10-15 16:08:52 | INFO | SSDAT | CRS=EPSG:31983 | tipos={'LineString': 36} | n=36 | nulas=0 vazias=0 inválidas=0 | campos=21 | ids={}
+2026-10-15 16:08:52 | INFO | [OK] Camada SSDAT em EPSG:31983.
+2026-10-15 16:08:52 | INFO | SSDBT | CRS=EPSG:31983 | tipos={'LineString': 17532} | n=17532 | nulas=0 vazias=0 inválidas=0 | campos=24 | ids={}
+2026-10-15 16:08:52 | INFO | [OK] Camada SSDBT em EPSG:31983.
+2026-10-15 16:08:52 | INFO | UNTRMT | CRS=EPSG:31983 | tipos={'Point': 1023} | n=1023 | nulas=0 vazias=0 inválidas=0 | campos=32 | ids={}
+2026-10-15 16:08:52 | INFO | [OK] Camada UNTRMT em EPSG:31983.
+2026-10-15 16:08:52 | INFO | UNTRAT | CRS=EPSG:31983 | tipos={'Point': 6} | n=6 | nulas=0 vazias=0 inválidas=0 | campos=76 | ids={}
+2026-10-15 16:08:52 | INFO | [OK] Camada UNTRAT em EPSG:31983.
+2026-10-15 16:08:52 | INFO | [OK] SSDMT: contagem igual à referência (6932).
+2026-10-15 16:08:52 | INFO | [OK] SSDAT: contagem igual à referência (36).
+2026-10-15 16:08:52 | INFO | [OK] SSDBT: contagem igual à referência (17532).
+2026-10-15 16:08:52 | INFO | [OK] UNTRMT: contagem igual à referência (1023).
+2026-10-15 16:08:52 | INFO | [OK] UNTRAT: contagem igual à referência (6).
+2026-10-15 16:08:52 | INFO | CSV lido | codificação=utf-8-sig | separador=auto-detectado | linhas=1 | colunas=['nome', 'latitude', 'longitude']
+2026-10-15 16:08:52 | INFO | [OK] Coordenadas do CSV numéricas, finitas e plausíveis para o DF.
+2026-10-15 16:08:52 | INFO | [OK] CSV 'Hospital Regional de Ceilândia (HRC)' coincide com a referência HRC (distância 0.0 m; conferência informativa).
+2026-10-15 16:08:52 | INFO | [OK] Ponto CSV x GeoPackage: desvio máximo 0.0000 m (tolerância 1.0 m).
+2026-10-15 16:08:52 | INFO | [OK] Hospital dentro do buffer 0.
+2026-10-15 16:08:52 | INFO | [OK] Buffer 0: centroide a 0.0000 m do hospital (tol. 1.0 m).
+2026-10-15 16:08:52 | INFO | [OK] Buffer 0: área 28,228,936 m² (raio equivalente 2997.6 m; erro 0.161%; tol. 1%).
+2026-10-15 16:08:52 | INFO | [OK] Buffer 0: raio da borda entre 3000.00 e 3000.00 m (alvo 3000 m).
+2026-10-15 16:08:52 | INFO | [OK] SSDMT: todas lineares.
+2026-10-15 16:08:52 | INFO | [OK] SSDMT: 0 linha(s) fora do buffer (tol. 0.01 m).
+2026-10-15 16:08:52 | INFO | SSDMT: comprimento recortado total = 225712.0 m
+2026-10-15 16:08:52 | INFO | [OK] SSDAT: todas lineares.
+2026-10-15 16:08:52 | INFO | [OK] SSDAT: 0 linha(s) fora do buffer (tol. 0.01 m).
+2026-10-15 16:08:52 | INFO | SSDAT: comprimento recortado total = 8978.7 m
+2026-10-15 16:08:52 | INFO | [OK] SSDBT: todas lineares.
+2026-10-15 16:08:52 | INFO | [OK] SSDBT: 0 linha(s) fora do buffer (tol. 0.01 m).
+2026-10-15 16:08:52 | INFO | SSDBT: comprimento recortado total = 526350.2 m
+2026-10-15 16:08:52 | INFO | [OK] UNTRMT: todos pontos.
+2026-10-15 16:08:52 | INFO | [OK] UNTRMT: 0 transformador(es) fora do buffer.
+2026-10-15 16:08:52 | INFO | [OK] UNTRAT: todos pontos.
+2026-10-15 16:08:52 | INFO | [OK] UNTRAT: 0 transformador(es) fora do buffer.
+2026-10-15 16:08:53 | INFO | [OK] SSDMT: esperado(BDGD)=6932 gravado=6932 faltam=0 sobram=0 [identificador COD_ID].
+2026-10-15 16:08:53 | INFO | [OK] SSDAT: esperado(BDGD)=36 gravado=36 faltam=0 sobram=0 [identificador COD_ID].
+2026-10-15 16:08:54 | INFO | [OK] SSDBT: esperado(BDGD)=17532 gravado=17532 faltam=0 sobram=0 [identificador COD_ID].
+2026-10-15 16:08:54 | INFO | [OK] UNTRMT: esperado(BDGD)=1023 gravado=1023 faltam=0 sobram=0 [identificador COD_ID].
+2026-10-15 16:08:54 | INFO | [OK] UNTRAT: esperado(BDGD)=6 gravado=6 faltam=0 sobram=0 [identificador COD_ID].
+2026-10-15 16:08:58 | INFO | Mapa salvo em C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\validacao_visual_subrede_hrc.png
+2026-10-15 16:08:58 | INFO | Relatório salvo em C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\relatorio_validacao_subrede_hrc.txt
+2026-10-15 16:08:58 | INFO | CONCLUSÃO: VALIDAÇÃO APROVADA | Todas as verificações executadas passaram sem ressalvas.
+2026-10-15 16:08:58 | INFO | Fim da validação em 6.3 s.

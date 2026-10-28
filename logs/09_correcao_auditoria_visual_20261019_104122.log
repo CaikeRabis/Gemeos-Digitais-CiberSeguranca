@@ -1,0 +1,55 @@
+2026-10-19 10:41:22,084 [INFO] ================================================================================
+2026-10-19 10:41:22,085 [INFO] INICIANDO ETAPA E6: CORREÇÃO DE CARGAS, FLUXO DE POTÊNCIA E AUDITORIA VISUAL
+2026-10-19 10:41:22,085 [INFO] RUN_TAG: 20261019_104122
+2026-10-19 10:41:22,085 [INFO] ================================================================================
+2026-10-19 10:41:22,087 [INFO] Arquivos base identificados:
+2026-10-19 10:41:22,087 [INFO]   * UCBT:       UCBT_consolidada_20261018_131447.csv
+2026-10-19 10:41:22,088 [INFO]   * Loads DSS:  Loads_TN08_20261019_103945.dss
+2026-10-19 10:41:22,088 [INFO]   * Master DSS: Master_TN08_20261019_103945.dss
+2026-10-19 10:41:22,088 [INFO]   * GeoPackage: geo_tn08_20261018_134703.gpkg
+2026-10-19 10:41:22,088 [INFO]   * Buscoords:  Buscoords_TN08_20261019_093214.dss
+2026-10-19 10:41:22,088 [INFO] ================================================================================
+2026-10-19 10:41:22,088 [INFO] FASE 1: CORREÇÃO DO FATOR DE COINCIDÊNCIA DAS CARGAS DE BAIXA TENSÃO (BT)
+2026-10-19 10:41:22,088 [INFO] ================================================================================
+2026-10-19 10:41:22,088 [INFO] Lendo base consolidada UCBT: UCBT_consolidada_20261018_131447.csv
+2026-10-19 10:41:31,367 [INFO] Total de UCs de Baixa Tensão no alimentador TN08: 5046
+2026-10-19 10:41:31,413 [INFO] Estatísticas de Demanda BT Recalculadas:
+2026-10-19 10:41:31,413 [INFO]   * Potência Ativa Total BT: 2446.32 kW (2.446 MW)
+2026-10-19 10:41:31,413 [INFO]   * Média por UCBT: 0.485 kW
+2026-10-19 10:41:31,413 [INFO]   * Faixa: [0.05 kW a 31.38 kW]
+2026-10-19 10:41:31,435 [INFO] Arquivo de cargas corrigido gravado: Loads_TN08_20261019_104122.dss
+2026-10-19 10:41:31,435 [INFO]   * Cargas UCBT modificadas: 5046
+2026-10-19 10:41:31,435 [INFO]   * Potência BT Anterior: 2446.05 kW (2.446 MW)
+2026-10-19 10:41:31,436 [INFO]   * Redução de Injeção BT Irreal: -0.000 MW
+2026-10-19 10:41:31,773 [INFO] Loads original atualizado e sincronizado: Loads_TN08_20261019_103945.dss
+2026-10-19 10:41:31,773 [INFO] ================================================================================
+2026-10-19 10:41:31,774 [INFO] FASE 2: REGULAÇÃO DE TENSÃO DA SUBESTAÇÃO STN (1.04 pu)
+2026-10-19 10:41:31,774 [INFO] ================================================================================
+2026-10-19 10:41:31,774 [INFO] Lendo Master DSS original: Master_TN08_20261019_103945.dss
+2026-10-19 10:41:31,776 [INFO] Arquivo Master regulado gravado com sucesso: Master_TN08_20261019_104122.dss
+2026-10-19 10:41:31,776 [INFO]   * Tensão nominal da barra equivalente 138 kV: 1.04 pu
+2026-10-19 10:41:31,776 [INFO]   * Tap do enrolamento secundário (13.8 kV) do Trafo T-1_STN: 1.008
+2026-10-19 10:41:31,801 [INFO] Master original atualizado e sincronizado: Master_TN08_20261019_103945.dss
+2026-10-19 10:41:31,801 [INFO] ================================================================================
+2026-10-19 10:41:31,801 [INFO] FASE 3: EXECUÇÃO DO FLUXO DE POTÊNCIA E AUDITORIA PRODIST (ANEEL)
+2026-10-19 10:41:31,801 [INFO] ================================================================================
+2026-10-19 10:41:31,802 [INFO] Compilando circuito OpenDSS: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\opendss\Master_TN08_20261019_104122.dss
+2026-10-19 10:41:31,984 [INFO] Fluxo de Potência convergiu com sucesso em 4 iterações!
+2026-10-19 10:41:31,988 [INFO] Dashboard PRODIST impresso com sucesso.
+2026-10-19 10:41:31,988 [INFO] Carregando camada de Média Tensão (SSDMT) do GeoPackage...
+2026-10-19 10:41:32,384 [INFO] Coordenada exata da barra do HRC: Longitude=-48.097722, Latitude=-15.814806
+2026-10-19 10:41:32,385 [INFO] ================================================================================
+2026-10-19 10:41:32,385 [INFO] FASE 4: GERAÇÃO DO LAUDO VISUAL GEORREFERENCIADO ESTÁTICO (PNG)
+2026-10-19 10:41:32,385 [INFO] ================================================================================
+2026-10-19 10:41:33,483 [INFO] Mapa estático gerado com sucesso: Mapa_Auditoria_HRC_20261019_104122.png
+2026-10-19 10:41:33,483 [INFO] ================================================================================
+2026-10-19 10:41:33,483 [INFO] FASE 5: GERAÇÃO DO MAPA INTERATIVO GEORREFERENCIADO (FOLIUM HTML)
+2026-10-19 10:41:33,483 [INFO] ================================================================================
+2026-10-19 10:41:33,735 [INFO] Mapa interativo gerado com sucesso: Mapa_Interativo_HRC_20261019_104122.html
+2026-10-19 10:41:33,735 [INFO] ================================================================================
+2026-10-19 10:41:33,735 [INFO] MISSÃO CUMPRIDA: AUDITORIA ELÉTRICA E LAUDOS VISUAIS GERADOS COM SUCESSO!
+2026-10-19 10:41:33,735 [INFO]   * Mapa Estático PNG:      Mapa_Auditoria_HRC_20261019_104122.png
+2026-10-19 10:41:33,735 [INFO]   * Mapa Interativo HTML:   Mapa_Interativo_HRC_20261019_104122.html
+2026-10-19 10:41:33,735 [INFO]   * Master DSS Regulado:    Master_TN08_20261019_104122.dss
+2026-10-19 10:41:33,736 [INFO]   * Loads DSS Corrigido:    Loads_TN08_20261019_104122.dss
+2026-10-19 10:41:33,736 [INFO] ================================================================================

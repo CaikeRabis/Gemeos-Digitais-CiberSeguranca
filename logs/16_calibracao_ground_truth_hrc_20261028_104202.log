@@ -1,0 +1,35 @@
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - ================================================================================
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - INICIANDO SCRIPT 16: CALIBRAÇÃO GROUND TRUTH DO HRC (RUN_TAG=20261028_104202)
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - ================================================================================
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Arquivos base identificados: Loads_TN08_20261019_104122.dss | Master_TN08_20261019_104122.dss
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - --------------------------------------------------------------------------------
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - SIMULAÇÃO 1: BASELINE NOMINAL PRÉ-CALIBRAÇÃO (DEMANDA ANTERIOR = 110.22 kW)
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - --------------------------------------------------------------------------------
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Compilando circuito OpenDSS: Master_TN08_20261019_104122.dss
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Fluxo de Potência convergiu com sucesso em 4 iterações.
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Pré-Calibração: Tensão HRC Fase A = 1.0053 pu | Perdas = 306.43 kW
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - --------------------------------------------------------------------------------
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - ETAPA 1: ATUALIZAÇÃO DO MODELO OPENDSS COM GROUND TRUTH (LAI / NEOENERGIA)
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - --------------------------------------------------------------------------------
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Arquivo Loads Original: Loads_TN08_20261019_104122.dss
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Arquivo Master Original: Master_TN08_20261019_104122.dss
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Linha de carga do HRC localizada e atualizada com sucesso no arquivo de Loads!
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Arquivo de cargas calibrado salvo em: Loads_TN08_Calibrado.dss (Tamanho: 536,915 bytes)
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Cópia com timestamp salva em: Loads_TN08_Calibrado_20261028_104202.dss
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Arquivo Master calibrado salvo em: Master_TN08_Calibrado.dss (Tamanho: 8,190 bytes)
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Cópia com timestamp salva em: Master_TN08_Calibrado_20261028_104202.dss
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - --------------------------------------------------------------------------------
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - SIMULAÇÃO 2: MODELO CALIBRADO COM GROUND TRUTH (DEMANDA REAL = 460.80 kW)
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - --------------------------------------------------------------------------------
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Compilando circuito OpenDSS: Master_TN08_Calibrado.dss
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Fluxo de Potência convergiu com sucesso em 4 iterações.
+2026-10-28 10:42:02 [INFO] CalibracaoGroundTruthHRC - Pós-Calibração: Tensão HRC Fase A = 1.0022 pu | Perdas = 316.92 kW
+2026-10-28 10:42:02 [ERROR] CalibracaoGroundTruthHRC - Erro crítico durante a calibração do HRC: name 'v_media' is not defined
+Traceback (most recent call last):
+  File "C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\src\16_calibracao_ground_truth_hrc.py", line 612, in main
+    imprimir_dashboard_calibrado(res_base, res_calib)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\src\16_calibracao_ground_truth_hrc.py", line 442, in imprimir_dashboard_calibrado
+    o pico faturado, o PAC STN_TN08_9026_CEI003 opera entre {v_a:.4f} e {v_b:.4f} pu (média {v_media:.4f} pu),
+                                                                                             ^^^^^^^
+NameError: name 'v_media' is not defined

@@ -1,0 +1,21 @@
+2026-10-16 16:24:39 | INFO | Início da auditoria de duplicidade (somente leitura; .gdb não aberto).
+2026-10-16 16:24:40 | INFO | perfil_ucs_entorno_hrc: 98053 linhas | colunas=['COD_ID', 'TABELA_ORIGEM', 'CLAS_SUB', 'CNAE', 'CAR_INST', 'DEM_CONT', 'PN_CON', 'UNI_TR_MT', 'CTMT', 'SUB', 'METODO_VINCULO'] | mapa={'id': 'COD_ID', 'origem': 'TABELA_ORIGEM', 'clas_sub': 'CLAS_SUB', 'cnae': 'CNAE', 'ctmt': 'CTMT', 'sub': 'SUB', 'car_inst': 'CAR_INST', 'dem_cont': 'DEM_CONT', 'pn_con': 'PN_CON', 'uni_tr_mt': 'UNI_TR_MT'}
+2026-10-16 16:24:40 | WARNING | perfil_ucs_entorno_hrc: papéis sem coluna: ['dist', 'hip', 'cat', 'criterio']
+2026-10-16 16:24:40 | INFO | triagem_publicas: 27 linhas | colunas=['COD_ID', 'TABELA_ORIGEM', 'CLAS_SUB', 'CNAE', 'CAR_INST', 'DEM_CONT', 'PN_CON', 'UNI_TR_MT', 'CTMT', 'SUB', 'METODO_VINCULO', 'filtros_atendidos'] | mapa={'id': 'COD_ID', 'origem': 'TABELA_ORIGEM', 'clas_sub': 'CLAS_SUB', 'cnae': 'CNAE', 'ctmt': 'CTMT', 'sub': 'SUB', 'car_inst': 'CAR_INST', 'dem_cont': 'DEM_CONT', 'pn_con': 'PN_CON', 'uni_tr_mt': 'UNI_TR_MT'}
+2026-10-16 16:24:40 | WARNING | triagem_publicas: papéis sem coluna: ['dist', 'hip', 'cat', 'criterio']
+2026-10-16 16:24:40 | INFO | triagem_cnae: 27 linhas | colunas=['COD_ID', 'TABELA_ORIGEM', 'CLAS_SUB', 'CNAE', 'CAR_INST', 'DEM_CONT', 'PN_CON', 'UNI_TR_MT', 'CTMT', 'SUB', 'METODO_VINCULO', 'filtros_atendidos'] | mapa={'id': 'COD_ID', 'origem': 'TABELA_ORIGEM', 'clas_sub': 'CLAS_SUB', 'cnae': 'CNAE', 'ctmt': 'CTMT', 'sub': 'SUB', 'car_inst': 'CAR_INST', 'dem_cont': 'DEM_CONT', 'pn_con': 'PN_CON', 'uni_tr_mt': 'UNI_TR_MT'}
+2026-10-16 16:24:40 | WARNING | triagem_cnae: papéis sem coluna: ['dist', 'hip', 'cat', 'criterio']
+2026-10-16 16:24:40 | INFO | triagem_interseccao: 19 linhas | colunas=['COD_ID', 'TABELA_ORIGEM', 'CLAS_SUB', 'CNAE', 'CAR_INST', 'DEM_CONT', 'PN_CON', 'UNI_TR_MT', 'CTMT', 'SUB', 'METODO_VINCULO', 'filtros_atendidos'] | mapa={'id': 'COD_ID', 'origem': 'TABELA_ORIGEM', 'clas_sub': 'CLAS_SUB', 'cnae': 'CNAE', 'ctmt': 'CTMT', 'sub': 'SUB', 'car_inst': 'CAR_INST', 'dem_cont': 'DEM_CONT', 'pn_con': 'PN_CON', 'uni_tr_mt': 'UNI_TR_MT'}
+2026-10-16 16:24:40 | WARNING | triagem_interseccao: papéis sem coluna: ['dist', 'hip', 'cat', 'criterio']
+2026-10-16 16:24:40 | INFO | hipoteses_h1_h4: 619 linhas | colunas=['identificador', 'tabela_origem', 'clas_sub', 'cnae', 'ctmt', 'sub', 'pn_con', 'car_inst', 'dem_cont', 'distancia_hrc_m', 'hipotese', 'criterio_atendido', 'categoria_cruzamento'] | mapa={'id': 'identificador', 'origem': 'tabela_origem', 'clas_sub': 'clas_sub', 'cnae': 'cnae', 'ctmt': 'ctmt', 'sub': 'sub', 'car_inst': 'car_inst', 'dem_cont': 'dem_cont', 'pn_con': 'pn_con', 'dist': 'distancia_hrc_m', 'hip': 'hipotese', 'cat': 'categoria_cruzamento', 'criterio': 'criterio_atendido'}
+2026-10-16 16:24:40 | WARNING | hipoteses_h1_h4: papéis sem coluna: ['uni_tr_mt']
+2026-10-16 16:25:15 | INFO | perfil_ucs_entorno_hrc/UCBT_tab: linhas=97817 ids=88327 redundantes=0 ids_divergentes=9386
+2026-10-16 16:25:15 | INFO | perfil_ucs_entorno_hrc/UCMT_tab: linhas=236 ids=199 redundantes=35 ids_divergentes=1
+2026-10-16 16:25:15 | INFO | triagem_publicas/UCMT_tab: linhas=27 ids=27 redundantes=0 ids_divergentes=0
+2026-10-16 16:25:15 | INFO | triagem_cnae/UCMT_tab: linhas=27 ids=25 redundantes=2 ids_divergentes=0
+2026-10-16 16:25:15 | INFO | triagem_interseccao/UCMT_tab: linhas=19 ids=19 redundantes=0 ids_divergentes=0
+2026-10-16 16:25:15 | INFO | hipoteses_h1_h4/UCBT_tab: linhas=592 ids=581 redundantes=0 ids_divergentes=11
+2026-10-16 16:25:15 | INFO | hipoteses_h1_h4/UCMT_tab: linhas=27 ids=25 redundantes=2 ids_divergentes=0
+2026-10-16 16:25:15 | INFO | CSVs gravados (contagem=7, divergências=9398, recontagem=33, cnae500=22 linhas)
+2026-10-16 16:25:15 | INFO | Relatório salvo em C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\relatorio_auditoria_duplicidade_hrc.txt
+2026-10-16 16:25:15 | INFO | Concluído em 36.1 s.

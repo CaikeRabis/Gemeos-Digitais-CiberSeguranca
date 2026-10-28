@@ -1,0 +1,51 @@
+ESTADO DE RETOMADA - 2026-10-16 16:15:27
+======================================================================
+
+SCRIPTS (src/)
+  OK     02_filtro_espacial.py (8721 B, 2026-10-15 15:36)
+  OK     03_validacao_visualizacao.py (32836 B, 2026-10-15 16:08)
+  OK     03b_inventario_schema_bdgd.py (39319 B, 2026-10-15 16:57)
+  OK     03c_triagem_ucs_hrc.py (18544 B, 2026-10-15 17:21)
+  OK     03d_hipoteses_alimentador_hrc.py (32925 B, 2026-10-15 17:30)
+
+ARTEFATOS (data/processed/)
+  OK     subrede_hospitais.gpkg (9854976 B, 2026-10-15 16:01)
+  OK     validacao_visual_subrede_hrc.png (2815699 B, 2026-10-15 16:08)
+  OK     relatorio_validacao_subrede_hrc.txt (5417 B, 2026-10-15 16:08)
+  OK     inventario_tabelas_bdgd.csv (3979 B, 2026-10-15 16:57)
+  OK     inventario_campos_bdgd.csv (295963 B, 2026-10-15 17:01)
+  OK     candidatos_chave_ligacao.csv (3876 B, 2026-10-15 17:03)
+  OK     perfil_ucs_entorno_hrc.csv (17437300 B, 2026-10-15 17:03)
+  OK     relatorio_inventario_bdgd.txt (13120 B, 2026-10-15 17:03)
+  OK     triagem_ucs_mt_publicas_hrc.csv (4757 B, 2026-10-15 17:21)
+  OK     triagem_ucs_mt_cnae_saude_seguranca_hrc.csv (4820 B, 2026-10-15 17:21)
+  OK     triagem_candidatas_hrc_interseccao.csv (3393 B, 2026-10-15 17:21)
+  OK     triagem_agregada_ctmt_sub_hrc.csv (788 B, 2026-10-15 17:21)
+  OK     relatorio_triagem_ucs_hrc.txt (8154 B, 2026-10-15 17:21)
+  OK     hipoteses_h1_h4_ucs_candidatas_hrc.csv (101734 B, 2026-10-15 17:30)
+  OK     hipoteses_h5_subestacao_e_circuitos_hrc.csv (2684 B, 2026-10-15 17:30)
+  OK     distribuicao_clas_sub_entorno_hrc.csv (600 B, 2026-10-15 17:30)
+  OK     relatorio_hipoteses_alimentador_hrc.txt (12639 B, 2026-10-15 17:30)
+
+LOGS (logs/)
+  hipoteses_alimentador_hrc_20261015_172910.log (1094 B)
+  hipoteses_alimentador_hrc_20261015_173049.log (1464 B)
+  inventario_20261015_165727.log (8198 B)
+  triagem_ucs_hrc_20261015_172139.log (1663 B)
+  validacao_20261015_160851.log (5736 B)
+
+03d: executado? SIM (relatório completo: True). Não reexecutado.
+  - log 20261015_172910: execução abortada (StopIteration em obter_hrc; prefixo 'hospital' vs 'hospitais'), sem saídas.
+  - log 20261015_173049: execução completa (exit 0), 3 CSVs + relatório.
+
+INTEGRIDADE ATUAL x 'depois' registrado pelo 03d (somente leitura)
+  subrede_hospitais.gpkg: IGUAL (c1003b8d4b171df168035065ddb0fda7e7600c38ee645f2165b4abac954224b9)
+  perfil_ucs_entorno_hrc.csv: IGUAL (ff092057e6145f860799f6cafacdc4bf298e79736da0ba4b6d174cefdc39cee5)
+  hospitais_df.csv: 174eb704e172c4211fc122f9024fa183fafecb3c2d9022d44eacf67db9f991bf
+
+DIVERGÊNCIAS / ACHADOS
+  UCMT_tab: linhas=236 COD_ID distintos=199 linhas totalmente repetidas=35
+  UCBT_tab: linhas=97817 COD_ID distintos=88327 linhas totalmente repetidas=0
+  - COD_ID NÃO é único em UCMT_tab/UCBT_tab; contagens de 03b/03c/03d são de LINHAS, não de UCs distintas.
+  - relatorio_inventario_bdgd.txt (03b) cita 'PRODIST Módulo 8' e F/A como 'Fechada/Aberta': texto desatualizado/não confirmado (artefato não alterado).
+  - Catálogo interno (GDB_Items, via LIST_ALL_TABLES) lido: 45 itens, 0 domínios codificados: domínio de P_N_OPE NÃO confirmado pelo arquivo.

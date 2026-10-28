@@ -1,0 +1,33 @@
+2026-10-18 13:34:30 | INFO | ================================================================================
+2026-10-18 13:34:30 | INFO | INICIANDO ETAPA E4: RASTREAMENTO TOPOLOGICO DO HRC (RUN_TAG=20261018_133430)
+2026-10-18 13:34:30 | INFO | ================================================================================
+2026-10-18 13:34:30 | INFO | Arquivo UCMT consolidado mais recente: UCMT_consolidada_20261018_131447.csv
+2026-10-18 13:34:30 | INFO | Arquivo UCBT consolidado mais recente: UCBT_consolidada_20261018_131447.csv
+2026-10-18 13:34:30 | INFO | Iniciando varredura na base de Media Tensao: UCMT_consolidada_20261018_131447.csv
+2026-10-18 13:34:30 | INFO | Total de registros em UCMT_consolidada: 5609
+2026-10-18 13:34:30 | INFO | UCMT: 76 candidatas com aderencia relevante identificadas.
+2026-10-18 13:34:30 | INFO | Iniciando varredura particionada em Baixa Tensao: UCBT_consolidada_20261018_131447.csv
+2026-10-18 13:34:37 | INFO | UCBT: 153 candidatas identificadas apos leitura de 1183916 linhas.
+2026-10-18 13:34:37 | INFO | ================================================================================
+2026-10-18 13:34:37 | INFO | UNIDADE CONSUMIDORA DO HRC LOCALIZADA COM SUCESSO!
+2026-10-18 13:34:37 | INFO | ================================================================================
+2026-10-18 13:34:37 | INFO | COD_ID: 01d6dfec8e270bbd5215e231ff676130bba898de060bbe65fd14fbd985db29d8 (Score de Aderencia: 180/100)
+2026-10-18 13:34:37 | INFO | Origem: UCMT | Bairro: CEILANDIA | CEP: 72215-178
+2026-10-18 13:34:37 | INFO | CNAE: 8610-1/01 (Atividades de Atendimento Hospitalar)
+2026-10-18 13:34:37 | INFO | Classe / Grupo Tarifario: CO9 / A4 (Media Tensao A4)
+2026-10-18 13:34:37 | INFO | Carga Instalada: 51987.66666666 kW | Demanda Contratada: 110.22222222 kW
+2026-10-18 13:34:37 | INFO | Evidencias cruzadas: Bairro: CEILANDIA; CEP exato do HRC: 72215-178; CNAE Hospitalar: 8610-1/01; Potencia Instalada de Grande Porte: 51987.7 kW
+2026-10-18 13:34:37 | INFO | ================================================================================
+2026-10-18 13:34:37 | INFO | DIAGRAMA TOPOLOGICO EM CADEIA DA ALIMENTACAO ELETRICA DO HRC:
+2026-10-18 13:34:37 | INFO | ================================================================================
+2026-10-18 13:34:37 | INFO | UC [01d6dfec8e270bbd5215e231ff676130bba898de060bbe65fd14fbd985db29d8] -> RAMAL [N/A (Conexao Direta MT)] -> PAC [STN_TN08_9026_CEI003] -> UNI_TR_MT [N/A (Subestacao Propria / Barramento MT)] -> CTMT [TN08] -> SUB [STN]
+2026-10-18 13:34:37 | INFO | --------------------------------------------------------------------------------
+2026-10-18 13:34:37 | INFO |   * SUBESTACAO ALIMENTADORA (SUB): STN
+2026-10-18 13:34:37 | INFO |   * CIRCUITO DE MEDIA TENSAO (CTMT): TN08
+2026-10-18 13:34:37 | INFO |   * TRANSFORMADOR AT/MT (UNI_TR_AT): T-1_STN
+2026-10-18 13:34:37 | INFO |   * PONTO DE ACESSO (PAC): STN_TN08_9026_CEI003
+2026-10-18 13:34:37 | INFO |   * POSTE DE CONEXAO (PN_CON): 9026_CEI003
+2026-10-18 13:34:37 | INFO | ================================================================================
+2026-10-18 13:34:37 | INFO | Artefato JSON gravado com sucesso em: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\data\processed\hrc_topologia_20261018_133430.json
+2026-10-18 13:34:37 | INFO | Log registrado em: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\logs\05_rastreamento_hrc_20261018_133430.log
+2026-10-18 13:34:37 | INFO | Etapa E4 concluida com exito.

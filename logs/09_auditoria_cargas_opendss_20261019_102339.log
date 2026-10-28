@@ -1,0 +1,69 @@
+=====================================================================================
+PAINEL DIAGNOSTICO DE AUDITORIA DE CARGAS - CIRCUITO TN08 (RUN_TAG=20261019_102339)
+=====================================================================================
+Arquivo Loads Auditado : Loads_TN08_20261018_134703.dss
+Arquivo Master Auditado: Master_TN08_20261019_093214.dss
+Base UCMT Consolidada  : UCMT_consolidada_20261018_131447.csv
+Base UCBT Consolidada  : UCBT_consolidada_20261018_131447.csv
+Base Bruta BDGD        : Neoenergia_Brasilia_5160_2025-12-31_V11_20260821-0031.gdb
+=====================================================================================
+
+1. SOMA DE POTENCIA ALOCADA NO MODELO OPENDSS:
+-------------------------------------------------------------------------------------
+  * Cargas de Média Tensão (MT) :    22 UCs  |    2,137.71 kW  (  2.14 MW)
+  * Cargas de Baixa Tensão (BT) :  5046 UCs  |   19,860.93 kW  ( 19.86 MW)
+  * TOTAL ALOCADO NO CIRCUITO   :  5068 UCs  |   21,998.64 kW  ( 22.00 MW)
+
+2. COMPARACAO COM O COMPORTAMENTO FISICO REAL (BDGD / NEOENERGIA):
+-------------------------------------------------------------------------------------
+  * Energia Mensal Média Faturada do Feeder TN08  :  2,146,086.5 kWh/mês
+  * Potência Média Real no Alimentador (730h)     :     2,939.84 kW  (  2.94 MW)
+  * Demanda de Pico Estimada (Fator de Carga 0.65):     4,522.84 kW  (  4.52 MW)
+  * Potência Real Média das 5.046 UCs de BT       :     1,615.94 kW  (  1.62 MW)
+  * Carga Instalada Total Cadastrada em BT        :    56,746.70 kW  ( 56.75 MW)
+
+3. ANALISE DA REGULACAO DA SUBESTACAO (VSOURCE & TRAFO):
+-------------------------------------------------------------------------------------
+  * Tensão Base Vsource Subestação STN           : 1.02 pu (Barramento 138 kV)
+  * Reatância do Transformador T-1_STN (32 MVA)   : 10.0%
+  * Prática Operativa Concessionárias em MT       : 1.03 a 1.05 pu no secundário (13.8 kV)
+  * Efeito na Barra STN_TN08_SUB                  : Tensão cai para ~0.998 pu antes de entrar no alimentador
+
+4. ORIGEM MATEMATICA DO VALOR DE kW MODELADO NO SCRIPT 06:
+-------------------------------------------------------------------------------------
+  * Em MT: Utilizou DEM_CONT (Demanda Contratada ativa). Valor aderente à realidade.
+  * Em BT: Aplicou 'kw_bt = car_inst * 0.35' individualmente para cada uma das 5.046 UCs.
+    -> Falha Conceitual: 0.35 é um Fator de Demanda individual, NÃO um Fator de Coincidência!
+    -> Ao simular em Snapshot, assumiu-se que 35% de TODOS os aparelhos elétricos de
+       5.046 residências e comércios de Ceilândia estão ligados no MESMO SEGUNDO.
+    -> Potência de BT alocada (19.86 MW) é 12.3x MAIOR que a demanda média faturada (1.62 MW).
+    -> Potência total alocada (22.00 MW) é 4.9x MAIOR que a capacidade de pico do circuito (4.52 MW).
+
+=====================================================================================
+LAUDO TECNICO PERICIAL DE ENGENHARIA ELETRICA:
+=====================================================================================
+1. DIAGNOSTICO DA CAUSA RAIZ:
+   A queda de tensão para 0.86 pu no Hospital Regional de Ceilândia (HRC) e as
+   sobrecargas térmicas de até 1.777% nas linhas de BT são CONSEQUÊNCIAS DIRETAS
+   da superestimação maciça de carga decorrente da ausência de Fator de Coincidência (FC).
+
+2. MECANISMO FISICO DO AFUNDAMENTO:
+   Injetou-se 22,0 MW em um alimentador projetado para operar com pico de ~4,5 MW.
+   A corrente total resultante de mais de 900 A atravessa os cabos tronco de MT
+   (capacidade nominal de 365 A), provocando uma queda ôhmico-indutiva (Delta V = R*I + X*I)
+   acumulada de mais de 14% ao longo dos 5 km de rede até a Área Especial QNM 27 do HRC.
+
+3. EQUACIONAMENTO REGULATORIO (PRODIST / ANEEL):
+   Segundo o PRODIST (Módulo 8) e as normas de distribuição (NBR 5410 / CODI):
+   Para agrupamentos acima de N = 1.000 consumidores residenciais/comerciais:
+   - Fator de Coincidência Real (FC) varia entre 0.10 e 0.15.
+   - Demanda Coincidente Real de BT no Alimentador TN08: ~2.000 a 2.500 kW (não 19.860 kW!).
+
+4. PLANO DE CORRECAO RECOMENDADO:
+   a) Parametrizar as cargas de BT com base no consumo efetivo mensal (ENE_01..12 / 730h)
+      multiplicado por Fator de Coincidência/Pico ajustado ao perfil real do alimentador,
+      reduzindo a injeção em BT de 19,8 MW para o patamar real de ~2,4 MW.
+   b) Ajustar a tensão de saída da subestação STN para 1.04 pu (regulação padrão concessionária).
+=====================================================================================
+Auditoria concluida. Log registrado em: C:\Users\adm\Documents\Modelos Preditivos na Rede Elétrica do DF\logs\09_auditoria_cargas_opendss_20261019_102339.log
+
