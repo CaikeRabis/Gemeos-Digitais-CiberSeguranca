@@ -3,7 +3,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
 [![OpenDSS](https://img.shields.io/badge/solver-OpenDSS%20Direct%20v0.15-orange.svg)](https://dss-extensions.org/)
 [![GIS Platform](https://img.shields.io/badge/GIS-GeoPandas%20%7C%20Shapely%20%7C%20Folium-green.svg)](https://geopandas.org/)
-[![Vercel Deployment](https://img.shields.io/badge/deploy-Vercel%20Production-black.svg)](https://fleet-teal-i0ysa80.tmp.now)
+[![Vercel Deployment](https://img.shields.io/badge/deploy-Vercel%20Production-black.svg)](https://gemeos-digitais-bsb.vercel.app)
 [![Regulatório](https://img.shields.io/badge/norma-ANEEL%20PRODIST%20Módulo%208-yellow.svg)](https://www.gov.br/aneel/)
 
 Repositório oficial de pesquisa e desenvolvimento do **Gêmeo Digital Eletromecânico e Topológico da Rede de Distribuição de Energia do Distrito Federal**, com ênfase na auditoria de conformidade regulatória (PRODIST ANEEL) e resiliência ciberfísica das **Infraestruturas Críticas de Saúde (Hospitais) e Segurança Pública (Delegacias de Polícia)**.
@@ -71,12 +71,12 @@ O projeto concluiu com total êxito as etapas analíticas, topológicas e eletro
 | Região / Zona | Ativo Crítico | Subestação / Circuito | PAC Auditado | Demanda Modelada | Tensões Nodais (pu) | Diagnóstico PRODIST | Topologia da Zona |
 | :--- | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
 | **Zona 1 (Ceilândia)** | **HRC** (Hospital) | `STN` / `TN08` | `STN_TN08_9026_CEI003` | **`460.80 kW`** | A: 1.0022<br>B: 1.0302<br>C: 1.0219 | **`[ADEQUADA]`** | **Segregada** (`STN` ≠ `SCN`) |
-| **Zona 1 (Ceilândia)** | **15ª DP** (Polícia) | `SCN` / `CN07` | `SCN_CN07_9032_CEIRJ002` | **`75.00 kW`** | A: 0.9248<br>B: 0.9594<br>C: 0.9457 | **`[PRECÁRIA]`** (Fase A) | **Segregada** (`STN` ≠ `SCN`) |
+| **Zona 1 (Ceilândia)** | **15ª DP** (Polícia) | `SCN` / `CN07` | `SCN_CN07_9032_CEIRJ002` | **`75.00 kW`** | A: 0.9738<br>B: 1.0138<br>C: 1.0013 | **`[ADEQUADA]`** | **Segregada** (`STN` ≠ `SCN`) |
 | **Zona 2 (Asa Sul)** | **HBDF** (Hospital) | `SBG` / `02_BGC1` | `S02_0201_PT_TF_913` | **`1.700,68 kW`** | A: 0.9514<br>B: 0.9922<br>C: 0.9857 | **`[ADEQUADA]`** | **Segregada** (`SBG` ≠ `SHP`) |
 | **Zona 2 (Asa Sul)** | **1ª DP** (Polícia) | `SHP` / `HP04` | `SHP_HP04_9025_BSB27A` | **`97.50 kW`** | A: 1.0138<br>B: 1.0158<br>C: 1.0157 | **`[ADEQUADA]`** | **Segregada** (`SBG` ≠ `SHP`) |
 
 ### Métricas Energéticas Globais
-* **Zona 1 (Ceilândia):** Injeção total de **16.60 MW** | Perdas técnicas de **1.288,8 kW (7.76%)**.
+* **Zona 1 (Ceilândia):** Injeção total de **11.93 MW** | Perdas técnicas de **780,5 kW (6.54%)** (alívio térmico após eliminação de 4,45 MW de ERBs fantasmas).
 * **Zona 2 (Asa Sul):** Injeção total de **33.33 MW** | Perdas técnicas de **1.624,8 kW (4.88%)** (eficiência de 95.12% devido ao cabeamento subterrâneo e subtransmissão em 34.5 kV).
 
 ---
@@ -159,6 +159,9 @@ Com os modelos elétricos das Zonas 1 e 2 calibrados e validados, a próxima eta
 | `src/20_extracao_e_baseline_sbg_hbdf.py` | Modelagem OpenDSS definitiva da SE SBG (02_BGC1) e baseline do HBDF. |
 | `src/21_dashboard_definitivo_frontend.py` | Geração do Dashboard Definitivo unificado com Esri Satellite. |
 | `src/22_limpeza_repositorio.py` | Higienização do repositório e remoção de arquivos intermediários. |
+| `src/23_auditoria_parametros_15dp.py` | Perícia do alimentador CN07 e detecção das ERBs celulares fantasmas. |
+| `src/24_calibracao_ground_truth_15dp.py` | Calibração das ERBs, normalização da 15ª DP (0.9738 pu) e regeneração do dashboard. |
+| `src/25_setup_vercel_oficial.py` | Automação e verificação de deploy do projeto `gemeos-digitais`. |
 
 ---
 
@@ -213,7 +216,7 @@ Start-Process "public/index.html"
 ## 🌐 Dashboard Online
 
 O painel unificado está hospedado e acessível publicamente via Vercel Edge CDN:
-👉 **[https://fleet-teal-i0ysa80.tmp.now](https://fleet-teal-i0ysa80.tmp.now)**
+👉 **[https://gemeos-digitais-bsb.vercel.app](https://gemeos-digitais-bsb.vercel.app)**
 
 ---
 

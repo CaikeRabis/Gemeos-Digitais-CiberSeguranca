@@ -1,13 +1,13 @@
 {
-  "run_tag": "20261028_122757",
-  "timestamp": "2026-10-28T12:28:00.513230",
+  "run_tag": "20261029_121216",
+  "timestamp": "2026-10-29T12:12:21.102347",
   "status": {
     "zona1": {
       "topologia": "Segregada (STN ≠ SCN)",
-      "conformidade": "Precária",
-      "p_inj_mw": 16.60491636459393,
-      "perdas_kw": 1288.7675736647116,
-      "perdas_pct": 7.761361426744097
+      "conformidade": "Adequada",
+      "p_inj_mw": 11.934424135103235,
+      "perdas_kw": 780.5298297179777,
+      "perdas_pct": 6.540154940716173
     },
     "zona2": {
       "topologia": "Segregada (SBG ≠ SHP)",
@@ -59,12 +59,12 @@
       "zona_nome": "Zona 1 — Ceilândia",
       "subestacao": "SCN",
       "subestacao_nome": "SE Ceilândia Norte",
-      "master": "Master_CN07_20261019_124919.dss",
-      "iteracoes": 5,
-      "p_inj_kw": 11563.529072814386,
-      "p_perdas_kw": 971.846323993712,
-      "q_perdas_kvar": 1613.9528678440236,
-      "perdas_pct": 8.404409396768866,
+      "master": "Master_CN07_Calibrado.dss",
+      "iteracoes": 4,
+      "p_inj_kw": 6893.036843323691,
+      "p_perdas_kw": 463.6085800469782,
+      "q_perdas_kvar": 636.847081771052,
+      "perdas_pct": 6.7257522422212235,
       "cargas": [
         {
           "id": "15ª DP",
@@ -72,19 +72,19 @@
           "tipo": "seguranca",
           "load": "DP15_PRIORITARIO",
           "pac": "SCN_CN07_9032_CEIRJ002",
-          "detalhe": "Demanda Contratada: 75.00 kW | Ponto Extremo do Alimentador",
+          "detalhe": "Ground Truth Calibrado (ERBs Corrigidas: 75.00 kW na 15ª DP)",
           "tensoes_pu": {
-            "A": 0.9247752733886853,
-            "B": 0.9593978856361625,
-            "C": 0.9456749976669075
+            "A": 0.9737963218679541,
+            "B": 1.0138153828301724,
+            "C": 1.0012727649994901
           },
           "tensoes_kv": {
-            "A": 12.761898772763859,
-            "B": 13.239690821779044,
-            "C": 13.050314967803326
+            "A": 13.438389241777768,
+            "B": 13.990652283056379,
+            "C": 13.817564156992965
           },
           "kw_modelado": 75.0,
-          "status": "PRECÁRIA"
+          "status": "ADEQUADA"
         }
       ]
     },

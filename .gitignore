@@ -26,6 +26,7 @@ data/processed/*.txt
 # Temporary & Vercel
 scratch/
 .vercel/
+logs/
 
 # IDE / Environment
 .idea/

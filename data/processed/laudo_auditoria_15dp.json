@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-10-29T11:57:08.667112",
+  "circuito": "CN07",
+  "subestacao": "SCN",
+  "pac_15dp": "SCN_CN07_9032_CEIRJ002",
+  "demanda_15dp_kw": 75.0,
+  "pf_15dp": 0.92,
+  "cargas_vizinhas_pac": [
+    {
+      "name": "UCMT_bf122ed81fc1050a",
+      "kw": 280.0,
+      "pf": 0.92
+    }
+  ],
+  "topologia": {
+    "distancia_total_km": 4.526,
+    "quantidade_nos": 143,
+    "quantidade_ramos": 142,
+    "no_ofensor_a_montante": true,
+    "distancia_no_ofensor_km": 3.498
+  },
+  "top5_maiores_cargas": [
+    {
+      "load": "UCMT_92ebfc289d3063a0",
+      "bus": "SCN_CN07_9562_CEI027",
+      "kw": 1750.0,
+      "kv": 13.8,
+      "is_anomalia": true
+    },
+    {
+      "load": "UCMT_3573cfc00eac13cf",
+      "bus": "SCN_CN07_9562_CEI027",
+      "kw": 1750.0,
+      "kv": 13.8,
+      "is_anomalia": true
+    },
+    {
+      "load": "UCMT_729c6a62555a28ce",
+      "bus": "SCN_CN07_9562_CEI027",
+      "kw": 1000.0,
+      "kv": 13.8,
+      "is_anomalia": true
+    },
+    {
+      "load": "UCMT_8a5e3140f37864a3",
+      "bus": "SCN_CN07_9562_CEI027",
+      "kw": 300.0,
+      "kv": 13.8,
+      "is_anomalia": false
+    },
+    {
+      "load": "UCMT_7c767e5add624823",
+      "bus": "SCN_CN07_9027_CEI32A",
+      "kw": 299.0,
+      "kv": 13.8,
+      "is_anomalia": false
+    }
+  ],
+  "resultados_eletricos": {
+    "fase_1": {
+      "baseline_pu": 0.9248,
+      "calibrado_pu": 0.9738,
+      "status_baseline": "PRECÁRIA",
+      "status_calibrado": "ADEQUADA"
+    },
+    "fase_2": {
+      "baseline_pu": 0.9594,
+      "calibrado_pu": 1.0138,
+      "status_baseline": "ADEQUADA",
+      "status_calibrado": "ADEQUADA"
+    },
+    "fase_3": {
+      "baseline_pu": 0.9457,
+      "calibrado_pu": 1.0013,
+      "status_baseline": "ADEQUADA",
+      "status_calibrado": "ADEQUADA"
+    }
+  },
+  "conclusao_pericial": "Afundamento provocado por erro cadastral na BDGD (4.5 MW fantasmas de ERB celular no nó SCN_CN07_9562_CEI027) combinado com posição física de fim de linha (4.526 km da SE SCN). A eliminação do erro eleva a tensão da 15ª DP de 0.9248 pu para 0.9738 pu [ADEQUADA]."
+}

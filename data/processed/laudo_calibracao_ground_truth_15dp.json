@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-10-29T12:12:21.477216",
+  "circuito": "CN07",
+  "subestacao": "SCN",
+  "pac_15dp": "SCN_CN07_9032_CEIRJ002",
+  "cargas_corrigidas": {
+    "UCMT_92ebfc289d3063a0": {
+      "kw_antigo": 1750.0,
+      "kw_novo": 23.0,
+      "car_inst": 23.0,
+      "cnae": "6120-5/01",
+      "motivo": "ERB Celular: carga instalada real é 23.0 kW (demanda contratada de 1750 kW era erro BDGD)"
+    },
+    "UCMT_3573cfc00eac13cf": {
+      "kw_antigo": 1750.0,
+      "kw_novo": 6.0,
+      "car_inst": 6.0,
+      "cnae": "6120-5/01",
+      "motivo": "ERB Celular: carga instalada real é 6.0 kW (demanda contratada de 1750 kW era erro BDGD)"
+    },
+    "UCMT_729c6a62555a28ce": {
+      "kw_antigo": 1000.0,
+      "kw_novo": 23.0,
+      "car_inst": 23.0,
+      "cnae": "6120-5/01",
+      "motivo": "ERB Celular: carga instalada real é 23.0 kW (demanda contratada de 1000 kW era erro BDGD)"
+    }
+  },
+  "resultados_eletricos": {
+    "convergiu": true,
+    "iteracoes": 4,
+    "tensoes_pu": {
+      "A": 0.9737963218679541,
+      "B": 1.0138153828301724,
+      "C": 1.0012727649994901
+    },
+    "status_prodist": "ADEQUADA",
+    "p_inj_kw": 6893.036843323691,
+    "perdas_kw": 463.6085800469782
+  },
+  "dashboard_tag_ok": true,
+  "conclusao": "Tensão da 15ª DP calibrada com sucesso para 0.9738 pu [ADEQUADA]. Erro da BDGD saneado."
+}

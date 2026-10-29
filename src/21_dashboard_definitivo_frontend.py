@@ -105,7 +105,7 @@ CIRCUITOS: Dict[str, Dict[str, Any]] = {
         "zona_nome": "Zona 1 — Ceilândia",
         "subestacao": "SCN",
         "subestacao_nome": "SE Ceilândia Norte",
-        "master": "Master_CN07_*.dss",
+        "master": "Master_CN07_Calibrado.dss",
         "gpkg": "geo_cn07_*.gpkg",
         "buscoords": "Buscoords_CN07_*.dss",
         "barra_se": "SCN_CN07_SUB",
@@ -118,7 +118,7 @@ CIRCUITOS: Dict[str, Dict[str, Any]] = {
             "tipo": "seguranca",
             "load": "DP15_PRIORITARIO",
             "pac": "SCN_CN07_9032_CEIRJ002",
-            "detalhe": "Demanda Contratada: 75.00 kW | Ponto Extremo do Alimentador",
+            "detalhe": "Ground Truth Calibrado (ERBs Corrigidas: 75.00 kW na 15ª DP)",
         }],
     },
     "SBG": {
@@ -1077,6 +1077,12 @@ def main() -> int:
         # 4. Salvar arquivo final
         LOGGER.info(f"Gravando arquivo final autocontido em: {OUTPUT_HTML.name}")
         mapa.save(str(OUTPUT_HTML))
+
+        public_dir = BASE_DIR / "public"
+        if public_dir.exists():
+            import shutil
+            shutil.copy2(str(OUTPUT_HTML), str(public_dir / "index.html"))
+            LOGGER.info("Dashboard espelhado com sucesso em public/index.html")
 
         # 5. Exportar status JSON
         with open(OUTPUT_JSON, "w", encoding="utf-8") as f:

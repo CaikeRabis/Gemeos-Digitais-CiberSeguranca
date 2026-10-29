@@ -14,9 +14,9 @@ New Load.UCMT_ae3618bf054037c7 Bus1=SCN_CN07_11270492.1.2.3 Phases=3 kV=13.800 k
 New Load.UCMT_141f00ff1e47fe76 Bus1=SCN_CN07_9240_CEI041.1.2.3 Phases=3 kV=13.800 kW=11.00 pf=0.92 Model=1 ! CarInst=11.0kW DemCont=0.0kW
 New Load.UCMT_3bcc2a3d1cec511b Bus1=SCN_CN07_9562_CEI027.1.2.3 Phases=3 kV=13.800 kW=135.42 pf=0.92 Model=1 ! CarInst=69914.1kW DemCont=135.4kW
 New Load.UCMT_cea0a32bc608cc36 Bus1=SCN_CN07_9562_CEI027.1.2.3 Phases=3 kV=13.800 kW=180.00 pf=0.92 Model=1 ! CarInst=53.8kW DemCont=180.0kW
-New Load.UCMT_92ebfc289d3063a0 Bus1=SCN_CN07_9562_CEI027.1.2.3 Phases=3 kV=13.800 kW=1750.00 pf=0.92 Model=1 ! CarInst=23.0kW DemCont=1750.0kW
-New Load.UCMT_3573cfc00eac13cf Bus1=SCN_CN07_9562_CEI027.1.2.3 Phases=3 kV=13.800 kW=1750.00 pf=0.92 Model=1 ! CarInst=6.0kW DemCont=1750.0kW
-New Load.UCMT_729c6a62555a28ce Bus1=SCN_CN07_9562_CEI027.1.2.3 Phases=3 kV=13.800 kW=1000.00 pf=0.92 Model=1 ! CarInst=23.0kW DemCont=1000.0kW
+New Load.UCMT_92ebfc289d3063a0 Bus1=SCN_CN07_9562_CEI027.1.2.3 Phases=3 kV=13.800 kW=23.00 pf=0.92 Model=1 ! [CALIBRADO GROUND TRUTH] CarInst=23.0kW | ERB Celular: carga instalada real é 23.0 kW (demanda contratada de 1750 kW era erro BDGD)
+New Load.UCMT_3573cfc00eac13cf Bus1=SCN_CN07_9562_CEI027.1.2.3 Phases=3 kV=13.800 kW=6.00 pf=0.92 Model=1 ! [CALIBRADO GROUND TRUTH] CarInst=6.0kW | ERB Celular: carga instalada real é 6.0 kW (demanda contratada de 1750 kW era erro BDGD)
+New Load.UCMT_729c6a62555a28ce Bus1=SCN_CN07_9562_CEI027.1.2.3 Phases=3 kV=13.800 kW=23.00 pf=0.92 Model=1 ! [CALIBRADO GROUND TRUTH] CarInst=23.0kW | ERB Celular: carga instalada real é 23.0 kW (demanda contratada de 1000 kW era erro BDGD)
 New Load.UCMT_8a5e3140f37864a3 Bus1=SCN_CN07_9562_CEI027.1.2.3 Phases=3 kV=13.800 kW=300.00 pf=0.92 Model=1 ! CarInst=15.0kW DemCont=300.0kW
 ! ------------------------------------------------------------------------------
 ! CARGA PRIORITÁRIA DE SEGURANÇA PÚBLICA: 15ª DELEGACIA DE POLÍCIA CIVIL (15ª DP)
