@@ -163,6 +163,7 @@ Com os modelos elétricos das Zonas 1 e 2 calibrados e validados, a próxima eta
 | `src/24_calibracao_ground_truth_15dp.py` | Calibração das ERBs, normalização da 15ª DP (0.9738 pu) e regeneração do dashboard. |
 | `src/25_setup_vercel_oficial.py` | Automação e verificação de deploy do projeto `gemeos-digitais`. |
 | `src/26_simulacao_24h_dashboard.py` | Simulação temporal de 24h (Daily Mode) e injeção do gráfico Plotly no Dashboard. |
+| `src/28_correcao_loadshapes_globais.py` | Injeção em lote de Loadshapes de vizinhança (`LS_Residencial`) via `BatchEdit`, simulação 24h com afundamento noturno real e atualização do Plotly. |
 
 ---
 
@@ -194,11 +195,14 @@ pip install -r requirements.txt
 # Executar a calibração com Ground Truth do HRC (Zona 1)
 python src/16_calibracao_ground_truth_hrc.py
 
+# Executar a calibração de cargas e ERBs da 15ª DP (Zona 1)
+python src/24_calibracao_ground_truth_15dp.py
+
 # Executar a modelagem e auditoria do circuito definitivo do HBDF na SE SBG (Zona 2)
 python src/20_extracao_e_baseline_sbg_hbdf.py
 
-# Gerar o Dashboard Unificado atualizado com as Zonas 1 e 2
-python src/21_dashboard_definitivo_frontend.py
+# Executar a simulação dinâmica 24h com Loadshapes Globais de vizinhança e atualizar o Dashboard
+python src/28_correcao_loadshapes_globais.py
 ```
 
 ### 4. Visualização do Dashboard Local
