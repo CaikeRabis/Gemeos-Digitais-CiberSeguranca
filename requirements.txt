@@ -21,3 +21,4 @@ folium>=0.19.0
 branca>=0.8.0
 dss-python>=0.15.7
 requests>=2.32.0
+plotly>=6.0.0

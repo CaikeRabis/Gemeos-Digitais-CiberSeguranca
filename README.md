@@ -162,6 +162,7 @@ Com os modelos elétricos das Zonas 1 e 2 calibrados e validados, a próxima eta
 | `src/23_auditoria_parametros_15dp.py` | Perícia do alimentador CN07 e detecção das ERBs celulares fantasmas. |
 | `src/24_calibracao_ground_truth_15dp.py` | Calibração das ERBs, normalização da 15ª DP (0.9738 pu) e regeneração do dashboard. |
 | `src/25_setup_vercel_oficial.py` | Automação e verificação de deploy do projeto `gemeos-digitais`. |
+| `src/26_simulacao_24h_dashboard.py` | Simulação temporal de 24h (Daily Mode) e injeção do gráfico Plotly no Dashboard. |
 
 ---
 
